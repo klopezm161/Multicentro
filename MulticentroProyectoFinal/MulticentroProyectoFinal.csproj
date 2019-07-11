@@ -50,7 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="claseprueba.cs" />
     <Compile Include="ConexionesBasicasAbrirCerrarBD.cs" />
     <Compile Include="GUI\FacturacionesBusqueda.cs">
       <SubType>Form</SubType>
