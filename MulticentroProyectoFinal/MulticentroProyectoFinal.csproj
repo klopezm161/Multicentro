@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B81492C5-5626-47F5-A314-561CFBEC1234}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MulticentroProyectoFinal</RootNamespace>
+    <AssemblyName>MulticentroProyectoFinal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConexionesBasicasAbrirCerrarBD.cs" />
+    <Compile Include="GUI\FacturacionesBusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FacturacionesBusqueda.Designer.cs">
+      <DependentUpon>FacturacionesBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FacturacionesCrear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FacturacionesCrear.Designer.cs">
+      <DependentUpon>FacturacionesCrear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Facturaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Facturaciones.Designer.cs">
+      <DependentUpon>Facturaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FacturacionBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FacturacionBuscar.Designer.cs">
+      <DependentUpon>FacturacionBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ServiciosActualizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ServiciosActualizacion.designer.cs">
+      <DependentUpon>ServiciosActualizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ServiciosBusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ServiciosBusqueda.designer.cs">
+      <DependentUpon>ServiciosBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Servicios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Servicios.designer.cs">
+      <DependentUpon>Servicios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ServiciosIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ServiciosIngreso.designer.cs">
+      <DependentUpon>ServiciosIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ProductoActualizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ProductoActualizacion.Designer.cs">
+      <DependentUpon>ProductoActualizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ProductoBusqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ProductoBusqueda.Designer.cs">
+      <DependentUpon>ProductoBusqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\ProductoIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ProductoIngreso.Designer.cs">
+      <DependentUpon>ProductoIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Productos.Designer.cs">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IActualizarElementoBD.cs" />
+    <Compile Include="IActualizarBuscarAgregarBD.cs" />
+    <Compile Include="IAgregarElementoBD.cs" />
+    <Compile Include="IBorrarElementoBD.cs" />
+    <Compile Include="IBuscarElementoBD.cs" />
+    <Compile Include="IConexionesBasicasAbrirCerrarBD.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FacturacionesBusqueda.resx">
+      <DependentUpon>FacturacionesBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FacturacionesCrear.resx">
+      <DependentUpon>FacturacionesCrear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FacturacionBuscar.resx">
+      <DependentUpon>FacturacionBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Facturaciones.resx">
+      <DependentUpon>Facturaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ServiciosActualizacion.resx">
+      <DependentUpon>ServiciosActualizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ServiciosBusqueda.resx">
+      <DependentUpon>ServiciosBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Servicios.resx">
+      <DependentUpon>Servicios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ServiciosIngreso.resx">
+      <DependentUpon>ServiciosIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ProductoActualizacion.resx">
+      <DependentUpon>ProductoActualizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ProductoBusqueda.resx">
+      <DependentUpon>ProductoBusqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ProductoIngreso.resx">
+      <DependentUpon>ProductoIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Productos.resx">
+      <DependentUpon>Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
