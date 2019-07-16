@@ -16,20 +16,26 @@ namespace MulticentroProyectoFinal
         {
             InitializeComponent();
         }
-
-        private void BtnIngresar_Click(object sender, EventArgs e)
+        //Getters de las textboxes para utilizarlas en ServiciosIngresoBD
+        public string getNombre()
         {
-            this.Dispose();
-            Servicios frm = new Servicios();
-            frm.Show();
+            return txtNombreServicioIngreso.Text;
         }
 
+        public string getCodigo()
+        {
+            return txtCodigoServicioIngreso.Text;
+        }
+
+        public string getPrecio()
+        {
+            return txtPrecioServicioIngreso.Text;
+        }
+       
         private void ServiciosIngreso_Load(object sender, EventArgs e)
         {
 
-        }
-
-     
+        }     
 
         private void BtnSalirServicioIngreso_Click(object sender, EventArgs e)
         {
@@ -40,13 +46,26 @@ namespace MulticentroProyectoFinal
         {
             this.Dispose();
             MenuPrincipal menuPrincipalPrograma = new MenuPrincipal();
-            menuPrincipalPrograma.Show();
-            
+            menuPrincipalPrograma.Show();            
         }
 
         private void ServiciosIngreso_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void BtnAceptarServicioIngreso_Click(object sender, EventArgs e)
+        {
+            ServiciosIngresoBD servicioIngreso = new ServiciosIngresoBD();
+            servicioIngreso.Agregar();
+            ServiciosBusquedaBD busqueda = new ServiciosBusquedaBD();
+            busqueda.BuscarPorCodigo(getCodigo());
+            DataTable dt = new DataTable();
+            busqueda.getSqlAdaptador().Fill(dt);
+            dgvServicioNuevo.DataSource = dt;
+            txtNombreServicioIngreso.Clear();
+            txtCodigoServicioIngreso.Clear();
+            txtPrecioServicioIngreso.Clear();
         }
     }
 }

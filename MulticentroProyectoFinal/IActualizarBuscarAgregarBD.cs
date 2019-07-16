@@ -9,7 +9,7 @@ namespace MulticentroProyectoFinal
     /// <summary>
     /// Interfaz con tres funcionalidades de BD: insertar, buscar, actualizar
     /// </summary>
-    public interface IActualizarBuscarAgregarBD: IBuscarElementoBD, IAgregarElementoBD, IActualizarElementoBD
+    public interface IActualizarBuscarAgregarBD: IBuscarElementoPorCodigoBD, IAgregarElementoBD, IActualizarElementoBD
     {
     }
 }

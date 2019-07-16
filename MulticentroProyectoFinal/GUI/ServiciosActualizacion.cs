@@ -16,13 +16,40 @@ namespace MulticentroProyectoFinal
         {
             InitializeComponent();
         }
+        //Getters de las text boxes para poder usarlos en la clase de ServiciosActualizacionBD
+        public string getNombre()
+        {
+            return txtNombreServiciosActualizacion.Text;
+        }
+
+        public string getCantidad()
+        {
+            return txtCantidadServiciosActualizacion.Text;
+
+        }
+        public string getPrecio()
+        {
+            return txtPrecioServiciosActualizacion.Text;
+        }
+        public string getCodigoParaActualizar()
+        {
+            return TxtCodAActualizarActualizacionServicios.Text;
+        }
 
         private void BtnActualizar_Click(object sender, EventArgs e)
         {
-            this.Dispose();
-            Servicios frm = new Servicios();
-            frm.Show();
+            ServiciosActualizacionBD servicioActualizacion = new ServiciosActualizacionBD();
+            servicioActualizacion.Actualizar();
+            ServiciosBusquedaBD busqueda = new ServiciosBusquedaBD();
+            busqueda.BuscarPorCodigo(getCodigoParaActualizar());
+            DataTable dt = new DataTable();
+            busqueda.getSqlAdaptador().Fill(dt);
 
+            dGVActualizacionServicio.DataSource = dt;
+            txtNombreServiciosActualizacion.Clear();
+            TxtCodAActualizarActualizacionServicios.Clear();
+            txtPrecioServiciosActualizacion.Clear();
+            txtCantidadServiciosActualizacion.Clear();
         }
 
         private void BtnSalirServiciosActualizacion_Click(object sender, EventArgs e)
@@ -41,5 +68,15 @@ namespace MulticentroProyectoFinal
         {
             Application.Exit();
         }
+
+        private void BtnBuscarServiciosActualizacion_Click(object sender, EventArgs e)
+        {
+            ServiciosBusquedaBD busqueda = new ServiciosBusquedaBD();
+            busqueda.BuscarPorCodigo(getCodigoParaActualizar());
+            DataTable dt = new DataTable();
+            busqueda.getSqlAdaptador().Fill(dt);
+            dGVActualizacionServicio.DataSource = dt;
+        }
     }
 }
+

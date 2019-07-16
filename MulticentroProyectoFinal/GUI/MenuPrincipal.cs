@@ -17,13 +17,6 @@ namespace MulticentroProyectoFinal
             InitializeComponent();
         }
 
-        private void BtnProductosMenuPrincipal_Click(object sender, EventArgs e)
-        {
-            Productos productos = new Productos();
-            productos.Show();
-            this.Dispose();
-        }
-
         private void BtnSalirMenuPrincipal_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -36,23 +29,69 @@ namespace MulticentroProyectoFinal
             this.Dispose();
         }
 
-        private void BtnServiciosMenuPrincipal_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-            Servicios servicios = new Servicios();
-            servicios.Show();
-        }
-
-        private void BtnFacturacionMenuPrincipal_Click(object sender, EventArgs e)
-        {
-            this.Dispose();
-            Facturaciones facturar = new Facturaciones();
-            facturar.Show();
-        }
-
         private void MenuPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void BtnProductos_Click(object sender, EventArgs e)
+        {
+            if (cBoxProductos.GetItemText(this.cBoxProductos.SelectedItem).Equals("Buscar"))
+            {
+                ProductoBusqueda productosBuscar = new ProductoBusqueda();
+                productosBuscar.Show();
+                this.Dispose();
+            }
+            else if (cBoxProductos.GetItemText(this.cBoxProductos.SelectedItem).Equals("Agregar"))
+            {
+                ProductoIngreso productosAgregar= new ProductoIngreso();
+                productosAgregar.Show();
+                this.Dispose();
+            }
+            else if (cBoxProductos.GetItemText(this.cBoxProductos.SelectedItem).Equals("Actualizar"))
+            {
+                ProductoActualizacion productosActualizar = new ProductoActualizacion();
+                productosActualizar.Show();
+                this.Dispose();
+            }
+        }
+
+        private void BtnFacturacion_Click(object sender, EventArgs e)
+        {
+            if (cBoxFacturacion.GetItemText(this.cBoxFacturacion.SelectedItem).Equals("Buscar"))
+            {
+                FacturacionesBusquesa facturaBuscar = new FacturacionesBusquesa();
+                facturaBuscar.Show();
+                this.Dispose();
+            }
+            else if (cBoxFacturacion.GetItemText(this.cBoxFacturacion.SelectedItem).Equals("Agregar"))
+            {
+                FacturarCrear FacturaAgregar = new FacturarCrear();
+                FacturaAgregar.Show();
+                this.Dispose();
+            }
+        }
+
+        private void BtnServicios_Click(object sender, EventArgs e)
+        {
+            if (cBoxServicios.GetItemText(this.cBoxServicios.SelectedItem).Equals("Buscar"))
+            {
+                ServiciosBusqueda servicioBuscar = new ServiciosBusqueda();
+               servicioBuscar.Show();
+                this.Dispose();
+            }
+            else if (cBoxServicios.GetItemText(this.cBoxServicios.SelectedItem).Equals("Agregar"))
+            {
+                ServiciosIngreso servicioAgregar = new ServiciosIngreso();
+                servicioAgregar.Show();
+                this.Dispose();
+            }
+            else if (cBoxServicios.GetItemText(this.cBoxServicios.SelectedItem).Equals("Actualizar"))
+            {
+                ServiciosActualizacion servicioActualizar = new ServiciosActualizacion();
+                servicioActualizar.Show();
+                this.Dispose();
+            }
         }
     }
 }
