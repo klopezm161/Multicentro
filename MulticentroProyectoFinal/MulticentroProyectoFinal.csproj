@@ -50,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConexionesBasicasAbrirCerrarBD.cs" />
+    <Compile Include="ConexionBD\ConexionesBasicasAbrirCerrarBD.cs" />
     <Compile Include="GUI\FacturacionesBusqueda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,18 +117,18 @@
     <Compile Include="GUI\ProductoIngreso.Designer.cs">
       <DependentUpon>ProductoIngreso.cs</DependentUpon>
     </Compile>
-    <Compile Include="IActualizarElementoBD.cs" />
-    <Compile Include="IActualizarBuscarAgregarBD.cs" />
-    <Compile Include="IAgregarElementoBD.cs" />
-    <Compile Include="IBorrarElementoBD.cs" />
-    <Compile Include="IBuscarElementoPorCodigoBD.cs" />
-    <Compile Include="IBuscarElementoPorCodigoYNombre.cs" />
-    <Compile Include="IConexionesBasicasAbrirCerrarBD.cs" />
+    <Compile Include="Interfaces\IActualizarElementoBD.cs" />
+    <Compile Include="Interfaces\IActualizarBuscarAgregarBD.cs" />
+    <Compile Include="Interfaces\IAgregarElementoBD.cs" />
+    <Compile Include="Interfaces\IBorrarElementoBD.cs" />
+    <Compile Include="Interfaces\IBuscarElementoPorCodigoBD.cs" />
+    <Compile Include="Interfaces\IBuscarElementoPorCodigoYNombre.cs" />
+    <Compile Include="ConexionBD\IConexionesBasicasAbrirCerrarBD.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ServiciosActualizacionBD.cs" />
-    <Compile Include="ServiciosBusquedaBD.cs" />
-    <Compile Include="ServiciosIngresoBD.cs" />
+    <Compile Include="Servicios\ServiciosActualizacionBD.cs" />
+    <Compile Include="Servicios\ServiciosBusquedaBD.cs" />
+    <Compile Include="Servicios\ServiciosIngresoBD.cs" />
     <EmbeddedResource Include="GUI\FacturacionesBusqueda.resx">
       <DependentUpon>FacturacionesBusqueda.cs</DependentUpon>
     </EmbeddedResource>
