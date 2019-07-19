@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Data;
 
 
 namespace MulticentroProyectoFinal
@@ -20,25 +21,23 @@ namespace MulticentroProyectoFinal
         private string codigo;
         private string precio;
         private SqlCommand cmd;
-       
-
+        IBuscarElementoPorCodigoYNombre busqueda = new ServiciosBusquedaBD();
         public ServiciosIngresoBD()
         {
             //inicializacion de variables
             conexion = new ConexionesBasicasAbrirCerrarBD();
-            nombre = guiServiciosIngreso.getNombre();
-            codigo = guiServiciosIngreso.getCodigo();
-            precio = guiServiciosIngreso.getPrecio();
+            nombre = guiServiciosIngreso.GetNombre();
+            codigo = guiServiciosIngreso.GetCodigo();
+            precio = guiServiciosIngreso.GetPrecio();
         }
+        //Implementación de método de la interfaz
 
-        /// <summary>
-        /// Método para agregar/insertar datos a servicios en base de datos
-        /// </summary>
+        //método para agregar datos
         public void Agregar()
         {
             try
             {
-                if (VerificarInformacion())
+                if (VerificarInformacion() )
                 {
                     conexion.AbrirConexion();
 
@@ -46,23 +45,29 @@ namespace MulticentroProyectoFinal
                         " values('" + int.Parse(codigo) + "', '" + nombre + "', '" + int.Parse(precio) + "')", conexion.GetSqlConnection());
                     cmd.ExecuteNonQuery();
                     conexion.CerrarConexion();
+
+                    busqueda.BuscarPorCodigo(guiServiciosIngreso.GetCodigo(), guiServiciosIngreso.GetDataView());
                     MessageBox.Show("Información agregada");
                 }
+                
             }
             catch (FormatException ex)
             {
-                MessageBox.Show("Formato incorrecto de datos. Inténtelo de nuevo");
+                MensajesStandard.MensajeFormatoIncorrectoDatos();
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("ERROR DE BASE DE DATOS. Inténtelo de nuevo");
+                MensajesStandard.MensajeCodigoNuevoYaExistente();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Mensaje de error  " + ex);
+                MensajesStandard.MensajeGeneralExcepcionGenerica(ex);
             }
         }
-
+        /// <summary>
+        /// Método que verifica que no se hayan dejado en blanco nombre, código y precio
+        /// </summary>
+        /// <returns></returns>
         public bool VerificarInformacion()
         {
             if (nombre.Length == 0 || codigo.Length == 0 || precio.Length == 0)
@@ -72,6 +77,8 @@ namespace MulticentroProyectoFinal
             }
             return true;
         }
+
     }
 }
+
 

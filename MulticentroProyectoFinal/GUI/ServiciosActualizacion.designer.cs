@@ -202,9 +202,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(14, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(168, 20);
+            this.label2.Size = new System.Drawing.Size(65, 20);
             this.label2.TabIndex = 25;
-            this.label2.Text = "Código  a actualizar";
+            this.label2.Text = "Código";
             // 
             // btnBuscarServiciosActualizacion
             // 
@@ -218,9 +218,9 @@
             // 
             // TxtCodAActualizarActualizacionServicios
             // 
-            this.TxtCodAActualizarActualizacionServicios.Location = new System.Drawing.Point(188, 77);
+            this.TxtCodAActualizarActualizacionServicios.Location = new System.Drawing.Point(131, 77);
             this.TxtCodAActualizarActualizacionServicios.Name = "TxtCodAActualizarActualizacionServicios";
-            this.TxtCodAActualizarActualizacionServicios.Size = new System.Drawing.Size(328, 26);
+            this.TxtCodAActualizarActualizacionServicios.Size = new System.Drawing.Size(385, 26);
             this.TxtCodAActualizarActualizacionServicios.TabIndex = 27;
             // 
             // ServiciosActualizacion

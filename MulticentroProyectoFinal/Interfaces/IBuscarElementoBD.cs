@@ -6,12 +6,8 @@ using System.Threading.Tasks;
 
 namespace MulticentroProyectoFinal
 {
-    /// <summary>
-    /// Interfaz para actualizar base de datos
-    /// </summary>
-    public interface IActualizarElementoBD
+    interface IBuscarElementoBD
     {
-      
-        void Actualizar();
+        void Buscar();
     }
 }

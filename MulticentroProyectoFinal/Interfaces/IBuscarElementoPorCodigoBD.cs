@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.Windows.Forms;
 
 namespace MulticentroProyectoFinal
 {
@@ -13,11 +14,8 @@ namespace MulticentroProyectoFinal
     /// </summary>
     public interface IBuscarElementoPorCodigoBD
     {
-        /// <summary>
-        /// Buscar elemento en base de datos por código o número
-        /// </summary>
-        /// <param name="elementoABuscar"></param>
-        void BuscarPorCodigo(string elementoABuscar);
+        //Método para buscar por código.
+        void BuscarPorCodigo(string elementoABuscar, DataGridView dataGrid);
         SqlDataAdapter getSqlAdaptador();
     }
 }

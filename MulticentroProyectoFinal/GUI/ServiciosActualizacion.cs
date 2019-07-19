@@ -16,42 +16,46 @@ namespace MulticentroProyectoFinal
         {
             InitializeComponent();
         }
-        //Getters de las text boxes para poder usarlos en la clase de ServiciosActualizacionBD
-        public string getNombre()
+        //Getters de las text boxes y del dataGridView
+        public string GetNombre()
         {
             return txtNombreServiciosActualizacion.Text;
         }
 
-        public string getCantidad()
+        public string GetCantidad()
         {
             return txtCantidadServiciosActualizacion.Text;
 
         }
-        public string getPrecio()
+        public string GetPrecio()
         {
             return txtPrecioServiciosActualizacion.Text;
         }
-        public string getCodigoParaActualizar()
+        public string GetCodigoParaActualizar()
         {
             return TxtCodAActualizarActualizacionServicios.Text;
+        }
+        public DataGridView GetDataGridView()
+        {
+            return dGVActualizacionServicio;
         }
 
         private void BtnActualizar_Click(object sender, EventArgs e)
         {
-            ServiciosActualizacionBD servicioActualizacion = new ServiciosActualizacionBD();
-            servicioActualizacion.Actualizar();
-            ServiciosBusquedaBD busqueda = new ServiciosBusquedaBD();
-            busqueda.BuscarPorCodigo(getCodigoParaActualizar());
-            DataTable dt = new DataTable();
-            busqueda.getSqlAdaptador().Fill(dt);
-
-            dGVActualizacionServicio.DataSource = dt;
+            
+            IActualizarElementoBD servicioActualizacion = new ServiciosActualizacionBD();
+            servicioActualizacion.Actualizar();          
+         
             txtNombreServiciosActualizacion.Clear();
-            TxtCodAActualizarActualizacionServicios.Clear();
+          //  TxtCodAActualizarActualizacionServicios.Clear();
             txtPrecioServiciosActualizacion.Clear();
             txtCantidadServiciosActualizacion.Clear();
         }
-
+        private void BtnBuscarServiciosActualizacion_Click(object sender, EventArgs e)
+        {
+            IBuscarElementoPorCodigoYNombre busqueda = new ServiciosBusquedaBD();
+            busqueda.BuscarPorCodigo(GetCodigoParaActualizar(), dGVActualizacionServicio);      
+        }
         private void BtnSalirServiciosActualizacion_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -69,14 +73,7 @@ namespace MulticentroProyectoFinal
             Application.Exit();
         }
 
-        private void BtnBuscarServiciosActualizacion_Click(object sender, EventArgs e)
-        {
-            ServiciosBusquedaBD busqueda = new ServiciosBusquedaBD();
-            busqueda.BuscarPorCodigo(getCodigoParaActualizar());
-            DataTable dt = new DataTable();
-            busqueda.getSqlAdaptador().Fill(dt);
-            dGVActualizacionServicio.DataSource = dt;
-        }
+
     }
 }
 

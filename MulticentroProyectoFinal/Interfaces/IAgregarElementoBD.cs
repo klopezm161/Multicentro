@@ -11,6 +11,9 @@ namespace MulticentroProyectoFinal
     /// </summary>
   public  interface IAgregarElementoBD
     {
+        /// <summary>
+        /// Método para agregar elementos a la base de datos
+        /// </summary>
         void Agregar();
     }
 }
