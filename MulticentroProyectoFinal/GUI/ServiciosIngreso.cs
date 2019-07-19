@@ -16,20 +16,25 @@ namespace MulticentroProyectoFinal
         {
             InitializeComponent();
         }
-        //Getters de las textboxes para utilizarlas en ServiciosIngresoBD
-        public string getNombre()
+        //Getters de las textboxes y del dataViewGrid
+        public string GetNombre()
         {
             return txtNombreServicioIngreso.Text;
         }
 
-        public string getCodigo()
+        public string GetCodigo()
         {
             return txtCodigoServicioIngreso.Text;
         }
 
-        public string getPrecio()
+        public string GetPrecio()
         {
             return txtPrecioServicioIngreso.Text;
+        }
+
+        public DataGridView GetDataView()
+        {
+            return dgvServicioNuevo;
         }
        
         private void ServiciosIngreso_Load(object sender, EventArgs e)
@@ -58,11 +63,9 @@ namespace MulticentroProyectoFinal
         {
             ServiciosIngresoBD servicioIngreso = new ServiciosIngresoBD();
             servicioIngreso.Agregar();
-            ServiciosBusquedaBD busqueda = new ServiciosBusquedaBD();
-            busqueda.BuscarPorCodigo(getCodigo());
-            DataTable dt = new DataTable();
-            busqueda.getSqlAdaptador().Fill(dt);
-            dgvServicioNuevo.DataSource = dt;
+            //ServiciosBusquedaBD busqueda = new ServiciosBusquedaBD();
+            //busqueda.BuscarPorCodigo(getCodigo(), dgvServicioNuevo);
+
             txtNombreServicioIngreso.Clear();
             txtCodigoServicioIngreso.Clear();
             txtPrecioServicioIngreso.Clear();

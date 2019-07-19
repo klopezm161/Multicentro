@@ -21,37 +21,103 @@ namespace MulticentroProyectoFinal
         private int codigo;
         private SqlCommand cmd;
         private SqlDataAdapter adaptador;
+        private String codigoEnStr;
 
         public ServiciosActualizacionBD()
         {
             //inicializacion de variables
             conexion = new ConexionesBasicasAbrirCerrarBD();
-            nombre = guiServiciosActualizacion.getNombre();
-            cantidad = guiServiciosActualizacion.getCantidad();
-            precio = guiServiciosActualizacion.getPrecio();
-        }
+            nombre = guiServiciosActualizacion.GetNombre();
+            cantidad = guiServiciosActualizacion.GetCantidad();
+            precio = guiServiciosActualizacion.GetPrecio();
 
+        }
+        /// <summary>
+        /// métodos para actualizar elementos a la base de datos
+        /// </summary>
         public void Actualizar()
         {
-            codigo = Int32.Parse(guiServiciosActualizacion.getCodigoParaActualizar());
             try
             {
-                int pre = Int32.Parse(precio);
+                codigoEnStr = guiServiciosActualizacion.GetCodigoParaActualizar();
+                if (codigoEnStr.Length<1)
+                {
+                    MensajesStandard.MensajeNoIngresoCodigo();
+                }
 
-                cmd = new SqlCommand("update Multicentro.dbo.servicio SET nombre= @nombre, precio=@precio where codigoservicio=@codigoservicio", conexion.GetSqlConnection());
-                conexion.AbrirConexion();
-                cmd.Parameters.AddWithValue("@codigoservicio", codigo);
-                cmd.Parameters.AddWithValue("@nombre", nombre);
-                cmd.Parameters.AddWithValue("@precio", pre);
+                else if (nombre.Length == 0 && precio.Length == 0)
+                {
+                    MessageBox.Show("No ingresó datos a actualizar");
+                }
 
-                cmd.ExecuteNonQuery();
-                conexion.CerrarConexion();
-                MessageBox.Show("Información actualizada");
+                else
+                {
+                    codigo = Int32.Parse(guiServiciosActualizacion.GetCodigoParaActualizar());
+                    if (nombre.Length > 0 && precio.Length > 0)
+                        ActualizarTodosDatos();
+
+                    else if (nombre.Length > 0 && precio.Length == 0)
+                    {
+                        ActualizarNombre();
+                    }
+                    else if (nombre.Length == 0 && precio.Length > 0)
+                    {
+                        ActualizarPrecio();
+                    }
+                    
+                    IBuscarElementoPorCodigoYNombre busqueda = new ServiciosBusquedaBD();
+                    busqueda.BuscarPorCodigo(guiServiciosActualizacion.GetCodigoParaActualizar(), guiServiciosActualizacion.GetDataGridView());
+                    MessageBox.Show("Información actualizada");
+                    
+                }
+            }
+            catch (FormatException ex)
+            {
+                MensajesStandard.MensajeFormatoIncorrectoDatos();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Mensaje de error  " + ex);
             }
+        }
+        //metodo que actualiza nombre, precio, codigo a Servicios
+        public void ActualizarTodosDatos()
+        {
+            int pre = Int32.Parse(precio);
+
+            cmd = new SqlCommand("update Multicentro.dbo.servicio SET nombre= @nombre, precio=@precio where codigoservicio=@codigoservicio", conexion.GetSqlConnection());
+            conexion.AbrirConexion();
+            cmd.Parameters.AddWithValue("@codigoservicio", codigo);
+            cmd.Parameters.AddWithValue("@nombre", nombre);
+            cmd.Parameters.AddWithValue("@precio", pre);
+
+            cmd.ExecuteNonQuery();
+            conexion.CerrarConexion();
+        }
+
+        //metodo que actualiza nombre
+        public void ActualizarNombre()
+        {
+            cmd = new SqlCommand("update Multicentro.dbo.servicio SET nombre= @nombre where codigoservicio=@codigoservicio", conexion.GetSqlConnection());
+            conexion.AbrirConexion();
+            cmd.Parameters.AddWithValue("@codigoservicio", codigo);
+            cmd.Parameters.AddWithValue("@nombre", nombre);
+            cmd.ExecuteNonQuery();
+            conexion.CerrarConexion();
+        }
+
+        //método que actualiza precio
+        public void ActualizarPrecio()
+        {
+            int pre = Int32.Parse(precio);
+
+            cmd = new SqlCommand("update Multicentro.dbo.servicio SET  precio=@precio where codigoservicio=@codigoservicio", conexion.GetSqlConnection());
+            conexion.AbrirConexion();
+            cmd.Parameters.AddWithValue("@codigoservicio", codigo);
+            cmd.Parameters.AddWithValue("@precio", pre);
+            cmd.ExecuteNonQuery();
+            conexion.CerrarConexion();
+
         }
 
     }
