@@ -11,30 +11,38 @@ using System.Data;
 
 namespace MulticentroProyectoFinal
 {
-    class ServiciosIngresoBD : IAgregarElementoBD
+    public class ServiciosIngresoBD : IAgregarElementoBD
     {
         //referencia a clase para abrir conexion
         private IConexionesBasicasAbrirCerrarBD conexion;
         //referencia a clase de Windows Form para poder capturar los valores ingresados por el cliente
         private ServiciosIngreso guiServiciosIngreso = (ServiciosIngreso)Application.OpenForms["ServiciosIngreso"];
-        private string nombre;
-        private string codigo;
-        private string precio;
+        //declaracion de propiedades Nombre, codigo, precio con su respectivo getter y setter
+        public string Nombre { get; set; }
+        public string Codigo { get; set; }
+        public string Precio { get; set; }
         private SqlCommand cmd;
-        IBuscarElementoPorCodigoYNombre busqueda = new ServiciosBusquedaBD();
+        IBuscarElementoPorCodigoYNombre busqueda;
         public ServiciosIngresoBD()
         {
             //inicializacion de variables
-            conexion = new ConexionesBasicasAbrirCerrarBD();
-            nombre = guiServiciosIngreso.GetNombre();
-            codigo = guiServiciosIngreso.GetCodigo();
-            precio = guiServiciosIngreso.GetPrecio();
+            //conexion = new ConexionesBasicasAbrirCerrarBD();
+            //Nombre = guiServiciosIngreso.GetNombre();
+            //Codigo = guiServiciosIngreso.GetCodigo();
+            //Precio = guiServiciosIngreso.GetPrecio();
         }
         //Implementación de método de la interfaz
 
-        //método para agregar datos
+        /// <summary>
+        /// método para agregar datos a servicios
+        /// </summary>
         public void Agregar()
         {
+            busqueda = new ServiciosBusquedaBD();
+            conexion = new ConexionesBasicasAbrirCerrarBD();
+            Nombre = guiServiciosIngreso.GetNombre();
+            Codigo = guiServiciosIngreso.GetCodigo();
+            Precio = guiServiciosIngreso.GetPrecio();
             try
             {
                 if (VerificarInformacion() )
@@ -42,7 +50,7 @@ namespace MulticentroProyectoFinal
                     conexion.AbrirConexion();
 
                     cmd = new SqlCommand("insert into Multicentro.dbo.servicio (codigoservicio,nombre,precio)" +
-                        " values('" + int.Parse(codigo) + "', '" + nombre + "', '" + int.Parse(precio) + "')", conexion.GetSqlConnection());
+                        " values('" + int.Parse(Codigo) + "', '" + Nombre + "', '" + int.Parse(Precio) + "')", conexion.GetSqlConnection());
                     cmd.ExecuteNonQuery();
                     conexion.CerrarConexion();
 
@@ -57,7 +65,7 @@ namespace MulticentroProyectoFinal
             }
             catch (SqlException ex)
             {
-                MensajesStandard.MensajeCodigoNuevoYaExistente();
+                MensajesStandard.MensajeErrorGeneralBaseDatos();
             }
             catch (Exception ex)
             {
@@ -70,7 +78,7 @@ namespace MulticentroProyectoFinal
         /// <returns></returns>
         public bool VerificarInformacion()
         {
-            if (nombre.Length == 0 || codigo.Length == 0 || precio.Length == 0)
+            if (Nombre.Length == 0 || Codigo.Length == 0 || Precio.Length == 0)
             {
                 MessageBox.Show("No puede dejar espacios en blanco");
                 return false;

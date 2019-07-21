@@ -48,11 +48,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(13, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 20);
+            this.label1.Size = new System.Drawing.Size(160, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "FACTURA NUEVA";
             // 
@@ -123,10 +124,10 @@
             // btnAceptarFacturarCrear
             // 
             this.btnAceptarFacturarCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarFacturarCrear.Location = new System.Drawing.Point(387, 400);
+            this.btnAceptarFacturarCrear.Location = new System.Drawing.Point(358, 400);
             this.btnAceptarFacturarCrear.Margin = new System.Windows.Forms.Padding(5);
             this.btnAceptarFacturarCrear.Name = "btnAceptarFacturarCrear";
-            this.btnAceptarFacturarCrear.Size = new System.Drawing.Size(125, 35);
+            this.btnAceptarFacturarCrear.Size = new System.Drawing.Size(145, 28);
             this.btnAceptarFacturarCrear.TabIndex = 7;
             this.btnAceptarFacturarCrear.Text = "Aceptar";
             this.btnAceptarFacturarCrear.UseVisualStyleBackColor = true;
@@ -137,7 +138,7 @@
             this.btnMenuPrincipalEnFacturarCrear.Location = new System.Drawing.Point(14, 400);
             this.btnMenuPrincipalEnFacturarCrear.Margin = new System.Windows.Forms.Padding(5);
             this.btnMenuPrincipalEnFacturarCrear.Name = "btnMenuPrincipalEnFacturarCrear";
-            this.btnMenuPrincipalEnFacturarCrear.Size = new System.Drawing.Size(125, 35);
+            this.btnMenuPrincipalEnFacturarCrear.Size = new System.Drawing.Size(145, 28);
             this.btnMenuPrincipalEnFacturarCrear.TabIndex = 8;
             this.btnMenuPrincipalEnFacturarCrear.Text = "Menú Principal";
             this.btnMenuPrincipalEnFacturarCrear.UseVisualStyleBackColor = true;
@@ -147,29 +148,29 @@
             // 
             this.txtFechaEmisionFacturarCrear.Location = new System.Drawing.Point(150, 160);
             this.txtFechaEmisionFacturarCrear.Name = "txtFechaEmisionFacturarCrear";
-            this.txtFechaEmisionFacturarCrear.Size = new System.Drawing.Size(372, 26);
+            this.txtFechaEmisionFacturarCrear.Size = new System.Drawing.Size(353, 26);
             this.txtFechaEmisionFacturarCrear.TabIndex = 10;
             // 
             // txtNumFacturaFacturarCrear
             // 
             this.txtNumFacturaFacturarCrear.Location = new System.Drawing.Point(150, 200);
             this.txtNumFacturaFacturarCrear.Name = "txtNumFacturaFacturarCrear";
-            this.txtNumFacturaFacturarCrear.Size = new System.Drawing.Size(372, 26);
+            this.txtNumFacturaFacturarCrear.Size = new System.Drawing.Size(353, 26);
             this.txtNumFacturaFacturarCrear.TabIndex = 11;
             // 
             // txtNombreClienteFacturarCrear
             // 
             this.txtNombreClienteFacturarCrear.Location = new System.Drawing.Point(150, 240);
             this.txtNombreClienteFacturarCrear.Name = "txtNombreClienteFacturarCrear";
-            this.txtNombreClienteFacturarCrear.Size = new System.Drawing.Size(372, 26);
+            this.txtNombreClienteFacturarCrear.Size = new System.Drawing.Size(353, 26);
             this.txtNombreClienteFacturarCrear.TabIndex = 12;
             // 
             // CBoxServicioFacturarCrear
             // 
             this.CBoxServicioFacturarCrear.FormattingEnabled = true;
-            this.CBoxServicioFacturarCrear.Location = new System.Drawing.Point(150, 277);
+            this.CBoxServicioFacturarCrear.Location = new System.Drawing.Point(150, 280);
             this.CBoxServicioFacturarCrear.Name = "CBoxServicioFacturarCrear";
-            this.CBoxServicioFacturarCrear.Size = new System.Drawing.Size(372, 28);
+            this.CBoxServicioFacturarCrear.Size = new System.Drawing.Size(353, 28);
             this.CBoxServicioFacturarCrear.TabIndex = 13;
             // 
             // dataGridView1
@@ -177,7 +178,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 454);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(500, 270);
+            this.dataGridView1.Size = new System.Drawing.Size(485, 270);
             this.dataGridView1.TabIndex = 14;
             // 
             // FacturarCrear
@@ -203,6 +204,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FacturarCrear";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FacturarCrear";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FacturarCrear_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

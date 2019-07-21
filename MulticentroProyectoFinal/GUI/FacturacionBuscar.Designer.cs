@@ -66,9 +66,9 @@
             // btnAceptarFacturacionBuscar
             // 
             this.btnAceptarFacturacionBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarFacturacionBuscar.Location = new System.Drawing.Point(211, 143);
+            this.btnAceptarFacturacionBuscar.Location = new System.Drawing.Point(192, 143);
             this.btnAceptarFacturacionBuscar.Name = "btnAceptarFacturacionBuscar";
-            this.btnAceptarFacturacionBuscar.Size = new System.Drawing.Size(126, 32);
+            this.btnAceptarFacturacionBuscar.Size = new System.Drawing.Size(145, 28);
             this.btnAceptarFacturacionBuscar.TabIndex = 3;
             this.btnAceptarFacturacionBuscar.Text = "Aceptar";
             this.btnAceptarFacturacionBuscar.UseVisualStyleBackColor = true;
@@ -76,9 +76,9 @@
             // btnMenuPrincipalEnFacturacionBuscar
             // 
             this.btnMenuPrincipalEnFacturacionBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuPrincipalEnFacturacionBuscar.Location = new System.Drawing.Point(211, 288);
+            this.btnMenuPrincipalEnFacturacionBuscar.Location = new System.Drawing.Point(192, 288);
             this.btnMenuPrincipalEnFacturacionBuscar.Name = "btnMenuPrincipalEnFacturacionBuscar";
-            this.btnMenuPrincipalEnFacturacionBuscar.Size = new System.Drawing.Size(126, 32);
+            this.btnMenuPrincipalEnFacturacionBuscar.Size = new System.Drawing.Size(145, 28);
             this.btnMenuPrincipalEnFacturacionBuscar.TabIndex = 5;
             this.btnMenuPrincipalEnFacturacionBuscar.Text = "Menú Principal";
             this.btnMenuPrincipalEnFacturacionBuscar.UseVisualStyleBackColor = true;
@@ -96,6 +96,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FacturacionBuscar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FacturacionBuscar";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FacturacionBuscar_FormClosed);
             this.ResumeLayout(false);

@@ -113,7 +113,7 @@
             this.btnAceptarProductoActualizado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAceptarProductoActualizado.Location = new System.Drawing.Point(358, 400);
             this.btnAceptarProductoActualizado.Name = "btnAceptarProductoActualizado";
-            this.btnAceptarProductoActualizado.Size = new System.Drawing.Size(145, 35);
+            this.btnAceptarProductoActualizado.Size = new System.Drawing.Size(145, 28);
             this.btnAceptarProductoActualizado.TabIndex = 9;
             this.btnAceptarProductoActualizado.Text = "Aceptar";
             this.btnAceptarProductoActualizado.UseVisualStyleBackColor = true;
@@ -123,7 +123,7 @@
             this.btnMenuPrincipalProductoActualizado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenuPrincipalProductoActualizado.Location = new System.Drawing.Point(14, 400);
             this.btnMenuPrincipalProductoActualizado.Name = "btnMenuPrincipalProductoActualizado";
-            this.btnMenuPrincipalProductoActualizado.Size = new System.Drawing.Size(145, 35);
+            this.btnMenuPrincipalProductoActualizado.Size = new System.Drawing.Size(145, 28);
             this.btnMenuPrincipalProductoActualizado.TabIndex = 11;
             this.btnMenuPrincipalProductoActualizado.Text = "Menú Principal";
             this.btnMenuPrincipalProductoActualizado.UseVisualStyleBackColor = true;
@@ -189,7 +189,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(18, 454);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(500, 270);
+            this.dataGridView1.Size = new System.Drawing.Size(485, 270);
             this.dataGridView1.TabIndex = 18;
             // 
             // ProductoActualizacion
@@ -215,6 +215,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ProductoActualizacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Producto Actualizacion";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ProductoActualizacion_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

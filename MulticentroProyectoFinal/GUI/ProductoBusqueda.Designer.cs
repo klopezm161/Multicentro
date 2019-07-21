@@ -85,9 +85,9 @@
             // btnBuscarProductoBusqueda
             // 
             this.btnBuscarProductoBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarProductoBusqueda.Location = new System.Drawing.Point(373, 400);
+            this.btnBuscarProductoBusqueda.Location = new System.Drawing.Point(358, 400);
             this.btnBuscarProductoBusqueda.Name = "btnBuscarProductoBusqueda";
-            this.btnBuscarProductoBusqueda.Size = new System.Drawing.Size(130, 30);
+            this.btnBuscarProductoBusqueda.Size = new System.Drawing.Size(145, 28);
             this.btnBuscarProductoBusqueda.TabIndex = 4;
             this.btnBuscarProductoBusqueda.Text = "Buscar";
             this.btnBuscarProductoBusqueda.UseVisualStyleBackColor = true;
@@ -97,7 +97,7 @@
             this.btnMenuPrincipalProductoBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenuPrincipalProductoBusqueda.Location = new System.Drawing.Point(14, 400);
             this.btnMenuPrincipalProductoBusqueda.Name = "btnMenuPrincipalProductoBusqueda";
-            this.btnMenuPrincipalProductoBusqueda.Size = new System.Drawing.Size(130, 30);
+            this.btnMenuPrincipalProductoBusqueda.Size = new System.Drawing.Size(145, 28);
             this.btnMenuPrincipalProductoBusqueda.TabIndex = 6;
             this.btnMenuPrincipalProductoBusqueda.Text = "Menú Principal";
             this.btnMenuPrincipalProductoBusqueda.UseVisualStyleBackColor = true;
@@ -130,7 +130,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(18, 454);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(500, 270);
+            this.dataGridView1.Size = new System.Drawing.Size(485, 270);
             this.dataGridView1.TabIndex = 10;
             // 
             // ProductoBusqueda
@@ -150,6 +150,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "ProductoBusqueda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductoBusqueda";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ProductoBusqueda_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

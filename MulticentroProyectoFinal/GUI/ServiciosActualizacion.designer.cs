@@ -134,9 +134,9 @@
             // btnAceptarServiciosActualizacion
             // 
             this.btnAceptarServiciosActualizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarServiciosActualizacion.Location = new System.Drawing.Point(376, 400);
+            this.btnAceptarServiciosActualizacion.Location = new System.Drawing.Point(358, 400);
             this.btnAceptarServiciosActualizacion.Name = "btnAceptarServiciosActualizacion";
-            this.btnAceptarServiciosActualizacion.Size = new System.Drawing.Size(127, 34);
+            this.btnAceptarServiciosActualizacion.Size = new System.Drawing.Size(145, 28);
             this.btnAceptarServiciosActualizacion.TabIndex = 18;
             this.btnAceptarServiciosActualizacion.Text = "Aceptar";
             this.btnAceptarServiciosActualizacion.UseVisualStyleBackColor = true;
@@ -183,7 +183,7 @@
             this.btnMenuPrincipalEnServiciosActualizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenuPrincipalEnServiciosActualizacion.Location = new System.Drawing.Point(14, 400);
             this.btnMenuPrincipalEnServiciosActualizacion.Name = "btnMenuPrincipalEnServiciosActualizacion";
-            this.btnMenuPrincipalEnServiciosActualizacion.Size = new System.Drawing.Size(126, 34);
+            this.btnMenuPrincipalEnServiciosActualizacion.Size = new System.Drawing.Size(145, 28);
             this.btnMenuPrincipalEnServiciosActualizacion.TabIndex = 23;
             this.btnMenuPrincipalEnServiciosActualizacion.Text = "Menú Principal";
             this.btnMenuPrincipalEnServiciosActualizacion.UseVisualStyleBackColor = true;
@@ -208,9 +208,10 @@
             // 
             // btnBuscarServiciosActualizacion
             // 
-            this.btnBuscarServiciosActualizacion.Location = new System.Drawing.Point(386, 108);
+            this.btnBuscarServiciosActualizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarServiciosActualizacion.Location = new System.Drawing.Point(358, 109);
             this.btnBuscarServiciosActualizacion.Name = "btnBuscarServiciosActualizacion";
-            this.btnBuscarServiciosActualizacion.Size = new System.Drawing.Size(128, 34);
+            this.btnBuscarServiciosActualizacion.Size = new System.Drawing.Size(145, 28);
             this.btnBuscarServiciosActualizacion.TabIndex = 26;
             this.btnBuscarServiciosActualizacion.Text = "Buscar";
             this.btnBuscarServiciosActualizacion.UseVisualStyleBackColor = true;
@@ -220,7 +221,7 @@
             // 
             this.TxtCodAActualizarActualizacionServicios.Location = new System.Drawing.Point(131, 77);
             this.TxtCodAActualizarActualizacionServicios.Name = "TxtCodAActualizarActualizacionServicios";
-            this.TxtCodAActualizarActualizacionServicios.Size = new System.Drawing.Size(385, 26);
+            this.TxtCodAActualizarActualizacionServicios.Size = new System.Drawing.Size(372, 26);
             this.TxtCodAActualizarActualizacionServicios.TabIndex = 27;
             // 
             // ServiciosActualizacion
@@ -250,6 +251,7 @@
             this.Controls.Add(this.lblNombreA);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ServiciosActualizacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Actualización Servicio";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ServiciosActualizacion_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dGVActualizacionServicio)).EndInit();

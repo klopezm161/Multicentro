@@ -45,9 +45,9 @@
             this.label1.Location = new System.Drawing.Point(13, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 22);
+            this.label1.Size = new System.Drawing.Size(173, 22);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Buscar Factura";
+            this.label1.Text = "BUSCAR FACTURA";
             // 
             // label2
             // 
@@ -65,16 +65,16 @@
             this.txtNumFacturaFacturacionesBusqueda.Location = new System.Drawing.Point(153, 80);
             this.txtNumFacturaFacturacionesBusqueda.Margin = new System.Windows.Forms.Padding(5);
             this.txtNumFacturaFacturacionesBusqueda.Name = "txtNumFacturaFacturacionesBusqueda";
-            this.txtNumFacturaFacturacionesBusqueda.Size = new System.Drawing.Size(372, 26);
+            this.txtNumFacturaFacturacionesBusqueda.Size = new System.Drawing.Size(350, 26);
             this.txtNumFacturaFacturacionesBusqueda.TabIndex = 2;
             // 
             // btnAceptarFacturacionesBusqueda
             // 
             this.btnAceptarFacturacionesBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarFacturacionesBusqueda.Location = new System.Drawing.Point(393, 400);
+            this.btnAceptarFacturacionesBusqueda.Location = new System.Drawing.Point(358, 400);
             this.btnAceptarFacturacionesBusqueda.Margin = new System.Windows.Forms.Padding(5);
             this.btnAceptarFacturacionesBusqueda.Name = "btnAceptarFacturacionesBusqueda";
-            this.btnAceptarFacturacionesBusqueda.Size = new System.Drawing.Size(125, 35);
+            this.btnAceptarFacturacionesBusqueda.Size = new System.Drawing.Size(145, 28);
             this.btnAceptarFacturacionesBusqueda.TabIndex = 3;
             this.btnAceptarFacturacionesBusqueda.Text = "Aceptar";
             this.btnAceptarFacturacionesBusqueda.UseVisualStyleBackColor = true;
@@ -85,7 +85,7 @@
             this.btnMenuPrincipalFacturacionesBusqueda.Location = new System.Drawing.Point(14, 400);
             this.btnMenuPrincipalFacturacionesBusqueda.Margin = new System.Windows.Forms.Padding(5);
             this.btnMenuPrincipalFacturacionesBusqueda.Name = "btnMenuPrincipalFacturacionesBusqueda";
-            this.btnMenuPrincipalFacturacionesBusqueda.Size = new System.Drawing.Size(125, 35);
+            this.btnMenuPrincipalFacturacionesBusqueda.Size = new System.Drawing.Size(145, 28);
             this.btnMenuPrincipalFacturacionesBusqueda.TabIndex = 4;
             this.btnMenuPrincipalFacturacionesBusqueda.Text = "Menú Principal";
             this.btnMenuPrincipalFacturacionesBusqueda.UseVisualStyleBackColor = true;
@@ -96,7 +96,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(18, 454);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(500, 270);
+            this.dataGridView1.Size = new System.Drawing.Size(485, 270);
             this.dataGridView1.TabIndex = 5;
             // 
             // FacturacionesBusquesa
@@ -114,7 +114,8 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FacturacionesBusquesa";
-            this.Text = "FacturacionesBusquesa";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Facturaciones Busqueda";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FacturacionesBusquesa_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

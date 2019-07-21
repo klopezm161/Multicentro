@@ -15,23 +15,27 @@ namespace MulticentroProyectoFinal
     {
         //referencia a clase para abrir conexion
         private IConexionesBasicasAbrirCerrarBD conexion;
-       // private SqlCommand cmd;
+        // private SqlCommand cmd;
         private SqlDataAdapter adaptador;
-       // private SqlDataReader lector;
+        // private SqlDataReader lector;
 
-       //constructor que inicializa la conexion
+        //constructor que inicializa la conexion
         public ServiciosBusquedaBD()
         {
-            conexion = new ConexionesBasicasAbrirCerrarBD();     
-        }       
+            conexion = new ConexionesBasicasAbrirCerrarBD();
+        }
         //Implementación de métodos de la interfaz 
 
-        //método que busca por nombre
+        /// <summary>
+        /// método que busca por nombre
+        /// </summary>
+        /// <param name="elementoABuscar"></param>
+        /// <param name="dataGrid"></param>
         public void BuscarPorNombre(String elementoABuscar, DataGridView dataGrid)
         {
             try
             {
-                conexion.AbrirConexion();               
+                conexion.AbrirConexion();
                 string query = @"SELECT * FROM dbo.servicio where nombre like'" + elementoABuscar + "%'";
                 adaptador = new SqlDataAdapter(query, conexion.GetSqlConnection());
                 conexion.CerrarConexion();
@@ -46,7 +50,11 @@ namespace MulticentroProyectoFinal
                 MensajesStandard.MensajeGeneralExcepcionGenerica(ex);
             }
         }
-        //método que busca por código
+        /// <summary>
+        /// método que busca por código
+        /// </summary>
+        /// <param name="elementoABuscar"></param>
+        /// <param name="dataGrid"></param>
         public void BuscarPorCodigo(String elementoABuscar, DataGridView dataGrid)
         {
             try
@@ -59,12 +67,12 @@ namespace MulticentroProyectoFinal
                     conexion.CerrarConexion();
                     MostrarDatos(dataGrid);
                 }
-                else if (elementoABuscar.Length > 11 || elementoABuscar.Length<1)
+                else if (elementoABuscar.Length > 11 || elementoABuscar.Length < 1)
                 {
-                   MensajesStandard.CodigoIngresadoIncorrecto();
+                    MensajesStandard.CodigoIngresadoIncorrecto();
                 }
             }
-            catch(ArgumentNullException ex)
+            catch (ArgumentNullException ex)
             {
                 MensajesStandard.MensajeNoIngresoCodigo();
             }
@@ -77,6 +85,10 @@ namespace MulticentroProyectoFinal
                 MensajesStandard.MensajeGeneralExcepcionGenerica(ex);
             }
         }
+        /// <summary>
+        /// metodo que regresa el SqlDataAdapter
+        /// </summary>
+        /// <returns></returns>
         public SqlDataAdapter getSqlAdaptador()
         {
             return adaptador;
@@ -99,8 +111,8 @@ namespace MulticentroProyectoFinal
                 }
             }
             catch (NullReferenceException ex) { }
-        }    
-       
+        }
+
     }
 }
 
