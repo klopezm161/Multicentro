@@ -126,6 +126,9 @@
     <Compile Include="Interfaces\IBuscarElementoPorCodigoYNombre.cs" />
     <Compile Include="ConexionBD\IConexionesBasicasAbrirCerrarBD.cs" />
     <Compile Include="MensajesStandard.cs" />
+    <Compile Include="Productos\ProductosActualizacionBD.cs" />
+    <Compile Include="Productos\ProductosBusquedaBD.cs" />
+    <Compile Include="Productos\ProductosIngresoBD.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servicios\ServiciosActualizacionBD.cs" />

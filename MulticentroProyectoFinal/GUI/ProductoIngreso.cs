@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MulticentroProyectoFinal;
 
 namespace MulticentroProyectoFinal
 {
@@ -17,7 +18,28 @@ namespace MulticentroProyectoFinal
         {
             InitializeComponent();
         }
+        public string GetNombre()
+        {
+            return txtNombreProductoNuevo.Text;
+        }
 
+        public string GetCodigo()
+        {
+            return txtCodigoProductoNuevo.Text;
+        }
+
+        public string GetPrecio()
+        {
+            return txtPrecioProductoNuevo.Text;
+        }
+        public string GetCantidad()
+        {
+            return txtCantidadProductoNuevo.Text;
+        }
+        public DataGridView GetDataView()
+        {
+            return dataGridViewProductoNuevo;
+        }
         private void BtnSalirProductoNuevo_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -30,7 +52,15 @@ namespace MulticentroProyectoFinal
             this.Close();
         }
 
-       
-        
+        private void BtnAceptarProductoNuevo_Click(object sender, EventArgs e)
+        {
+            ProductosIngresoBD productoIngreso = new ProductosIngresoBD();
+            productoIngreso.Agregar();
+
+            txtNombreProductoNuevo.Clear();
+            txtCodigoProductoNuevo.Clear();
+            txtPrecioProductoNuevo.Clear();
+            txtCantidadProductoNuevo.Clear();
+        }
     }
 }
