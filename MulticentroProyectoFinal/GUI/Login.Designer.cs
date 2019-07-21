@@ -75,9 +75,9 @@
             // btnIngresarLogin
             // 
             this.btnIngresarLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresarLogin.Location = new System.Drawing.Point(338, 181);
+            this.btnIngresarLogin.Location = new System.Drawing.Point(293, 181);
             this.btnIngresarLogin.Name = "btnIngresarLogin";
-            this.btnIngresarLogin.Size = new System.Drawing.Size(100, 35);
+            this.btnIngresarLogin.Size = new System.Drawing.Size(145, 28);
             this.btnIngresarLogin.TabIndex = 4;
             this.btnIngresarLogin.Text = "Ingresar";
             this.btnIngresarLogin.UseVisualStyleBackColor = true;
@@ -88,7 +88,7 @@
             this.btnSalirLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalirLogin.Location = new System.Drawing.Point(20, 181);
             this.btnSalirLogin.Name = "btnSalirLogin";
-            this.btnSalirLogin.Size = new System.Drawing.Size(104, 35);
+            this.btnSalirLogin.Size = new System.Drawing.Size(145, 28);
             this.btnSalirLogin.TabIndex = 5;
             this.btnSalirLogin.Text = "Salir";
             this.btnSalirLogin.UseVisualStyleBackColor = true;
@@ -98,7 +98,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Location = new System.Drawing.Point(183, 15);
+            this.label3.Location = new System.Drawing.Point(23, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 22);
             this.label3.TabIndex = 6;
@@ -129,6 +129,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
             this.panel1.ResumeLayout(false);

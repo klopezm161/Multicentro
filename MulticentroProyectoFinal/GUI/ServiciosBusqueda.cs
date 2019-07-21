@@ -21,12 +21,11 @@ namespace MulticentroProyectoFinal
         {
             return txtNombreBusquedaServicio.Text;
         }
-
         public string getCodigo()
         {
             return txtCodigoBusquedaServicio.Text;
         }
-
+        //botón que referencia ServiciosBusquedaBD y dependiendo de cuál textbox tenga datos, llama al método correspondiente
         private void BtnBuscar_Click(object sender, EventArgs e)
         {
             IBuscarElementoPorCodigoYNombre busqueda = new ServiciosBusquedaBD();
@@ -48,7 +47,6 @@ namespace MulticentroProyectoFinal
             txtNombreBusquedaServicio.Clear();
 
         }
-
         private void BtnSalirEnBusquedaServicio_Click(object sender, EventArgs e)
         {
             Application.Exit();

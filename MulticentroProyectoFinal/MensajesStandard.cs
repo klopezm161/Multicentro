@@ -33,6 +33,10 @@ namespace MulticentroProyectoFinal
         {
             MessageBox.Show("Ese código ya existe en la base de datos, ingrese otro código.");
         }
+        public static void MensajeErrorGeneralBaseDatos()
+        {
+            MessageBox.Show("Error al ingresar los datos a la base de datos, verifique la información ingresada.");
+        }
         
     }
 }

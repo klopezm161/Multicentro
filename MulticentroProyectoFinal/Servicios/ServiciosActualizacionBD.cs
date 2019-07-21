@@ -9,27 +9,28 @@ using System.Windows.Forms;
 
 namespace MulticentroProyectoFinal
 {
-    class ServiciosActualizacionBD : IActualizarElementoBD
+    public class ServiciosActualizacionBD : IActualizarElementoBD
     {
         //referencia a clase para abrir conexion
         private IConexionesBasicasAbrirCerrarBD conexion;
         //referencia a clase de Windows Form para poder capturar los valores ingresados por el cliente
         private ServiciosActualizacion guiServiciosActualizacion = (ServiciosActualizacion)Application.OpenForms["ServiciosActualizacion"];
-        private string nombre;
-        private string cantidad;
-        private string precio;
-        private int codigo;
+        //declaracion de propiedades con su respectivo getter y setter
+        public string Nombre { get; set; }
+        public  string Cantidad { get; set; }
+        public string Precio { get; set; }
+        public int Codigo { get; set; }
         private SqlCommand cmd;
         private SqlDataAdapter adaptador;
-        private String codigoEnStr;
+        public String CodigoEnStr{ get; set; }
 
         public ServiciosActualizacionBD()
         {
             //inicializacion de variables
-            conexion = new ConexionesBasicasAbrirCerrarBD();
-            nombre = guiServiciosActualizacion.GetNombre();
-            cantidad = guiServiciosActualizacion.GetCantidad();
-            precio = guiServiciosActualizacion.GetPrecio();
+            //conexion = new ConexionesBasicasAbrirCerrarBD();
+            //Nombre = guiServiciosActualizacion.GetNombre();
+            //Cantidad = guiServiciosActualizacion.GetCantidad();
+            //Precio = guiServiciosActualizacion.GetPrecio();
 
         }
         /// <summary>
@@ -37,30 +38,35 @@ namespace MulticentroProyectoFinal
         /// </summary>
         public void Actualizar()
         {
+            conexion = new ConexionesBasicasAbrirCerrarBD();
+            Nombre = guiServiciosActualizacion.GetNombre();
+            Cantidad = guiServiciosActualizacion.GetCantidad();
+            Precio = guiServiciosActualizacion.GetPrecio();
+
             try
             {
-                codigoEnStr = guiServiciosActualizacion.GetCodigoParaActualizar();
-                if (codigoEnStr.Length<1)
+                CodigoEnStr = guiServiciosActualizacion.GetCodigoParaActualizar();
+                if (CodigoEnStr.Length<1)
                 {
                     MensajesStandard.MensajeNoIngresoCodigo();
                 }
 
-                else if (nombre.Length == 0 && precio.Length == 0)
+                else if (Nombre.Length == 0 && Precio.Length == 0)
                 {
                     MessageBox.Show("No ingresó datos a actualizar");
                 }
 
                 else
                 {
-                    codigo = Int32.Parse(guiServiciosActualizacion.GetCodigoParaActualizar());
-                    if (nombre.Length > 0 && precio.Length > 0)
+                    Codigo = Int32.Parse(guiServiciosActualizacion.GetCodigoParaActualizar());
+                    if (Nombre.Length > 0 && Precio.Length > 0)
                         ActualizarTodosDatos();
 
-                    else if (nombre.Length > 0 && precio.Length == 0)
+                    else if (Nombre.Length > 0 && Precio.Length == 0)
                     {
                         ActualizarNombre();
                     }
-                    else if (nombre.Length == 0 && precio.Length > 0)
+                    else if (Nombre.Length == 0 && Precio.Length > 0)
                     {
                         ActualizarPrecio();
                     }
@@ -70,6 +76,10 @@ namespace MulticentroProyectoFinal
                     MessageBox.Show("Información actualizada");
                     
                 }
+            }
+            catch (SqlException ex)
+            {
+                MensajesStandard.MensajeErrorGeneralBaseDatos();
             }
             catch (FormatException ex)
             {
@@ -83,37 +93,37 @@ namespace MulticentroProyectoFinal
         //metodo que actualiza nombre, precio, codigo a Servicios
         public void ActualizarTodosDatos()
         {
-            int pre = Int32.Parse(precio);
+            int pre = Int32.Parse(Precio);
 
             cmd = new SqlCommand("update Multicentro.dbo.servicio SET nombre= @nombre, precio=@precio where codigoservicio=@codigoservicio", conexion.GetSqlConnection());
             conexion.AbrirConexion();
-            cmd.Parameters.AddWithValue("@codigoservicio", codigo);
-            cmd.Parameters.AddWithValue("@nombre", nombre);
+            cmd.Parameters.AddWithValue("@codigoservicio", Codigo);
+            cmd.Parameters.AddWithValue("@nombre", Nombre);
             cmd.Parameters.AddWithValue("@precio", pre);
 
             cmd.ExecuteNonQuery();
             conexion.CerrarConexion();
         }
 
-        //metodo que actualiza nombre
+        //metodo que actualiza nombre a servicios
         public void ActualizarNombre()
         {
             cmd = new SqlCommand("update Multicentro.dbo.servicio SET nombre= @nombre where codigoservicio=@codigoservicio", conexion.GetSqlConnection());
             conexion.AbrirConexion();
-            cmd.Parameters.AddWithValue("@codigoservicio", codigo);
-            cmd.Parameters.AddWithValue("@nombre", nombre);
+            cmd.Parameters.AddWithValue("@codigoservicio", Codigo);
+            cmd.Parameters.AddWithValue("@nombre", Nombre);
             cmd.ExecuteNonQuery();
             conexion.CerrarConexion();
         }
 
-        //método que actualiza precio
+        //método que actualiza precio a servicios
         public void ActualizarPrecio()
         {
-            int pre = Int32.Parse(precio);
+            int pre = Int32.Parse(Precio);
 
             cmd = new SqlCommand("update Multicentro.dbo.servicio SET  precio=@precio where codigoservicio=@codigoservicio", conexion.GetSqlConnection());
             conexion.AbrirConexion();
-            cmd.Parameters.AddWithValue("@codigoservicio", codigo);
+            cmd.Parameters.AddWithValue("@codigoservicio", Codigo);
             cmd.Parameters.AddWithValue("@precio", pre);
             cmd.ExecuteNonQuery();
             conexion.CerrarConexion();

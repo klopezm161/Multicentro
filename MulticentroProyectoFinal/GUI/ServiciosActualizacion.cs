@@ -21,11 +21,9 @@ namespace MulticentroProyectoFinal
         {
             return txtNombreServiciosActualizacion.Text;
         }
-
         public string GetCantidad()
         {
             return txtCantidadServiciosActualizacion.Text;
-
         }
         public string GetPrecio()
         {
@@ -39,22 +37,42 @@ namespace MulticentroProyectoFinal
         {
             return dGVActualizacionServicio;
         }
-
+        //public void SetNombre(string nombre)
+        //{
+        //    txtNombreServiciosActualizacion.Text = nombre;
+        //}
+        //public void SetPrecio(string precio)
+        //{
+        //    txtPrecioServiciosActualizacion.Text = precio;
+        //}
+        //public void SetCodigoParaActualizar(string codigo)
+        //{
+        //    TxtCodAActualizarActualizacionServicios.Text = codigo;
+        //}
+        //Botón instancia a la clase servicioActualización y al método actualizar
         private void BtnActualizar_Click(object sender, EventArgs e)
         {
-            
             IActualizarElementoBD servicioActualizacion = new ServiciosActualizacionBD();
-            servicioActualizacion.Actualizar();          
-         
+            servicioActualizacion.Actualizar();
+
             txtNombreServiciosActualizacion.Clear();
-          //  TxtCodAActualizarActualizacionServicios.Clear();
+            //  TxtCodAActualizarActualizacionServicios.Clear();
             txtPrecioServiciosActualizacion.Clear();
             txtCantidadServiciosActualizacion.Clear();
         }
+        //botón que busca código para actualizar
         private void BtnBuscarServiciosActualizacion_Click(object sender, EventArgs e)
         {
-            IBuscarElementoPorCodigoYNombre busqueda = new ServiciosBusquedaBD();
-            busqueda.BuscarPorCodigo(GetCodigoParaActualizar(), dGVActualizacionServicio);      
+            if (GetCodigoParaActualizar().Length < 1)
+            {
+                MensajesStandard.MensajeNoIngresoCodigo();
+            }
+
+            else
+            {
+                IBuscarElementoPorCodigoYNombre busqueda = new ServiciosBusquedaBD();
+                busqueda.BuscarPorCodigo(GetCodigoParaActualizar(), dGVActualizacionServicio);
+            }
         }
         private void BtnSalirServiciosActualizacion_Click(object sender, EventArgs e)
         {
@@ -72,7 +90,6 @@ namespace MulticentroProyectoFinal
         {
             Application.Exit();
         }
-
 
     }
 }

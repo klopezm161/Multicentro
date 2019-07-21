@@ -21,12 +21,10 @@ namespace MulticentroProyectoFinal
         {
             return txtNombreServicioIngreso.Text;
         }
-
         public string GetCodigo()
         {
             return txtCodigoServicioIngreso.Text;
         }
-
         public string GetPrecio()
         {
             return txtPrecioServicioIngreso.Text;
@@ -58,7 +56,7 @@ namespace MulticentroProyectoFinal
         {
             Application.Exit();
         }
-
+        //boton que inicializar ServiciosIngreso BD y llama al método Agregar
         private void BtnAceptarServicioIngreso_Click(object sender, EventArgs e)
         {
             ServiciosIngresoBD servicioIngreso = new ServiciosIngresoBD();
