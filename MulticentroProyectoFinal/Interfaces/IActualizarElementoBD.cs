@@ -11,6 +11,7 @@ namespace MulticentroProyectoFinal
     /// </summary>
     public interface IActualizarElementoBD
     {
+      
         void Actualizar();
     }
 }

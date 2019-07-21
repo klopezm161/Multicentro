@@ -16,60 +16,37 @@ namespace MulticentroProyectoFinal
         {
             InitializeComponent();
         }
-        //getters de los texteboxes para poder usarlos en la calse ServiciosBusquedaBD
+        //getters de los textboxes 
         public string getNombre()
         {
             return txtNombreBusquedaServicio.Text;
         }
-
         public string getCodigo()
         {
             return txtCodigoBusquedaServicio.Text;
         }
-
+        //botón que referencia ServiciosBusquedaBD y dependiendo de cuál textbox tenga datos, llama al método correspondiente
         private void BtnBuscar_Click(object sender, EventArgs e)
         {
             IBuscarElementoPorCodigoYNombre busqueda = new ServiciosBusquedaBD();
-            String elementoABuscar;
+            //String elementoABuscar;
             if (getNombre().Length == 0 && getCodigo().Length == 0)
             {
                 MessageBox.Show("No ingresó ningún valor. Indique el código o nombre que desea buscar.");
             }
             else if (getNombre().Length > 0)
             {
-                busqueda.BuscarPorNombre(getNombre());
+                busqueda.BuscarPorNombre(getNombre(), dGVBusquedaServicio);
 
             }
             else if (getCodigo().Length > 0)
             {
-                busqueda.BuscarPorCodigo(getCodigo());
-            }
-
-
-            try
-            {
-                DataTable dt = new DataTable();
-                busqueda.getSqlAdaptador().Fill(dt);
-
-
-                if (dt.Rows.Count > 0)
-                {
-                    dGVBusquedaServicio.DataSource = dt;
-                }
-                else
-                {
-                    MessageBox.Show("No se encontró ese servicio. Inténtelo de nuevo");
-                }
-            }
-            catch (System.NullReferenceException ex)
-            {
-                // MessageBox.Show("No se seleccionó un dato correcto, no hay nada que mostrar.");
-            }
+                busqueda.BuscarPorCodigo(getCodigo(), dGVBusquedaServicio);
+            }            
             txtCodigoBusquedaServicio.Clear();
             txtNombreBusquedaServicio.Clear();
 
         }
-
         private void BtnSalirEnBusquedaServicio_Click(object sender, EventArgs e)
         {
             Application.Exit();

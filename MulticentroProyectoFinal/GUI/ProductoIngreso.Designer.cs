@@ -144,10 +144,10 @@
             // btnAceptarProductoNuevo
             // 
             this.btnAceptarProductoNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarProductoNuevo.Location = new System.Drawing.Point(317, 400);
+            this.btnAceptarProductoNuevo.Location = new System.Drawing.Point(358, 400);
             this.btnAceptarProductoNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptarProductoNuevo.Name = "btnAceptarProductoNuevo";
-            this.btnAceptarProductoNuevo.Size = new System.Drawing.Size(196, 28);
+            this.btnAceptarProductoNuevo.Size = new System.Drawing.Size(145, 28);
             this.btnAceptarProductoNuevo.TabIndex = 8;
             this.btnAceptarProductoNuevo.Text = "Aceptar";
             this.btnAceptarProductoNuevo.UseVisualStyleBackColor = true;
@@ -158,7 +158,7 @@
             this.btnMenuPrincipalProductoNuevo.Location = new System.Drawing.Point(14, 400);
             this.btnMenuPrincipalProductoNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuPrincipalProductoNuevo.Name = "btnMenuPrincipalProductoNuevo";
-            this.btnMenuPrincipalProductoNuevo.Size = new System.Drawing.Size(196, 28);
+            this.btnMenuPrincipalProductoNuevo.Size = new System.Drawing.Size(145, 28);
             this.btnMenuPrincipalProductoNuevo.TabIndex = 10;
             this.btnMenuPrincipalProductoNuevo.Text = "Menú Principal";
             this.btnMenuPrincipalProductoNuevo.UseVisualStyleBackColor = true;
@@ -228,7 +228,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(18, 454);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(500, 270);
+            this.dataGridView1.Size = new System.Drawing.Size(485, 270);
             this.dataGridView1.TabIndex = 18;
             // 
             // ProductoIngreso
@@ -258,6 +258,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ProductoIngreso";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProductoIngreso";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

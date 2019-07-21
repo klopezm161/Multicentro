@@ -48,7 +48,7 @@
             this.label1.AutoSize = true;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(171, 25);
+            this.label1.Location = new System.Drawing.Point(12, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(201, 42);
             this.label1.TabIndex = 0;
@@ -57,9 +57,9 @@
             // btnRegresarMenuPrincipal
             // 
             this.btnRegresarMenuPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarMenuPrincipal.Location = new System.Drawing.Point(398, 398);
+            this.btnRegresarMenuPrincipal.Location = new System.Drawing.Point(363, 400);
             this.btnRegresarMenuPrincipal.Name = "btnRegresarMenuPrincipal";
-            this.btnRegresarMenuPrincipal.Size = new System.Drawing.Size(110, 32);
+            this.btnRegresarMenuPrincipal.Size = new System.Drawing.Size(145, 28);
             this.btnRegresarMenuPrincipal.TabIndex = 4;
             this.btnRegresarMenuPrincipal.Text = "Regresar";
             this.btnRegresarMenuPrincipal.UseVisualStyleBackColor = true;
@@ -109,9 +109,9 @@
             // btnProductos
             // 
             this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProductos.Location = new System.Drawing.Point(384, 50);
+            this.btnProductos.Location = new System.Drawing.Point(349, 50);
             this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(105, 28);
+            this.btnProductos.Size = new System.Drawing.Size(145, 28);
             this.btnProductos.TabIndex = 17;
             this.btnProductos.Text = "Seleccionar";
             this.btnProductos.UseVisualStyleBackColor = true;
@@ -120,9 +120,9 @@
             // btnFacturacion
             // 
             this.btnFacturacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFacturacion.Location = new System.Drawing.Point(384, 116);
+            this.btnFacturacion.Location = new System.Drawing.Point(349, 116);
             this.btnFacturacion.Name = "btnFacturacion";
-            this.btnFacturacion.Size = new System.Drawing.Size(105, 28);
+            this.btnFacturacion.Size = new System.Drawing.Size(145, 28);
             this.btnFacturacion.TabIndex = 18;
             this.btnFacturacion.Text = "Seleccionar";
             this.btnFacturacion.UseVisualStyleBackColor = true;
@@ -131,9 +131,9 @@
             // btnServicios
             // 
             this.btnServicios.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnServicios.Location = new System.Drawing.Point(384, 185);
+            this.btnServicios.Location = new System.Drawing.Point(349, 185);
             this.btnServicios.Name = "btnServicios";
-            this.btnServicios.Size = new System.Drawing.Size(105, 28);
+            this.btnServicios.Size = new System.Drawing.Size(145, 28);
             this.btnServicios.TabIndex = 19;
             this.btnServicios.Text = "Seleccionar";
             this.btnServicios.UseVisualStyleBackColor = true;
@@ -197,6 +197,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Name = "MenuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuPrincipal";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MenuPrincipal_FormClosed);
             this.panel1.ResumeLayout(false);

@@ -48,10 +48,10 @@
             // btnAceptarServicioIngreso
             // 
             this.btnAceptarServicioIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarServicioIngreso.Location = new System.Drawing.Point(360, 400);
+            this.btnAceptarServicioIngreso.Location = new System.Drawing.Point(358, 400);
             this.btnAceptarServicioIngreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptarServicioIngreso.Name = "btnAceptarServicioIngreso";
-            this.btnAceptarServicioIngreso.Size = new System.Drawing.Size(143, 28);
+            this.btnAceptarServicioIngreso.Size = new System.Drawing.Size(145, 28);
             this.btnAceptarServicioIngreso.TabIndex = 7;
             this.btnAceptarServicioIngreso.Text = "Aceptar";
             this.btnAceptarServicioIngreso.UseVisualStyleBackColor = true;
@@ -166,7 +166,7 @@
             this.btnMenuPrincipalEnServicioIngreso.Location = new System.Drawing.Point(14, 400);
             this.btnMenuPrincipalEnServicioIngreso.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuPrincipalEnServicioIngreso.Name = "btnMenuPrincipalEnServicioIngreso";
-            this.btnMenuPrincipalEnServicioIngreso.Size = new System.Drawing.Size(143, 28);
+            this.btnMenuPrincipalEnServicioIngreso.Size = new System.Drawing.Size(145, 28);
             this.btnMenuPrincipalEnServicioIngreso.TabIndex = 21;
             this.btnMenuPrincipalEnServicioIngreso.Text = "Menú Principal";
             this.btnMenuPrincipalEnServicioIngreso.UseVisualStyleBackColor = true;
@@ -177,7 +177,7 @@
             this.dgvServicioNuevo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvServicioNuevo.Location = new System.Drawing.Point(18, 454);
             this.dgvServicioNuevo.Name = "dgvServicioNuevo";
-            this.dgvServicioNuevo.Size = new System.Drawing.Size(500, 270);
+            this.dgvServicioNuevo.Size = new System.Drawing.Size(485, 270);
             this.dgvServicioNuevo.TabIndex = 22;
             // 
             // ServiciosIngreso
@@ -203,6 +203,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ServiciosIngreso";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ingresar";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ServiciosIngreso_FormClosed);
             this.Load += new System.EventHandler(this.ServiciosIngreso_Load);

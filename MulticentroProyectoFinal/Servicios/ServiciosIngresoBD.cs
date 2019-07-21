@@ -6,72 +6,87 @@ using System.Threading.Tasks;
 using System.Configuration;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Data;
 
 
 namespace MulticentroProyectoFinal
 {
-    class ServiciosIngresoBD : IAgregarElementoBD
+    public class ServiciosIngresoBD : IAgregarElementoBD
     {
         //referencia a clase para abrir conexion
         private IConexionesBasicasAbrirCerrarBD conexion;
         //referencia a clase de Windows Form para poder capturar los valores ingresados por el cliente
         private ServiciosIngreso guiServiciosIngreso = (ServiciosIngreso)Application.OpenForms["ServiciosIngreso"];
-        private string nombre;
-        private string codigo;
-        private string precio;
+        //declaracion de propiedades Nombre, codigo, precio con su respectivo getter y setter
+        public string Nombre { get; set; }
+        public string Codigo { get; set; }
+        public string Precio { get; set; }
         private SqlCommand cmd;
-       
-
+        IBuscarElementoPorCodigoYNombre busqueda;
         public ServiciosIngresoBD()
         {
             //inicializacion de variables
-            conexion = new ConexionesBasicasAbrirCerrarBD();
-            nombre = guiServiciosIngreso.getNombre();
-            codigo = guiServiciosIngreso.getCodigo();
-            precio = guiServiciosIngreso.getPrecio();
+            //conexion = new ConexionesBasicasAbrirCerrarBD();
+            //Nombre = guiServiciosIngreso.GetNombre();
+            //Codigo = guiServiciosIngreso.GetCodigo();
+            //Precio = guiServiciosIngreso.GetPrecio();
         }
+        //Implementación de método de la interfaz
 
         /// <summary>
-        /// Método para agregar/insertar datos a servicios en base de datos
+        /// método para agregar datos a servicios
         /// </summary>
         public void Agregar()
         {
+            busqueda = new ServiciosBusquedaBD();
+            conexion = new ConexionesBasicasAbrirCerrarBD();
+            Nombre = guiServiciosIngreso.GetNombre();
+            Codigo = guiServiciosIngreso.GetCodigo();
+            Precio = guiServiciosIngreso.GetPrecio();
             try
             {
-                if (VerificarInformacion())
+                if (VerificarInformacion() )
                 {
                     conexion.AbrirConexion();
 
                     cmd = new SqlCommand("insert into Multicentro.dbo.servicio (codigoservicio,nombre,precio)" +
-                        " values('" + int.Parse(codigo) + "', '" + nombre + "', '" + int.Parse(precio) + "')", conexion.GetSqlConnection());
+                        " values('" + int.Parse(Codigo) + "', '" + Nombre + "', '" + int.Parse(Precio) + "')", conexion.GetSqlConnection());
                     cmd.ExecuteNonQuery();
                     conexion.CerrarConexion();
+
+                    busqueda.BuscarPorCodigo(guiServiciosIngreso.GetCodigo(), guiServiciosIngreso.GetDataView());
                     MessageBox.Show("Información agregada");
                 }
+                
             }
             catch (FormatException ex)
             {
-                MessageBox.Show("Formato incorrecto de datos. Inténtelo de nuevo");
+                MensajesStandard.MensajeFormatoIncorrectoDatos();
             }
             catch (SqlException ex)
             {
-                MessageBox.Show("ERROR DE BASE DE DATOS. Inténtelo de nuevo");
+                MensajesStandard.MensajeErrorGeneralBaseDatos();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Mensaje de error  " + ex);
+                MensajesStandard.MensajeGeneralExcepcionGenerica(ex);
             }
         }
-
+        /// <summary>
+        /// Método que verifica que no se hayan dejado en blanco nombre, código y precio
+        /// </summary>
+        /// <returns></returns>
         public bool VerificarInformacion()
         {
-            if (nombre.Length == 0 || codigo.Length == 0 || precio.Length == 0)
+            if (Nombre.Length == 0 || Codigo.Length == 0 || Precio.Length == 0)
             {
                 MessageBox.Show("No puede dejar espacios en blanco");
                 return false;
             }
             return true;
         }
+
     }
 }
+
 

@@ -77,10 +77,10 @@
             // btnBuscarBusquedaServicio
             // 
             this.btnBuscarBusquedaServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarBusquedaServicio.Location = new System.Drawing.Point(379, 400);
+            this.btnBuscarBusquedaServicio.Location = new System.Drawing.Point(358, 400);
             this.btnBuscarBusquedaServicio.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarBusquedaServicio.Name = "btnBuscarBusquedaServicio";
-            this.btnBuscarBusquedaServicio.Size = new System.Drawing.Size(124, 31);
+            this.btnBuscarBusquedaServicio.Size = new System.Drawing.Size(145, 28);
             this.btnBuscarBusquedaServicio.TabIndex = 3;
             this.btnBuscarBusquedaServicio.Text = "Buscar";
             this.btnBuscarBusquedaServicio.UseVisualStyleBackColor = true;
@@ -127,7 +127,7 @@
             this.btnMenuPrincipalEnBusquedaServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMenuPrincipalEnBusquedaServicio.Location = new System.Drawing.Point(14, 400);
             this.btnMenuPrincipalEnBusquedaServicio.Name = "btnMenuPrincipalEnBusquedaServicio";
-            this.btnMenuPrincipalEnBusquedaServicio.Size = new System.Drawing.Size(124, 31);
+            this.btnMenuPrincipalEnBusquedaServicio.Size = new System.Drawing.Size(145, 28);
             this.btnMenuPrincipalEnBusquedaServicio.TabIndex = 10;
             this.btnMenuPrincipalEnBusquedaServicio.Text = "Menú Principal";
             this.btnMenuPrincipalEnBusquedaServicio.UseVisualStyleBackColor = true;
@@ -138,7 +138,7 @@
             this.dGVBusquedaServicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGVBusquedaServicio.Location = new System.Drawing.Point(18, 454);
             this.dGVBusquedaServicio.Name = "dGVBusquedaServicio";
-            this.dGVBusquedaServicio.Size = new System.Drawing.Size(500, 270);
+            this.dGVBusquedaServicio.Size = new System.Drawing.Size(485, 270);
             this.dGVBusquedaServicio.TabIndex = 11;
             // 
             // ServiciosBusqueda
@@ -159,6 +159,7 @@
             this.Controls.Add(this.lblCategoria);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ServiciosBusqueda";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Busqueda Servicio";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ServiciosBusqueda_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dGVBusquedaServicio)).EndInit();
