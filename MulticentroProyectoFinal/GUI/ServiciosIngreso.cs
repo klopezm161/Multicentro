@@ -59,6 +59,11 @@ namespace MulticentroProyectoFinal
         //boton que inicializar ServiciosIngreso BD y llama al método Agregar
         private void BtnAceptarServicioIngreso_Click(object sender, EventArgs e)
         {
+            AgregarCodigo();
+        }
+
+        public void AgregarCodigo()
+        {
             ServiciosIngresoBD servicioIngreso = new ServiciosIngresoBD();
             servicioIngreso.Agregar();
             //ServiciosBusquedaBD busqueda = new ServiciosBusquedaBD();

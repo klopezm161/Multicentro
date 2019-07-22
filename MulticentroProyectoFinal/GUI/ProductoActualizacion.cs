@@ -60,10 +60,21 @@ namespace MulticentroProyectoFinal
 
         private void BtnBuscarServiciosActualizacion_Click(object sender, EventArgs e)
         {
-            IBuscarElementoPorCodigoYNombre busqueda = new ProductosBusquedaBD();
-            busqueda.BuscarPorCodigo(GetCodigoParaActualizar(), dataGridView1);
-            txtNombreProductoActualizado.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            txtPrecioProductoActualizado.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            BuscarCodigo();
+        }
+        public void BuscarCodigo()
+        {
+            if (GetCodigoParaActualizar().Length < 1)
+            {
+                MensajesStandard.MensajeNoIngresoCodigo();
+            }
+            else
+            {
+                IBuscarElementoPorCodigoYNombre busqueda = new ProductosBusquedaBD();
+                busqueda.BuscarPorCodigo(GetCodigoParaActualizar(), dataGridView1);
+                txtNombreProductoActualizado.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                txtPrecioProductoActualizado.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
+            }
         }
 
         private void BtnAceptarProductoActualizado_Click(object sender, EventArgs e)

@@ -25,7 +25,11 @@ namespace MulticentroProyectoFinal
         }
         //Implementación de métodos de la interfaz 
 
-        //método que busca por nombre
+        /// <summary>
+        /// método que busca por nombre
+        /// </summary>
+        /// <param name="elementoABuscar"></param>
+        /// <param name="dataGrid"></param>
         public void BuscarPorNombre(String elementoABuscar, DataGridView dataGrid)
         {
             try

@@ -71,6 +71,10 @@ namespace MulticentroProyectoFinal
 
                 }
             }
+            catch (SqlException ex)
+            {
+                MensajesStandard.MensajeErrorGeneralBaseDatos();
+            }
             catch (FormatException ex)
             {
                 MensajesStandard.MensajeFormatoIncorrectoDatos();

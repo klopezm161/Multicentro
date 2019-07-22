@@ -16,7 +16,7 @@ namespace MulticentroProyectoFinal
         {
             InitializeComponent();
         }
-
+        //getters de los textboxes 
         public string getNombre()
         {
             return txtNombreProductoBusqueda.Text;
