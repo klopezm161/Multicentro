@@ -138,7 +138,7 @@
             this.dGVBusquedaServicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dGVBusquedaServicio.Location = new System.Drawing.Point(18, 454);
             this.dGVBusquedaServicio.Name = "dGVBusquedaServicio";
-            this.dGVBusquedaServicio.Size = new System.Drawing.Size(485, 270);
+            this.dGVBusquedaServicio.Size = new System.Drawing.Size(485, 250);
             this.dGVBusquedaServicio.TabIndex = 11;
             // 
             // ServiciosBusqueda

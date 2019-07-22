@@ -177,7 +177,7 @@
             this.dgvServicioNuevo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvServicioNuevo.Location = new System.Drawing.Point(18, 454);
             this.dgvServicioNuevo.Name = "dgvServicioNuevo";
-            this.dgvServicioNuevo.Size = new System.Drawing.Size(485, 270);
+            this.dgvServicioNuevo.Size = new System.Drawing.Size(485, 250);
             this.dgvServicioNuevo.TabIndex = 22;
             // 
             // ServiciosIngreso

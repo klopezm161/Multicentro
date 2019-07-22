@@ -56,9 +56,9 @@
             this.lblProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProveedor.Location = new System.Drawing.Point(14, 360);
             this.lblProveedor.Name = "lblProveedor";
-            this.lblProveedor.Size = new System.Drawing.Size(90, 20);
+            this.lblProveedor.Size = new System.Drawing.Size(95, 20);
             this.lblProveedor.TabIndex = 11;
-            this.lblProveedor.Text = "Proveedor";
+            this.lblProveedor.Text = "Proveedor:";
             // 
             // lblTipoA
             // 
@@ -66,9 +66,9 @@
             this.lblTipoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTipoA.Location = new System.Drawing.Point(14, 280);
             this.lblTipoA.Name = "lblTipoA";
-            this.lblTipoA.Size = new System.Drawing.Size(43, 20);
+            this.lblTipoA.Size = new System.Drawing.Size(48, 20);
             this.lblTipoA.TabIndex = 10;
-            this.lblTipoA.Text = "Tipo";
+            this.lblTipoA.Text = "Tipo:";
             // 
             // lblCantidadA
             // 
@@ -76,9 +76,9 @@
             this.lblCantidadA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidadA.Location = new System.Drawing.Point(14, 240);
             this.lblCantidadA.Name = "lblCantidadA";
-            this.lblCantidadA.Size = new System.Drawing.Size(81, 20);
+            this.lblCantidadA.Size = new System.Drawing.Size(86, 20);
             this.lblCantidadA.TabIndex = 9;
-            this.lblCantidadA.Text = "Cantidad";
+            this.lblCantidadA.Text = "Cantidad:";
             // 
             // lblPrecioA
             // 
@@ -86,9 +86,9 @@
             this.lblPrecioA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecioA.Location = new System.Drawing.Point(14, 200);
             this.lblPrecioA.Name = "lblPrecioA";
-            this.lblPrecioA.Size = new System.Drawing.Size(59, 20);
+            this.lblPrecioA.Size = new System.Drawing.Size(64, 20);
             this.lblPrecioA.TabIndex = 8;
-            this.lblPrecioA.Text = "Precio";
+            this.lblPrecioA.Text = "Precio:";
             // 
             // lblMarca
             // 
@@ -96,9 +96,9 @@
             this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarca.Location = new System.Drawing.Point(14, 320);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(58, 20);
+            this.lblMarca.Size = new System.Drawing.Size(63, 20);
             this.lblMarca.TabIndex = 7;
-            this.lblMarca.Text = "Marca";
+            this.lblMarca.Text = "Marca:";
             // 
             // lblNombreA
             // 
@@ -106,9 +106,9 @@
             this.lblNombreA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreA.Location = new System.Drawing.Point(14, 160);
             this.lblNombreA.Name = "lblNombreA";
-            this.lblNombreA.Size = new System.Drawing.Size(71, 20);
+            this.lblNombreA.Size = new System.Drawing.Size(76, 20);
             this.lblNombreA.TabIndex = 6;
-            this.lblNombreA.Text = "Nombre";
+            this.lblNombreA.Text = "Nombre:";
             // 
             // txtNombreServiciosActualizacion
             // 
@@ -192,9 +192,9 @@
             // dGVActualizacionServicio
             // 
             this.dGVActualizacionServicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVActualizacionServicio.Location = new System.Drawing.Point(14, 453);
+            this.dGVActualizacionServicio.Location = new System.Drawing.Point(18, 454);
             this.dGVActualizacionServicio.Name = "dGVActualizacionServicio";
-            this.dGVActualizacionServicio.Size = new System.Drawing.Size(500, 270);
+            this.dGVActualizacionServicio.Size = new System.Drawing.Size(485, 250);
             this.dGVActualizacionServicio.TabIndex = 24;
             // 
             // label2
@@ -202,9 +202,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(14, 80);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 20);
+            this.label2.Size = new System.Drawing.Size(70, 20);
             this.label2.TabIndex = 25;
-            this.label2.Text = "Código";
+            this.label2.Text = "Código:";
             // 
             // btnBuscarServiciosActualizacion
             // 

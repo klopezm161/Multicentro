@@ -49,10 +49,9 @@
             this.label1.AutoSize = true;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 36);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(13, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 27);
+            this.label1.Size = new System.Drawing.Size(255, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "ACTUALIZACIÓN PRODUCTO";
             // 
@@ -60,10 +59,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 225);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(14, 160);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 25);
+            this.label2.Size = new System.Drawing.Size(76, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre:";
             // 
@@ -71,20 +69,18 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(19, 324);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(14, 240);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 25);
+            this.label4.Size = new System.Drawing.Size(86, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Cantidad:";
             // 
             // btnAceptarProductoActualizado
             // 
             this.btnAceptarProductoActualizado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarProductoActualizado.Location = new System.Drawing.Point(477, 492);
-            this.btnAceptarProductoActualizado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAceptarProductoActualizado.Location = new System.Drawing.Point(358, 400);
             this.btnAceptarProductoActualizado.Name = "btnAceptarProductoActualizado";
-            this.btnAceptarProductoActualizado.Size = new System.Drawing.Size(193, 43);
+            this.btnAceptarProductoActualizado.Size = new System.Drawing.Size(145, 28);
             this.btnAceptarProductoActualizado.TabIndex = 9;
             this.btnAceptarProductoActualizado.Text = "Aceptar";
             this.btnAceptarProductoActualizado.UseVisualStyleBackColor = true;
@@ -93,10 +89,9 @@
             // btnMenuPrincipalProductoActualizado
             // 
             this.btnMenuPrincipalProductoActualizado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuPrincipalProductoActualizado.Location = new System.Drawing.Point(19, 492);
-            this.btnMenuPrincipalProductoActualizado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMenuPrincipalProductoActualizado.Location = new System.Drawing.Point(14, 400);
             this.btnMenuPrincipalProductoActualizado.Name = "btnMenuPrincipalProductoActualizado";
-            this.btnMenuPrincipalProductoActualizado.Size = new System.Drawing.Size(193, 43);
+            this.btnMenuPrincipalProductoActualizado.Size = new System.Drawing.Size(145, 28);
             this.btnMenuPrincipalProductoActualizado.TabIndex = 11;
             this.btnMenuPrincipalProductoActualizado.Text = "Menú Principal";
             this.btnMenuPrincipalProductoActualizado.UseVisualStyleBackColor = true;
@@ -106,59 +101,57 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(19, 275);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(14, 200);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 25);
+            this.label3.Size = new System.Drawing.Size(64, 20);
             this.label3.TabIndex = 2;
             this.label3.Text = "Precio:";
             // 
             // txtNombreProductoActualizado
             // 
-            this.txtNombreProductoActualizado.Location = new System.Drawing.Point(175, 225);
-            this.txtNombreProductoActualizado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreProductoActualizado.Location = new System.Drawing.Point(131, 160);
             this.txtNombreProductoActualizado.Name = "txtNombreProductoActualizado";
-            this.txtNombreProductoActualizado.Size = new System.Drawing.Size(495, 22);
+            this.txtNombreProductoActualizado.Size = new System.Drawing.Size(372, 20);
             this.txtNombreProductoActualizado.TabIndex = 12;
             // 
             // txtPrecioProductoActualizado
             // 
-            this.txtPrecioProductoActualizado.Location = new System.Drawing.Point(175, 275);
-            this.txtPrecioProductoActualizado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrecioProductoActualizado.Location = new System.Drawing.Point(131, 200);
             this.txtPrecioProductoActualizado.Name = "txtPrecioProductoActualizado";
-            this.txtPrecioProductoActualizado.Size = new System.Drawing.Size(495, 22);
+            this.txtPrecioProductoActualizado.Size = new System.Drawing.Size(372, 20);
             this.txtPrecioProductoActualizado.TabIndex = 13;
             // 
             // txtCantidadProductoActualizado
             // 
-            this.txtCantidadProductoActualizado.Location = new System.Drawing.Point(175, 324);
-            this.txtCantidadProductoActualizado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCantidadProductoActualizado.Location = new System.Drawing.Point(131, 240);
             this.txtCantidadProductoActualizado.Name = "txtCantidadProductoActualizado";
-            this.txtCantidadProductoActualizado.Size = new System.Drawing.Size(495, 22);
+            this.txtCantidadProductoActualizado.Size = new System.Drawing.Size(372, 20);
             this.txtCantidadProductoActualizado.TabIndex = 14;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 559);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 454);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(667, 332);
+            this.dataGridView1.Size = new System.Drawing.Size(485, 250);
             this.dataGridView1.TabIndex = 18;
             // 
             // TxtCodAActualizarActualizacionProductos
             // 
-            this.TxtCodAActualizarActualizacionProductos.Location = new System.Drawing.Point(175, 133);
+            this.TxtCodAActualizarActualizacionProductos.Location = new System.Drawing.Point(131, 80);
+            this.TxtCodAActualizarActualizacionProductos.Margin = new System.Windows.Forms.Padding(2);
             this.TxtCodAActualizarActualizacionProductos.Name = "TxtCodAActualizarActualizacionProductos";
-            this.TxtCodAActualizarActualizacionProductos.Size = new System.Drawing.Size(500, 22);
+            this.TxtCodAActualizarActualizacionProductos.Size = new System.Drawing.Size(376, 20);
             this.TxtCodAActualizarActualizacionProductos.TabIndex = 30;
             // 
             // btnBuscarServiciosActualizacion
             // 
-            this.btnBuscarServiciosActualizacion.Location = new System.Drawing.Point(430, 164);
+            this.btnBuscarServiciosActualizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscarServiciosActualizacion.Location = new System.Drawing.Point(358, 113);
+            this.btnBuscarServiciosActualizacion.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarServiciosActualizacion.Name = "btnBuscarServiciosActualizacion";
-            this.btnBuscarServiciosActualizacion.Size = new System.Drawing.Size(243, 34);
+            this.btnBuscarServiciosActualizacion.Size = new System.Drawing.Size(145, 28);
             this.btnBuscarServiciosActualizacion.TabIndex = 29;
             this.btnBuscarServiciosActualizacion.Text = "Buscar";
             this.btnBuscarServiciosActualizacion.UseVisualStyleBackColor = true;
@@ -167,18 +160,20 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 136);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(14, 80);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 17);
+            this.label5.Size = new System.Drawing.Size(70, 20);
             this.label5.TabIndex = 28;
-            this.label5.Text = "Código";
+            this.label5.Text = "Código:";
             // 
             // ProductoActualizacion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(719, 906);
+            this.ClientSize = new System.Drawing.Size(539, 736);
             this.Controls.Add(this.TxtCodAActualizarActualizacionProductos);
             this.Controls.Add(this.btnBuscarServiciosActualizacion);
             this.Controls.Add(this.label5);
@@ -192,8 +187,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ProductoActualizacion";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Producto Actualizacion";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ProductoActualizacion_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
