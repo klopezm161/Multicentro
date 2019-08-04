@@ -21,10 +21,10 @@ namespace MulticentroProyectoFinal
         {
             return txtNombreServiciosActualizacion.Text;
         }
-        public string GetCantidad()
-        {
-            return txtCantidadServiciosActualizacion.Text;
-        }
+        //public string GetCantidad()
+        //{
+        //    return txtCantidadServiciosActualizacion.Text;
+        //}
         public string GetPrecio()
         {
             return txtPrecioServiciosActualizacion.Text;
@@ -58,7 +58,7 @@ namespace MulticentroProyectoFinal
             txtNombreServiciosActualizacion.Clear();
             //  TxtCodAActualizarActualizacionServicios.Clear();
             txtPrecioServiciosActualizacion.Clear();
-            txtCantidadServiciosActualizacion.Clear();
+           // txtCantidadServiciosActualizacion.Clear();
         }
         //botón que busca código para actualizar
         private void BtnBuscarServiciosActualizacion_Click(object sender, EventArgs e)

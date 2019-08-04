@@ -40,6 +40,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnReporteVentasMenuPrincipal = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -187,12 +188,24 @@
             this.panel1.Size = new System.Drawing.Size(515, 276);
             this.panel1.TabIndex = 23;
             // 
+            // btnReporteVentasMenuPrincipal
+            // 
+            this.btnReporteVentasMenuPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporteVentasMenuPrincipal.Location = new System.Drawing.Point(13, 400);
+            this.btnReporteVentasMenuPrincipal.Name = "btnReporteVentasMenuPrincipal";
+            this.btnReporteVentasMenuPrincipal.Size = new System.Drawing.Size(145, 28);
+            this.btnReporteVentasMenuPrincipal.TabIndex = 24;
+            this.btnReporteVentasMenuPrincipal.Text = "Reporte de ventas";
+            this.btnReporteVentasMenuPrincipal.UseVisualStyleBackColor = true;
+            this.btnReporteVentasMenuPrincipal.Click += new System.EventHandler(this.BtnReporteVentasMenuPrincipal_Click);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(539, 461);
+            this.Controls.Add(this.btnReporteVentasMenuPrincipal);
             this.Controls.Add(this.btnRegresarMenuPrincipal);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
@@ -221,5 +234,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnReporteVentasMenuPrincipal;
     }
 }

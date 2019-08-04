@@ -39,8 +39,7 @@ namespace MulticentroProyectoFinal
         public void Actualizar()
         {
             conexion = new ConexionesBasicasAbrirCerrarBD();
-            Nombre = guiServiciosActualizacion.GetNombre();
-            Cantidad = guiServiciosActualizacion.GetCantidad();
+            Nombre = guiServiciosActualizacion.GetNombre();           
             Precio = guiServiciosActualizacion.GetPrecio();
 
             try

@@ -32,9 +32,7 @@
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.lblCantidad = new System.Windows.Forms.Label();
             this.lblTipo = new System.Windows.Forms.Label();
-            this.txtCantidadServicioIngreso = new System.Windows.Forms.TextBox();
             this.txtPrecioServicioIngreso = new System.Windows.Forms.TextBox();
             this.txtCodigoServicioIngreso = new System.Windows.Forms.TextBox();
             this.txtNombreServicioIngreso = new System.Windows.Forms.TextBox();
@@ -87,33 +85,15 @@
             this.lblCodigo.TabIndex = 10;
             this.lblCodigo.Text = "Código:";
             // 
-            // lblCantidad
-            // 
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.Location = new System.Drawing.Point(14, 200);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(86, 20);
-            this.lblCantidad.TabIndex = 11;
-            this.lblCantidad.Text = "Cantidad:";
-            // 
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
             this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.Location = new System.Drawing.Point(14, 240);
+            this.lblTipo.Location = new System.Drawing.Point(14, 200);
             this.lblTipo.Name = "lblTipo";
             this.lblTipo.Size = new System.Drawing.Size(48, 20);
             this.lblTipo.TabIndex = 12;
             this.lblTipo.Text = "Tipo:";
-            // 
-            // txtCantidadServicioIngreso
-            // 
-            this.txtCantidadServicioIngreso.Location = new System.Drawing.Point(131, 200);
-            this.txtCantidadServicioIngreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCantidadServicioIngreso.Name = "txtCantidadServicioIngreso";
-            this.txtCantidadServicioIngreso.Size = new System.Drawing.Size(372, 22);
-            this.txtCantidadServicioIngreso.TabIndex = 13;
             // 
             // txtPrecioServicioIngreso
             // 
@@ -154,7 +134,7 @@
             // CBoxTipoServicioIngreso
             // 
             this.CBoxTipoServicioIngreso.FormattingEnabled = true;
-            this.CBoxTipoServicioIngreso.Location = new System.Drawing.Point(131, 240);
+            this.CBoxTipoServicioIngreso.Location = new System.Drawing.Point(131, 200);
             this.CBoxTipoServicioIngreso.Margin = new System.Windows.Forms.Padding(4);
             this.CBoxTipoServicioIngreso.Name = "CBoxTipoServicioIngreso";
             this.CBoxTipoServicioIngreso.Size = new System.Drawing.Size(372, 24);
@@ -193,9 +173,7 @@
             this.Controls.Add(this.txtNombreServicioIngreso);
             this.Controls.Add(this.txtCodigoServicioIngreso);
             this.Controls.Add(this.txtPrecioServicioIngreso);
-            this.Controls.Add(this.txtCantidadServicioIngreso);
             this.Controls.Add(this.lblTipo);
-            this.Controls.Add(this.lblCantidad);
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblPrecio);
@@ -219,9 +197,7 @@
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblCodigo;
-        private System.Windows.Forms.Label lblCantidad;
         private System.Windows.Forms.Label lblTipo;
-        private System.Windows.Forms.TextBox txtCantidadServicioIngreso;
         private System.Windows.Forms.TextBox txtPrecioServicioIngreso;
         private System.Windows.Forms.TextBox txtCodigoServicioIngreso;
         private System.Windows.Forms.TextBox txtNombreServicioIngreso;

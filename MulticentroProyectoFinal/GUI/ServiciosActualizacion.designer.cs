@@ -28,19 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblProveedor = new System.Windows.Forms.Label();
             this.lblTipoA = new System.Windows.Forms.Label();
-            this.lblCantidadA = new System.Windows.Forms.Label();
             this.lblPrecioA = new System.Windows.Forms.Label();
-            this.lblMarca = new System.Windows.Forms.Label();
             this.lblNombreA = new System.Windows.Forms.Label();
             this.txtNombreServiciosActualizacion = new System.Windows.Forms.TextBox();
             this.txtPrecioServiciosActualizacion = new System.Windows.Forms.TextBox();
-            this.txtCantidadServiciosActualizacion = new System.Windows.Forms.TextBox();
             this.btnAceptarServiciosActualizacion = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.CBoxProveedorServiciosActualizacion = new System.Windows.Forms.ComboBox();
-            this.CBoxMarcaServiciosActualizacion = new System.Windows.Forms.ComboBox();
             this.CBoxTipoServiciosActualizacion = new System.Windows.Forms.ComboBox();
             this.btnMenuPrincipalEnServiciosActualizacion = new System.Windows.Forms.Button();
             this.dGVActualizacionServicio = new System.Windows.Forms.DataGridView();
@@ -50,35 +44,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.dGVActualizacionServicio)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblProveedor
-            // 
-            this.lblProveedor.AutoSize = true;
-            this.lblProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProveedor.Location = new System.Drawing.Point(14, 360);
-            this.lblProveedor.Name = "lblProveedor";
-            this.lblProveedor.Size = new System.Drawing.Size(95, 20);
-            this.lblProveedor.TabIndex = 11;
-            this.lblProveedor.Text = "Proveedor:";
-            // 
             // lblTipoA
             // 
             this.lblTipoA.AutoSize = true;
             this.lblTipoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoA.Location = new System.Drawing.Point(14, 280);
+            this.lblTipoA.Location = new System.Drawing.Point(14, 240);
             this.lblTipoA.Name = "lblTipoA";
             this.lblTipoA.Size = new System.Drawing.Size(48, 20);
             this.lblTipoA.TabIndex = 10;
             this.lblTipoA.Text = "Tipo:";
-            // 
-            // lblCantidadA
-            // 
-            this.lblCantidadA.AutoSize = true;
-            this.lblCantidadA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidadA.Location = new System.Drawing.Point(14, 240);
-            this.lblCantidadA.Name = "lblCantidadA";
-            this.lblCantidadA.Size = new System.Drawing.Size(86, 20);
-            this.lblCantidadA.TabIndex = 9;
-            this.lblCantidadA.Text = "Cantidad:";
             // 
             // lblPrecioA
             // 
@@ -89,16 +63,6 @@
             this.lblPrecioA.Size = new System.Drawing.Size(64, 20);
             this.lblPrecioA.TabIndex = 8;
             this.lblPrecioA.Text = "Precio:";
-            // 
-            // lblMarca
-            // 
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(14, 320);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(63, 20);
-            this.lblMarca.TabIndex = 7;
-            this.lblMarca.Text = "Marca:";
             // 
             // lblNombreA
             // 
@@ -124,13 +88,6 @@
             this.txtPrecioServiciosActualizacion.Size = new System.Drawing.Size(372, 26);
             this.txtPrecioServiciosActualizacion.TabIndex = 13;
             // 
-            // txtCantidadServiciosActualizacion
-            // 
-            this.txtCantidadServiciosActualizacion.Location = new System.Drawing.Point(131, 240);
-            this.txtCantidadServiciosActualizacion.Name = "txtCantidadServiciosActualizacion";
-            this.txtCantidadServiciosActualizacion.Size = new System.Drawing.Size(372, 26);
-            this.txtCantidadServiciosActualizacion.TabIndex = 15;
-            // 
             // btnAceptarServiciosActualizacion
             // 
             this.btnAceptarServiciosActualizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -154,26 +111,10 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "ACTUALIZACIÓN SERVICIO";
             // 
-            // CBoxProveedorServiciosActualizacion
-            // 
-            this.CBoxProveedorServiciosActualizacion.FormattingEnabled = true;
-            this.CBoxProveedorServiciosActualizacion.Location = new System.Drawing.Point(131, 360);
-            this.CBoxProveedorServiciosActualizacion.Name = "CBoxProveedorServiciosActualizacion";
-            this.CBoxProveedorServiciosActualizacion.Size = new System.Drawing.Size(372, 28);
-            this.CBoxProveedorServiciosActualizacion.TabIndex = 20;
-            // 
-            // CBoxMarcaServiciosActualizacion
-            // 
-            this.CBoxMarcaServiciosActualizacion.FormattingEnabled = true;
-            this.CBoxMarcaServiciosActualizacion.Location = new System.Drawing.Point(131, 320);
-            this.CBoxMarcaServiciosActualizacion.Name = "CBoxMarcaServiciosActualizacion";
-            this.CBoxMarcaServiciosActualizacion.Size = new System.Drawing.Size(372, 28);
-            this.CBoxMarcaServiciosActualizacion.TabIndex = 21;
-            // 
             // CBoxTipoServiciosActualizacion
             // 
             this.CBoxTipoServiciosActualizacion.FormattingEnabled = true;
-            this.CBoxTipoServiciosActualizacion.Location = new System.Drawing.Point(131, 280);
+            this.CBoxTipoServiciosActualizacion.Location = new System.Drawing.Point(131, 240);
             this.CBoxTipoServiciosActualizacion.Name = "CBoxTipoServiciosActualizacion";
             this.CBoxTipoServiciosActualizacion.Size = new System.Drawing.Size(372, 28);
             this.CBoxTipoServiciosActualizacion.TabIndex = 22;
@@ -236,18 +177,12 @@
             this.Controls.Add(this.dGVActualizacionServicio);
             this.Controls.Add(this.btnMenuPrincipalEnServiciosActualizacion);
             this.Controls.Add(this.CBoxTipoServiciosActualizacion);
-            this.Controls.Add(this.CBoxMarcaServiciosActualizacion);
-            this.Controls.Add(this.CBoxProveedorServiciosActualizacion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAceptarServiciosActualizacion);
-            this.Controls.Add(this.txtCantidadServiciosActualizacion);
             this.Controls.Add(this.txtPrecioServiciosActualizacion);
             this.Controls.Add(this.txtNombreServiciosActualizacion);
-            this.Controls.Add(this.lblProveedor);
             this.Controls.Add(this.lblTipoA);
-            this.Controls.Add(this.lblCantidadA);
             this.Controls.Add(this.lblPrecioA);
-            this.Controls.Add(this.lblMarca);
             this.Controls.Add(this.lblNombreA);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "ServiciosActualizacion";
@@ -261,20 +196,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblProveedor;
         private System.Windows.Forms.Label lblTipoA;
-        private System.Windows.Forms.Label lblCantidadA;
         private System.Windows.Forms.Label lblPrecioA;
-        private System.Windows.Forms.Label lblMarca;
         private System.Windows.Forms.Label lblNombreA;
         private System.Windows.Forms.TextBox txtNombreServiciosActualizacion;
         private System.Windows.Forms.TextBox txtPrecioServiciosActualizacion;
-        private System.Windows.Forms.TextBox txtCantidadServiciosActualizacion;
         private System.Windows.Forms.Button btnAceptarServiciosActualizacion;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox CBoxProveedorServiciosActualizacion;
-        private System.Windows.Forms.ComboBox CBoxMarcaServiciosActualizacion;
         private System.Windows.Forms.ComboBox CBoxTipoServiciosActualizacion;
         private System.Windows.Forms.Button btnMenuPrincipalEnServiciosActualizacion;
         private System.Windows.Forms.DataGridView dGVActualizacionServicio;

@@ -93,5 +93,14 @@ namespace MulticentroProyectoFinal
                 this.Dispose();
             }
         }
+
+        private void BtnReporteVentasMenuPrincipal_Click(object sender, EventArgs e)
+        {
+            ReporteVentas ventas = new ReporteVentas();
+            ventas.Show();
+            this.Dispose();
+            
+
+        }
     }
 }
