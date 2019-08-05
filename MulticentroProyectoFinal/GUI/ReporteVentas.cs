@@ -16,5 +16,12 @@ namespace MulticentroProyectoFinal
         {
             InitializeComponent();
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menuPrincipalPrograma = new MenuPrincipal();
+            menuPrincipalPrograma.Show();
+            this.Dispose();
+        }
     }
 }

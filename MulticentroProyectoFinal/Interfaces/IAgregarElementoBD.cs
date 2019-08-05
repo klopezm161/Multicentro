@@ -14,6 +14,6 @@ namespace MulticentroProyectoFinal
         /// <summary>
         /// Método para agregar elementos a la base de datos
         /// </summary>
-        void Agregar();
+        bool Agregar();
     }
 }

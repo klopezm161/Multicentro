@@ -34,7 +34,7 @@ namespace MulticentroProyectoFinal
         //Implementación de método de la interfaz
 
         //método para agregar datos
-        public void Agregar()
+        public bool Agregar()
         {
             try
             {
@@ -49,9 +49,11 @@ namespace MulticentroProyectoFinal
 
                     busqueda.BuscarPorCodigo(guiProductosIngreso.GetCodigo(), guiProductosIngreso.GetDataView());
                     MessageBox.Show("Información agregada");
+                    return true;
                 }
 
             }
+            
             catch (FormatException ex)
             {
                 MensajesStandard.MensajeFormatoIncorrectoDatos();
@@ -64,6 +66,7 @@ namespace MulticentroProyectoFinal
             {
                 MensajesStandard.MensajeGeneralExcepcionGenerica(ex);
             }
+            return false;
         }
         /// <summary>
         /// Método que verifica que no se hayan dejado en blanco nombre, código, precio y cantidad

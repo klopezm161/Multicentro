@@ -17,5 +17,8 @@ namespace MulticentroProyectoFinal
         //Método para buscar por código.
         void BuscarPorCodigo(string elementoABuscar, DataGridView dataGrid);
         SqlDataAdapter getSqlAdaptador();
+
+        //Patrón: bridge
+        IConexionesBasicasAbrirCerrarBD conexion { get; set; }
     }
 }

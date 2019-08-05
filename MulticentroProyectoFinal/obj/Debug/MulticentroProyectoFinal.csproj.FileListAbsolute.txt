@@ -126,5 +126,4 @@ C:\Users\sergi\OneDrive\Documentos\GitHub\Multicentro\MulticentroProyectoFinal\b
 C:\Users\sergi\OneDrive\Documentos\GitHub\Multicentro\MulticentroProyectoFinal\bin\Debug\MulticentroProyectoFinal.exe
 C:\Users\sergi\OneDrive\Documentos\GitHub\Multicentro\MulticentroProyectoFinal\bin\Debug\MulticentroProyectoFinal.pdb
 C:\Users\karla\Desktop\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.ReporteVentas.resources
-C:\Users\karla\Desktop\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.GUI.Ventas.resources
 C:\Users\karla\Desktop\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.FacturacionesBusquesda.resources

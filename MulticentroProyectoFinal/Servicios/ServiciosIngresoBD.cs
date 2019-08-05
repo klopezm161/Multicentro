@@ -36,7 +36,7 @@ namespace MulticentroProyectoFinal
         /// <summary>
         /// método para agregar datos a servicios
         /// </summary>
-        public void Agregar()
+        public bool Agregar()
         {
             busqueda = new ServiciosBusquedaBD();
             conexion = new ConexionesBasicasAbrirCerrarBD();
@@ -56,21 +56,27 @@ namespace MulticentroProyectoFinal
 
                     busqueda.BuscarPorCodigo(guiServiciosIngreso.GetCodigo(), guiServiciosIngreso.GetDataView());
                     MessageBox.Show("Información agregada");
+                    return true;
                 }
-                
+              
             }
+            
             catch (FormatException ex)
             {
                 MensajesStandard.MensajeFormatoIncorrectoDatos();
+                return false;
             }
             catch (SqlException ex)
             {
                 MensajesStandard.MensajeErrorGeneralBaseDatos();
+                return false;
             }
             catch (Exception ex)
             {
                 MensajesStandard.MensajeGeneralExcepcionGenerica(ex);
+                return false;
             }
+            return false;  
         }
         /// <summary>
         /// Método que verifica que no se hayan dejado en blanco nombre, código y precio

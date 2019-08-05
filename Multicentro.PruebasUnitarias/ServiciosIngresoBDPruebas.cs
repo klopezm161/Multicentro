@@ -41,22 +41,23 @@ namespace Multicentro.PruebasUnitarias
             //Assert
             Assert.AreNotEqual(expected, actual);
         }
-        // [TestMethod]
-        //public void Agregar_FormatoCodigoIncorrecto_ReturnMensajeFormatException()
+       // [TestMethod]
+        //public void Agregar_FormatoCodigoIncorrecto_ReturnFalse()
         //{
-        //    Arrange
-        //    var expected = "Formato incorrecto de datos. Inténtelo de nuevo";
+        //    // Arrange
+        //    var expected = false ;
         //    var ingreso = new ServiciosIngresoBD();
         //    ingreso.Nombre = "a";
         //    ingreso.Precio = "a";
         //    ingreso.Codigo = "4500";
 
-        //    Act
+        //    //Act
         //    var actual = ingreso.Agregar();
 
-        //    Asert
+        //    //Asert
         //    Assert.AreEqual(expected, actual);
         //}
+
         [TestMethod]
         public void VerificarInformacion_TodosDatosVacios_ReturnVerificarInformacionFalse()
         {

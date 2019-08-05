@@ -12,8 +12,8 @@ namespace MulticentroProyectoFinal
 {
     class ProductosBusquedaBD : IBuscarElementoPorCodigoYNombre
     {
-        //referencia a clase para abrir conexion
-        private IConexionesBasicasAbrirCerrarBD conexion;
+        //referencia a clase para abrir conexion, implementación de bridge
+        public IConexionesBasicasAbrirCerrarBD conexion { get; set; }
         // private SqlCommand cmd;
         private SqlDataAdapter adaptador;
         // private SqlDataReader lector;

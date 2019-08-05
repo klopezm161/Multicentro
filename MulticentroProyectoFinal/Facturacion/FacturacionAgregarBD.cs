@@ -32,7 +32,7 @@ namespace MulticentroProyectoFinal
         /// <summary>
         /// método para agregar datos a servicios
         /// </summary>
-        public void Agregar()
+        public bool Agregar()
         {
             busqueda = new ServiciosBusquedaBD();
             conexion = new ConexionesBasicasAbrirCerrarBD();
@@ -53,6 +53,7 @@ namespace MulticentroProyectoFinal
 
                     busqueda.BuscarPorCodigo(guiFacturacionesCrear.GetNumFactura(), guiFacturacionesCrear.GetDataView());
                     MessageBox.Show("Información agregada");
+                    return true;
                 }
 
             }
@@ -68,6 +69,7 @@ namespace MulticentroProyectoFinal
             {
                 MensajesStandard.MensajeGeneralExcepcionGenerica(ex);
             }
+            return false;
         }
         /// <summary>
         /// Método que verifica que no se hayan dejado en blanco nombre, código y precio
