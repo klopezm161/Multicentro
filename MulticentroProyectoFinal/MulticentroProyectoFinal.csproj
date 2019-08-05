@@ -51,6 +51,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConexionBD\ConexionesBasicasAbrirCerrarBD.cs" />
+    <Compile Include="Facturacion\FacturacionAgregarBD.cs" />
+    <Compile Include="Facturacion\FacturacionBusquedaBD.cs" />
     <Compile Include="GUI\FacturacionesBusqueda.cs">
       <SubType>Form</SubType>
     </Compile>

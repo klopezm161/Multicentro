@@ -1,6 +1,6 @@
 ﻿namespace MulticentroProyectoFinal
 {
-    partial class FacturacionesBusquesa
+    partial class FacturacionesBusquesda
     {
         /// <summary>
         /// Required designer variable.

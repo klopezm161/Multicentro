@@ -10,13 +10,24 @@ using System.Windows.Forms;
 
 namespace MulticentroProyectoFinal
 {
-    public partial class FacturacionesBusquesa : Form
+    public partial class FacturacionesBusquesda : Form
     {
-        public FacturacionesBusquesa()
+        private DataGridView dgvFacturacionBusqueda;
+        public FacturacionesBusquesda()
         {
             InitializeComponent();
         }
 
+        public string GetIdFactura()
+        {
+            return txtNumFacturaFacturacionesBusqueda.Text;
+        }
+
+
+        public DataGridView GetDataView()
+        {
+            return dgvFacturacionBusqueda;
+        }
         private void BtnSalirFacturacionesBusqueda_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -32,6 +43,12 @@ namespace MulticentroProyectoFinal
         private void FacturacionesBusquesa_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnAceptarFacturacionesBusqueda_Click(object sender, EventArgs e)
+        {
+            FacturacionBusquedaBD facturacion = new FacturacionBusquedaBD();
+            facturacion.BuscarPorCodigo(GetIdFactura(), GetDataView());
         }
     }
 }

@@ -60,7 +60,7 @@ namespace MulticentroProyectoFinal
         {
             if (cBoxFacturacion.GetItemText(this.cBoxFacturacion.SelectedItem).Equals("Buscar"))
             {
-                FacturacionesBusquesa facturaBuscar = new FacturacionesBusquesa();
+                FacturacionesBusquesda facturaBuscar = new FacturacionesBusquesda();
                 facturaBuscar.Show();
                 this.Dispose();
             }

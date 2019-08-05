@@ -16,6 +16,27 @@ namespace MulticentroProyectoFinal
         {
             InitializeComponent();
         }
+        public String GetFecha()
+        {
+            return txtFechaEmisionFacturarCrear.Text;
+        }
+        public String GetNumFactura()
+        {
+            return txtNumFacturaFacturarCrear.Text;
+        }
+        public string GetNombreCliente()
+        {
+            return txtNombreClienteFacturarCrear.Text;
+        }
+        public string GetServicio()
+        {
+            return CBoxServicioFacturarCrear.Text;
+        }
+
+        public DataGridView GetDataView()
+        {
+            return dgvFacturaNueva;
+        }
 
         private void BtnMenuPrincipalEnFacturarCrear_Click(object sender, EventArgs e)
         {
@@ -32,6 +53,14 @@ namespace MulticentroProyectoFinal
         private void FacturarCrear_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+        private void btnAceptarFacturarCrear_Click_1(object sender, EventArgs e)
+        {
+           FacturacionAgregarBD facturacion = new FacturacionAgregarBD();
+            facturacion.Agregar();
+            txtFechaEmisionFacturarCrear.Clear();
+            txtNombreClienteFacturarCrear.Clear();
+            txtNumFacturaFacturarCrear.Clear();
         }
     }
 }

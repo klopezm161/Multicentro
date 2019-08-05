@@ -41,8 +41,8 @@
             this.txtNumFacturaFacturarCrear = new System.Windows.Forms.TextBox();
             this.txtNombreClienteFacturarCrear = new System.Windows.Forms.TextBox();
             this.CBoxServicioFacturarCrear = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvFacturaNueva = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFacturaNueva)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -173,13 +173,13 @@
             this.CBoxServicioFacturarCrear.Size = new System.Drawing.Size(353, 28);
             this.CBoxServicioFacturarCrear.TabIndex = 13;
             // 
-            // dataGridView1
+            // dgvFacturaNueva
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 454);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(485, 270);
-            this.dataGridView1.TabIndex = 14;
+            this.dgvFacturaNueva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFacturaNueva.Location = new System.Drawing.Point(12, 454);
+            this.dgvFacturaNueva.Name = "dgvFacturaNueva";
+            this.dgvFacturaNueva.Size = new System.Drawing.Size(485, 270);
+            this.dgvFacturaNueva.TabIndex = 14;
             // 
             // FacturarCrear
             // 
@@ -187,7 +187,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(539, 736);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvFacturaNueva);
             this.Controls.Add(this.CBoxServicioFacturarCrear);
             this.Controls.Add(this.txtNombreClienteFacturarCrear);
             this.Controls.Add(this.txtNumFacturaFacturarCrear);
@@ -207,7 +207,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FacturarCrear";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FacturarCrear_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFacturaNueva)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -228,6 +228,6 @@
         private System.Windows.Forms.TextBox txtNumFacturaFacturarCrear;
         private System.Windows.Forms.TextBox txtNombreClienteFacturarCrear;
         private System.Windows.Forms.ComboBox CBoxServicioFacturarCrear;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvFacturaNueva;
     }
 }
