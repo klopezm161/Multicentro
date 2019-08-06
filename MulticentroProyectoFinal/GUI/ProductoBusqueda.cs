@@ -15,6 +15,8 @@ namespace MulticentroProyectoFinal
         public ProductoBusqueda()
         {
             InitializeComponent();
+            ProductosBusquedaBD busqueda = new ProductosBusquedaBD();
+            busqueda.BuscarTodo(dataGridView1);
         }
         //getters de los textboxes 
         public string getNombre()

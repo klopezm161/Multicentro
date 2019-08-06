@@ -16,6 +16,8 @@ namespace MulticentroProyectoFinal
         public ProductoActualizacion()
         {
             InitializeComponent();
+            ProductosBusquedaBD busqueda = new ProductosBusquedaBD();
+            busqueda.BuscarTodo(dataGridView1);
         }
 
         public string GetNombre()

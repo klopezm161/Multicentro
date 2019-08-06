@@ -80,8 +80,16 @@ namespace MulticentroProyectoFinal
                 MensajesStandard.MensajeGeneralExcepcionGenerica(ex);
             }
         }
+        public void BuscarTodo(DataGridView dataGrid)
+        {
+            conexion.AbrirConexion();
+            string query = @"SELECT * FROM dbo.producto";
+            adaptador = new SqlDataAdapter(query, conexion.GetSqlConnection());
+            conexion.CerrarConexion();
+            MostrarDatos(dataGrid);
+        }
 
-        public SqlDataAdapter getSqlAdaptador()
+            public SqlDataAdapter getSqlAdaptador()
         {
             return adaptador;
         }
