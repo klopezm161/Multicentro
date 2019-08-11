@@ -32,12 +32,10 @@
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.lblTipo = new System.Windows.Forms.Label();
             this.txtPrecioServicioIngreso = new System.Windows.Forms.TextBox();
             this.txtCodigoServicioIngreso = new System.Windows.Forms.TextBox();
             this.txtNombreServicioIngreso = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.CBoxTipoServicioIngreso = new System.Windows.Forms.ComboBox();
             this.btnMenuPrincipalEnServicioIngreso = new System.Windows.Forms.Button();
             this.dgvServicioNuevo = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicioNuevo)).BeginInit();
@@ -85,16 +83,6 @@
             this.lblCodigo.TabIndex = 10;
             this.lblCodigo.Text = "Código:";
             // 
-            // lblTipo
-            // 
-            this.lblTipo.AutoSize = true;
-            this.lblTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipo.Location = new System.Drawing.Point(14, 200);
-            this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(48, 20);
-            this.lblTipo.TabIndex = 12;
-            this.lblTipo.Text = "Tipo:";
-            // 
             // txtPrecioServicioIngreso
             // 
             this.txtPrecioServicioIngreso.Location = new System.Drawing.Point(131, 160);
@@ -131,15 +119,6 @@
             this.label1.TabIndex = 18;
             this.label1.Text = "SERVICIO NUEVO";
             // 
-            // CBoxTipoServicioIngreso
-            // 
-            this.CBoxTipoServicioIngreso.FormattingEnabled = true;
-            this.CBoxTipoServicioIngreso.Location = new System.Drawing.Point(131, 200);
-            this.CBoxTipoServicioIngreso.Margin = new System.Windows.Forms.Padding(4);
-            this.CBoxTipoServicioIngreso.Name = "CBoxTipoServicioIngreso";
-            this.CBoxTipoServicioIngreso.Size = new System.Drawing.Size(372, 24);
-            this.CBoxTipoServicioIngreso.TabIndex = 19;
-            // 
             // btnMenuPrincipalEnServicioIngreso
             // 
             this.btnMenuPrincipalEnServicioIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -168,12 +147,10 @@
             this.ClientSize = new System.Drawing.Size(539, 736);
             this.Controls.Add(this.dgvServicioNuevo);
             this.Controls.Add(this.btnMenuPrincipalEnServicioIngreso);
-            this.Controls.Add(this.CBoxTipoServicioIngreso);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNombreServicioIngreso);
             this.Controls.Add(this.txtCodigoServicioIngreso);
             this.Controls.Add(this.txtPrecioServicioIngreso);
-            this.Controls.Add(this.lblTipo);
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblPrecio);
@@ -197,12 +174,10 @@
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label lblCodigo;
-        private System.Windows.Forms.Label lblTipo;
         private System.Windows.Forms.TextBox txtPrecioServicioIngreso;
         private System.Windows.Forms.TextBox txtCodigoServicioIngreso;
         private System.Windows.Forms.TextBox txtNombreServicioIngreso;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox CBoxTipoServicioIngreso;
         private System.Windows.Forms.Button btnMenuPrincipalEnServicioIngreso;
         private System.Windows.Forms.DataGridView dgvServicioNuevo;
     }

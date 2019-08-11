@@ -92,7 +92,7 @@ namespace MulticentroProyectoFinal
         //metodo que actualiza nombre, precio, codigo a Servicios
         public void ActualizarTodosDatos()
         {
-            int pre = Int32.Parse(Precio);
+            float pre = float.Parse(Precio);
 
             cmd = new SqlCommand("update Multicentro.dbo.servicio SET nombre= @nombre, precio=@precio where codigoservicio=@codigoservicio", conexion.GetSqlConnection());
             conexion.AbrirConexion();
@@ -118,7 +118,7 @@ namespace MulticentroProyectoFinal
         //método que actualiza precio a servicios
         public void ActualizarPrecio()
         {
-            int pre = Int32.Parse(Precio);
+            double pre = double.Parse(Precio);
 
             cmd = new SqlCommand("update Multicentro.dbo.servicio SET  precio=@precio where codigoservicio=@codigoservicio", conexion.GetSqlConnection());
             conexion.AbrirConexion();

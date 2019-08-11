@@ -50,7 +50,7 @@ namespace MulticentroProyectoFinal
                     conexion.AbrirConexion();
 
                     cmd = new SqlCommand("insert into Multicentro.dbo.servicio (codigoservicio,nombre,precio)" +
-                        " values('" + int.Parse(Codigo) + "', '" + Nombre + "', '" + int.Parse(Precio) + "')", conexion.GetSqlConnection());
+                        " values('" + int.Parse(Codigo) + "', '" + Nombre + "', '" + double.Parse(Precio) + "')", conexion.GetSqlConnection());
                     cmd.ExecuteNonQuery();
                     conexion.CerrarConexion();
 

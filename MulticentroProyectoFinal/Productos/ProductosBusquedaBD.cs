@@ -89,7 +89,7 @@ namespace MulticentroProyectoFinal
             MostrarDatos(dataGrid);
         }
 
-            public SqlDataAdapter getSqlAdaptador()
+        public SqlDataAdapter getSqlAdaptador()
         {
             return adaptador;
         }
@@ -117,3 +117,4 @@ namespace MulticentroProyectoFinal
         }
     }
 }
+

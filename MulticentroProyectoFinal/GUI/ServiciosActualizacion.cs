@@ -15,6 +15,8 @@ namespace MulticentroProyectoFinal
         public ServiciosActualizacion()
         {
             InitializeComponent();
+            ServiciosBusquedaBD mostrarTodo = new ServiciosBusquedaBD();
+            mostrarTodo.BuscarTodo(dGVActualizacionServicio);
         }
         //Getters de las text boxes y del dataGridView
         public string GetNombre()

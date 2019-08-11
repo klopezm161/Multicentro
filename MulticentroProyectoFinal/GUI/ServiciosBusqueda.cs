@@ -15,6 +15,11 @@ namespace MulticentroProyectoFinal
         public ServiciosBusqueda()
         {
             InitializeComponent();
+            ServiciosBusquedaBD mostrarTodo = new ServiciosBusquedaBD();
+            mostrarTodo.BuscarTodo(dGVBusquedaServicio);
+
+            
+           
         }
         //getters de los textboxes 
         public string getNombre()

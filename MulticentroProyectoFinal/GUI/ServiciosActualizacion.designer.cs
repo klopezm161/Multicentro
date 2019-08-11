@@ -28,14 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblTipoA = new System.Windows.Forms.Label();
             this.lblPrecioA = new System.Windows.Forms.Label();
             this.lblNombreA = new System.Windows.Forms.Label();
             this.txtNombreServiciosActualizacion = new System.Windows.Forms.TextBox();
             this.txtPrecioServiciosActualizacion = new System.Windows.Forms.TextBox();
             this.btnAceptarServiciosActualizacion = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.CBoxTipoServiciosActualizacion = new System.Windows.Forms.ComboBox();
             this.btnMenuPrincipalEnServiciosActualizacion = new System.Windows.Forms.Button();
             this.dGVActualizacionServicio = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,16 +41,6 @@
             this.TxtCodAActualizarActualizacionServicios = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dGVActualizacionServicio)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblTipoA
-            // 
-            this.lblTipoA.AutoSize = true;
-            this.lblTipoA.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoA.Location = new System.Drawing.Point(14, 240);
-            this.lblTipoA.Name = "lblTipoA";
-            this.lblTipoA.Size = new System.Drawing.Size(48, 20);
-            this.lblTipoA.TabIndex = 10;
-            this.lblTipoA.Text = "Tipo:";
             // 
             // lblPrecioA
             // 
@@ -111,14 +99,6 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "ACTUALIZACIÓN SERVICIO";
             // 
-            // CBoxTipoServiciosActualizacion
-            // 
-            this.CBoxTipoServiciosActualizacion.FormattingEnabled = true;
-            this.CBoxTipoServiciosActualizacion.Location = new System.Drawing.Point(131, 240);
-            this.CBoxTipoServiciosActualizacion.Name = "CBoxTipoServiciosActualizacion";
-            this.CBoxTipoServiciosActualizacion.Size = new System.Drawing.Size(372, 28);
-            this.CBoxTipoServiciosActualizacion.TabIndex = 22;
-            // 
             // btnMenuPrincipalEnServiciosActualizacion
             // 
             this.btnMenuPrincipalEnServiciosActualizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -176,12 +156,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dGVActualizacionServicio);
             this.Controls.Add(this.btnMenuPrincipalEnServiciosActualizacion);
-            this.Controls.Add(this.CBoxTipoServiciosActualizacion);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAceptarServiciosActualizacion);
             this.Controls.Add(this.txtPrecioServiciosActualizacion);
             this.Controls.Add(this.txtNombreServiciosActualizacion);
-            this.Controls.Add(this.lblTipoA);
             this.Controls.Add(this.lblPrecioA);
             this.Controls.Add(this.lblNombreA);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -196,14 +174,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label lblTipoA;
         private System.Windows.Forms.Label lblPrecioA;
         private System.Windows.Forms.Label lblNombreA;
         private System.Windows.Forms.TextBox txtNombreServiciosActualizacion;
         private System.Windows.Forms.TextBox txtPrecioServiciosActualizacion;
         private System.Windows.Forms.Button btnAceptarServiciosActualizacion;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox CBoxTipoServiciosActualizacion;
         private System.Windows.Forms.Button btnMenuPrincipalEnServiciosActualizacion;
         private System.Windows.Forms.DataGridView dGVActualizacionServicio;
         private System.Windows.Forms.Label label2;

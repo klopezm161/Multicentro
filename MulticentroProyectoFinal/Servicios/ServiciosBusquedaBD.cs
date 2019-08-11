@@ -93,6 +93,15 @@ namespace MulticentroProyectoFinal
         {
             return adaptador;
         }
+
+        public void BuscarTodo(DataGridView dataGrid)
+        {
+            conexion.AbrirConexion();
+            string query = @"SELECT * FROM dbo.servicio";
+            adaptador = new SqlDataAdapter(query, conexion.GetSqlConnection());
+            conexion.CerrarConexion();
+            MostrarDatos(dataGrid);
+        }
         //Método para mostrar datos en dataGrid de la ventana correspondiente
         public void MostrarDatos(DataGridView dataGrid)
         {
