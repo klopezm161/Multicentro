@@ -74,8 +74,6 @@ namespace MulticentroProyectoFinal
             {
                 IBuscarElementoPorCodigoYNombre busqueda = new ProductosBusquedaBD();
                 busqueda.BuscarPorCodigo(GetCodigoParaActualizar(), dataGridView1);
-              //  txtNombreProductoActualizado.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-               // txtPrecioProductoActualizado.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             }
         }
 

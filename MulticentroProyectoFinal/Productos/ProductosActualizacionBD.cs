@@ -66,7 +66,6 @@ namespace MulticentroProyectoFinal
                     }
 
                     IBuscarElementoPorCodigoYNombre busqueda = new ServiciosBusquedaBD();
-                    busqueda.BuscarPorCodigo(guiProductosActualizacion.GetCodigoParaActualizar(), guiProductosActualizacion.GetDataGridView());
                     MessageBox.Show("Información actualizada");
 
                 }
@@ -87,12 +86,14 @@ namespace MulticentroProyectoFinal
         //metodo que actualiza nombre, precio, codigo a Servicios
         public void ActualizarTodosDatos()
         {
+            int Cantidad = Int32.Parse(cantidad);
             int pre = Int32.Parse(precio);
 
-            cmd = new SqlCommand("update Multicentro.dbo.producto SET nombre= @nombre, precio=@precio where codigoproducto=@codigoproducto", conexion.GetSqlConnection());
+            cmd = new SqlCommand("update Multicentro.dbo.producto SET nombre= @nombre, cantidad=@cantidad, precio=@precio where codigoproducto=@codigoproducto", conexion.GetSqlConnection());
             conexion.AbrirConexion();
             cmd.Parameters.AddWithValue("@codigoproducto", codigo);
             cmd.Parameters.AddWithValue("@nombre", nombre);
+            cmd.Parameters.AddWithValue("@cantidad", Cantidad);
             cmd.Parameters.AddWithValue("@precio", pre);
 
             cmd.ExecuteNonQuery();
@@ -119,6 +120,20 @@ namespace MulticentroProyectoFinal
             conexion.AbrirConexion();
             cmd.Parameters.AddWithValue("@codigoproducto", codigo);
             cmd.Parameters.AddWithValue("@precio", pre);
+            cmd.ExecuteNonQuery();
+            conexion.CerrarConexion();
+
+        }
+
+        //método que actualiza cantidad
+        public void ActualizarCantidad()
+        {
+            int Cantidad = Int32.Parse(cantidad);
+
+            cmd = new SqlCommand("update Multicentro.dbo.producto SET  cantidad=@cantidad where codigoproducto=@codigoproducto", conexion.GetSqlConnection());
+            conexion.AbrirConexion();
+            cmd.Parameters.AddWithValue("@codigoproducto", codigo);
+            cmd.Parameters.AddWithValue("@cantidad", Cantidad);
             cmd.ExecuteNonQuery();
             conexion.CerrarConexion();
 
