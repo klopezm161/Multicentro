@@ -149,3 +149,24 @@ C:\Users\Home\Documents\GitHub\Multicentro\MulticentroProyectoFinal\obj\Debug\Mu
 C:\Users\Home\Documents\GitHub\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.csproj.CoreCompileInputs.cache
 C:\Users\Home\Documents\GitHub\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.exe
 C:\Users\Home\Documents\GitHub\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.pdb
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\bin\Debug\MulticentroProyectoFinal.exe.config
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\bin\Debug\MulticentroProyectoFinal.exe
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\bin\Debug\MulticentroProyectoFinal.pdb
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.csprojAssemblyReference.cache
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.FacturacionesBusquesda.resources
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.FacturarCrear.resources
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.GUI.FacturacionBuscar.resources
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.ReporteVentas.resources
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.ServiciosActualizacion.resources
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.ServiciosBusqueda.resources
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.ServiciosIngreso.resources
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.Login.resources
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.MenuPrincipal.resources
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.ProductoActualizacion.resources
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.ProductoBusqueda.resources
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.ProductoIngreso.resources
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.Properties.Resources.resources
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.csproj.GenerateResource.cache
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.csproj.CoreCompileInputs.cache
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.exe
+C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.pdb
