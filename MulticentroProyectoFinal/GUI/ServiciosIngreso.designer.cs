@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ServiciosIngreso));
             this.btnAceptarServicioIngreso = new System.Windows.Forms.Button();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
@@ -38,13 +39,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnMenuPrincipalEnServicioIngreso = new System.Windows.Forms.Button();
             this.dgvServicioNuevo = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicioNuevo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAceptarServicioIngreso
             // 
             this.btnAceptarServicioIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarServicioIngreso.Location = new System.Drawing.Point(358, 400);
+            this.btnAceptarServicioIngreso.Location = new System.Drawing.Point(358, 268);
             this.btnAceptarServicioIngreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptarServicioIngreso.Name = "btnAceptarServicioIngreso";
             this.btnAceptarServicioIngreso.Size = new System.Drawing.Size(145, 28);
@@ -56,36 +59,36 @@
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(14, 160);
+            this.lblPrecio.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrecio.Location = new System.Drawing.Point(15, 232);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(64, 20);
+            this.lblPrecio.Size = new System.Drawing.Size(64, 18);
             this.lblPrecio.TabIndex = 8;
             this.lblPrecio.Text = "Precio:";
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(14, 80);
+            this.lblNombre.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(15, 167);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(76, 20);
+            this.lblNombre.Size = new System.Drawing.Size(78, 18);
             this.lblNombre.TabIndex = 9;
             this.lblNombre.Text = "Nombre:";
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(14, 120);
+            this.lblCodigo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigo.Location = new System.Drawing.Point(15, 198);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(70, 20);
+            this.lblCodigo.Size = new System.Drawing.Size(71, 18);
             this.lblCodigo.TabIndex = 10;
             this.lblCodigo.Text = "Código:";
             // 
             // txtPrecioServicioIngreso
             // 
-            this.txtPrecioServicioIngreso.Location = new System.Drawing.Point(131, 160);
+            this.txtPrecioServicioIngreso.Location = new System.Drawing.Point(131, 232);
             this.txtPrecioServicioIngreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrecioServicioIngreso.Name = "txtPrecioServicioIngreso";
             this.txtPrecioServicioIngreso.Size = new System.Drawing.Size(372, 22);
@@ -93,7 +96,7 @@
             // 
             // txtCodigoServicioIngreso
             // 
-            this.txtCodigoServicioIngreso.Location = new System.Drawing.Point(131, 120);
+            this.txtCodigoServicioIngreso.Location = new System.Drawing.Point(131, 198);
             this.txtCodigoServicioIngreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCodigoServicioIngreso.Name = "txtCodigoServicioIngreso";
             this.txtCodigoServicioIngreso.Size = new System.Drawing.Size(372, 22);
@@ -101,7 +104,7 @@
             // 
             // txtNombreServicioIngreso
             // 
-            this.txtNombreServicioIngreso.Location = new System.Drawing.Point(131, 80);
+            this.txtNombreServicioIngreso.Location = new System.Drawing.Point(131, 167);
             this.txtNombreServicioIngreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreServicioIngreso.Name = "txtNombreServicioIngreso";
             this.txtNombreServicioIngreso.Size = new System.Drawing.Size(372, 22);
@@ -110,19 +113,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 29);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(305, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(164, 22);
+            this.label1.Size = new System.Drawing.Size(198, 25);
             this.label1.TabIndex = 18;
             this.label1.Text = "SERVICIO NUEVO";
             // 
             // btnMenuPrincipalEnServicioIngreso
             // 
             this.btnMenuPrincipalEnServicioIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuPrincipalEnServicioIngreso.Location = new System.Drawing.Point(14, 400);
+            this.btnMenuPrincipalEnServicioIngreso.Location = new System.Drawing.Point(13, 94);
             this.btnMenuPrincipalEnServicioIngreso.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuPrincipalEnServicioIngreso.Name = "btnMenuPrincipalEnServicioIngreso";
             this.btnMenuPrincipalEnServicioIngreso.Size = new System.Drawing.Size(145, 28);
@@ -133,21 +137,33 @@
             // 
             // dgvServicioNuevo
             // 
+            this.dgvServicioNuevo.BackgroundColor = System.Drawing.Color.White;
             this.dgvServicioNuevo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvServicioNuevo.Location = new System.Drawing.Point(18, 454);
+            this.dgvServicioNuevo.Location = new System.Drawing.Point(18, 313);
             this.dgvServicioNuevo.Name = "dgvServicioNuevo";
-            this.dgvServicioNuevo.Size = new System.Drawing.Size(485, 250);
+            this.dgvServicioNuevo.Size = new System.Drawing.Size(485, 391);
             this.dgvServicioNuevo.TabIndex = 22;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(539, 76);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 36;
+            this.pictureBox1.TabStop = false;
             // 
             // ServiciosIngreso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(539, 736);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvServicioNuevo);
             this.Controls.Add(this.btnMenuPrincipalEnServicioIngreso);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNombreServicioIngreso);
             this.Controls.Add(this.txtCodigoServicioIngreso);
             this.Controls.Add(this.txtPrecioServicioIngreso);
@@ -163,6 +179,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ServiciosIngreso_FormClosed);
             this.Load += new System.EventHandler(this.ServiciosIngreso_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvServicioNuevo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,5 +197,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMenuPrincipalEnServicioIngreso;
         private System.Windows.Forms.DataGridView dgvServicioNuevo;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

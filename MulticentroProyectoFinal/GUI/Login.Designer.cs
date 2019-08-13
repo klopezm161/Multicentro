@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtUsuarioLogin = new System.Windows.Forms.TextBox();
@@ -36,77 +37,92 @@
             this.btnSalirLogin = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 74);
+            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(54, 246);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 20);
+            this.label1.Size = new System.Drawing.Size(77, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuario:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 128);
+            this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(54, 298);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 20);
+            this.label2.Size = new System.Drawing.Size(108, 18);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Password:";
+            this.label2.Text = "Contraseña:";
             // 
             // txtUsuarioLogin
             // 
-            this.txtUsuarioLogin.Location = new System.Drawing.Point(159, 68);
+            this.txtUsuarioLogin.Location = new System.Drawing.Point(173, 242);
             this.txtUsuarioLogin.Name = "txtUsuarioLogin";
-            this.txtUsuarioLogin.Size = new System.Drawing.Size(279, 26);
+            this.txtUsuarioLogin.Size = new System.Drawing.Size(273, 26);
             this.txtUsuarioLogin.TabIndex = 2;
             // 
             // txtPasswordLogin
             // 
-            this.txtPasswordLogin.Location = new System.Drawing.Point(159, 122);
+            this.txtPasswordLogin.Location = new System.Drawing.Point(173, 294);
             this.txtPasswordLogin.Name = "txtPasswordLogin";
             this.txtPasswordLogin.PasswordChar = '*';
-            this.txtPasswordLogin.Size = new System.Drawing.Size(279, 26);
+            this.txtPasswordLogin.Size = new System.Drawing.Size(273, 26);
             this.txtPasswordLogin.TabIndex = 3;
             // 
             // btnIngresarLogin
             // 
-            this.btnIngresarLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIngresarLogin.Location = new System.Drawing.Point(293, 181);
+            this.btnIngresarLogin.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnIngresarLogin.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnIngresarLogin.FlatAppearance.BorderSize = 0;
+            this.btnIngresarLogin.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIngresarLogin.Location = new System.Drawing.Point(301, 353);
             this.btnIngresarLogin.Name = "btnIngresarLogin";
             this.btnIngresarLogin.Size = new System.Drawing.Size(145, 28);
             this.btnIngresarLogin.TabIndex = 4;
             this.btnIngresarLogin.Text = "Ingresar";
-            this.btnIngresarLogin.UseVisualStyleBackColor = true;
+            this.btnIngresarLogin.UseVisualStyleBackColor = false;
             this.btnIngresarLogin.Click += new System.EventHandler(this.BtnIngresarLogin_Click);
             // 
             // btnSalirLogin
             // 
-            this.btnSalirLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalirLogin.Location = new System.Drawing.Point(20, 181);
+            this.btnSalirLogin.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSalirLogin.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalirLogin.Location = new System.Drawing.Point(57, 353);
             this.btnSalirLogin.Name = "btnSalirLogin";
             this.btnSalirLogin.Size = new System.Drawing.Size(145, 28);
             this.btnSalirLogin.TabIndex = 5;
             this.btnSalirLogin.Text = "Salir";
-            this.btnSalirLogin.UseVisualStyleBackColor = true;
+            this.btnSalirLogin.UseVisualStyleBackColor = false;
             this.btnSalirLogin.Click += new System.EventHandler(this.BtnSalirLogin_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label3.Location = new System.Drawing.Point(23, 15);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(201, 212);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 22);
+            this.label3.Size = new System.Drawing.Size(138, 18);
             this.label3.TabIndex = 6;
-            this.label3.Text = "LOGIN";
+            this.label3.Text = "Inicio de sesión";
             // 
             // panel1
             // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.btnSalirLogin);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.btnIngresarLogin);
@@ -114,18 +130,38 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.txtPasswordLogin);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(35, 25);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(459, 257);
+            this.panel1.Size = new System.Drawing.Size(515, 437);
             this.panel1.TabIndex = 7;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(173, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(200, 195);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(-3, -3);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(546, 472);
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(539, 461);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Login";
@@ -134,6 +170,8 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -148,6 +186,8 @@
         private System.Windows.Forms.Button btnSalirLogin;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

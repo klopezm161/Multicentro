@@ -58,9 +58,9 @@
             // 
             // txtNumFacturaFacturacionBuscar
             // 
-            this.txtNumFacturaFacturacionBuscar.Location = new System.Drawing.Point(186, 104);
+            this.txtNumFacturaFacturacionBuscar.Location = new System.Drawing.Point(192, 104);
             this.txtNumFacturaFacturacionBuscar.Name = "txtNumFacturaFacturacionBuscar";
-            this.txtNumFacturaFacturacionBuscar.Size = new System.Drawing.Size(151, 20);
+            this.txtNumFacturaFacturacionBuscar.Size = new System.Drawing.Size(145, 20);
             this.txtNumFacturaFacturacionBuscar.TabIndex = 2;
             // 
             // btnAceptarFacturacionBuscar

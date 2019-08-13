@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ServiciosBusqueda));
             this.lblCodigoB = new System.Windows.Forms.Label();
             this.lblNombreB = new System.Windows.Forms.Label();
             this.btnBuscarBusquedaServicio = new System.Windows.Forms.Button();
@@ -36,35 +37,37 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnMenuPrincipalEnBusquedaServicio = new System.Windows.Forms.Button();
             this.dGVBusquedaServicio = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dGVBusquedaServicio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblCodigoB
             // 
             this.lblCodigoB.AutoSize = true;
-            this.lblCodigoB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigoB.Location = new System.Drawing.Point(14, 80);
+            this.lblCodigoB.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigoB.Location = new System.Drawing.Point(115, 167);
             this.lblCodigoB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigoB.Name = "lblCodigoB";
-            this.lblCodigoB.Size = new System.Drawing.Size(70, 20);
+            this.lblCodigoB.Size = new System.Drawing.Size(170, 18);
             this.lblCodigoB.TabIndex = 1;
-            this.lblCodigoB.Text = "Código:";
+            this.lblCodigoB.Text = "Código del servicio:";
             // 
             // lblNombreB
             // 
             this.lblNombreB.AutoSize = true;
-            this.lblNombreB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreB.Location = new System.Drawing.Point(14, 120);
+            this.lblNombreB.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreB.Location = new System.Drawing.Point(95, 210);
             this.lblNombreB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreB.Name = "lblNombreB";
-            this.lblNombreB.Size = new System.Drawing.Size(76, 20);
+            this.lblNombreB.Size = new System.Drawing.Size(78, 18);
             this.lblNombreB.TabIndex = 2;
             this.lblNombreB.Text = "Nombre:";
             // 
             // btnBuscarBusquedaServicio
             // 
             this.btnBuscarBusquedaServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarBusquedaServicio.Location = new System.Drawing.Point(358, 400);
+            this.btnBuscarBusquedaServicio.Location = new System.Drawing.Point(358, 254);
             this.btnBuscarBusquedaServicio.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarBusquedaServicio.Name = "btnBuscarBusquedaServicio";
             this.btnBuscarBusquedaServicio.Size = new System.Drawing.Size(145, 28);
@@ -76,35 +79,36 @@
             // txtNombreBusquedaServicio
             // 
             this.txtNombreBusquedaServicio.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNombreBusquedaServicio.Location = new System.Drawing.Point(131, 120);
+            this.txtNombreBusquedaServicio.Location = new System.Drawing.Point(177, 211);
             this.txtNombreBusquedaServicio.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreBusquedaServicio.Name = "txtNombreBusquedaServicio";
-            this.txtNombreBusquedaServicio.Size = new System.Drawing.Size(372, 20);
+            this.txtNombreBusquedaServicio.Size = new System.Drawing.Size(326, 20);
             this.txtNombreBusquedaServicio.TabIndex = 4;
             // 
             // txtCodigoBusquedaServicio
             // 
-            this.txtCodigoBusquedaServicio.Location = new System.Drawing.Point(131, 80);
+            this.txtCodigoBusquedaServicio.Location = new System.Drawing.Point(289, 168);
             this.txtCodigoBusquedaServicio.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigoBusquedaServicio.Name = "txtCodigoBusquedaServicio";
-            this.txtCodigoBusquedaServicio.Size = new System.Drawing.Size(372, 20);
+            this.txtCodigoBusquedaServicio.Size = new System.Drawing.Size(214, 20);
             this.txtCodigoBusquedaServicio.TabIndex = 5;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 29);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(284, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 22);
+            this.label1.Size = new System.Drawing.Size(241, 25);
             this.label1.TabIndex = 7;
             this.label1.Text = "BÚSQUEDA SERVICIO";
             // 
             // btnMenuPrincipalEnBusquedaServicio
             // 
             this.btnMenuPrincipalEnBusquedaServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuPrincipalEnBusquedaServicio.Location = new System.Drawing.Point(14, 400);
+            this.btnMenuPrincipalEnBusquedaServicio.Location = new System.Drawing.Point(12, 87);
             this.btnMenuPrincipalEnBusquedaServicio.Name = "btnMenuPrincipalEnBusquedaServicio";
             this.btnMenuPrincipalEnBusquedaServicio.Size = new System.Drawing.Size(145, 28);
             this.btnMenuPrincipalEnBusquedaServicio.TabIndex = 10;
@@ -114,21 +118,33 @@
             // 
             // dGVBusquedaServicio
             // 
+            this.dGVBusquedaServicio.BackgroundColor = System.Drawing.Color.White;
             this.dGVBusquedaServicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVBusquedaServicio.Location = new System.Drawing.Point(18, 454);
+            this.dGVBusquedaServicio.Location = new System.Drawing.Point(18, 306);
             this.dGVBusquedaServicio.Name = "dGVBusquedaServicio";
-            this.dGVBusquedaServicio.Size = new System.Drawing.Size(485, 250);
+            this.dGVBusquedaServicio.Size = new System.Drawing.Size(485, 398);
             this.dGVBusquedaServicio.TabIndex = 11;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-1, 1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(539, 76);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
             // 
             // ServiciosBusqueda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(539, 736);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dGVBusquedaServicio);
             this.Controls.Add(this.btnMenuPrincipalEnBusquedaServicio);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCodigoBusquedaServicio);
             this.Controls.Add(this.txtNombreBusquedaServicio);
             this.Controls.Add(this.btnBuscarBusquedaServicio);
@@ -140,6 +156,7 @@
             this.Text = "Busqueda Servicio";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ServiciosBusqueda_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dGVBusquedaServicio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,5 +171,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnMenuPrincipalEnBusquedaServicio;
         private System.Windows.Forms.DataGridView dGVBusquedaServicio;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
