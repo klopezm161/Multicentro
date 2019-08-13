@@ -43,7 +43,7 @@ namespace MulticentroProyectoFinal
                     conexion.AbrirConexion();
 
                     cmd = new SqlCommand("insert into Multicentro.dbo.producto (codigoproducto,nombre,cantidad,precio)" +
-                        " values('" + int.Parse(codigo) + "', '" + nombre + "', '" + int.Parse(cantidad) + "', '" + int.Parse(precio) + "')", conexion.GetSqlConnection());
+                        " values('" + int.Parse(codigo) + "', '" + nombre + "', '" + int.Parse(cantidad) + "', '" + decimal.Parse(precio) + "')", conexion.GetSqlConnection());
                     cmd.ExecuteNonQuery();
                     conexion.CerrarConexion();
 
