@@ -87,7 +87,7 @@ namespace MulticentroProyectoFinal
         public void ActualizarTodosDatos()
         {
             int Cantidad = Int32.Parse(cantidad);
-            int pre = Int32.Parse(precio);
+            decimal pre = decimal.Parse(precio);
 
             cmd = new SqlCommand("update Multicentro.dbo.producto SET nombre= @nombre, cantidad=@cantidad, precio=@precio where codigoproducto=@codigoproducto", conexion.GetSqlConnection());
             conexion.AbrirConexion();
@@ -114,7 +114,7 @@ namespace MulticentroProyectoFinal
         //método que actualiza precio
         public void ActualizarPrecio()
         {
-            int pre = Int32.Parse(precio);
+            decimal pre = decimal.Parse(precio);
 
             cmd = new SqlCommand("update Multicentro.dbo.producto SET  precio=@precio where codigoproducto=@codigoproducto", conexion.GetSqlConnection());
             conexion.AbrirConexion();
