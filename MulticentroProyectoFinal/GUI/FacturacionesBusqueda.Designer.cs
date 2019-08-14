@@ -49,7 +49,7 @@
             this.label1.Location = new System.Drawing.Point(310, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(203, 25);
+            this.label1.Size = new System.Drawing.Size(264, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "BUSCAR FACTURA";
             // 
@@ -60,7 +60,7 @@
             this.label2.Location = new System.Drawing.Point(16, 169);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 18);
+            this.label2.Size = new System.Drawing.Size(183, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Número Factura:";
             // 
@@ -69,7 +69,7 @@
             this.txtNumFacturaFacturacionesBusqueda.Location = new System.Drawing.Point(163, 165);
             this.txtNumFacturaFacturacionesBusqueda.Margin = new System.Windows.Forms.Padding(5);
             this.txtNumFacturaFacturacionesBusqueda.Name = "txtNumFacturaFacturacionesBusqueda";
-            this.txtNumFacturaFacturacionesBusqueda.Size = new System.Drawing.Size(350, 26);
+            this.txtNumFacturaFacturacionesBusqueda.Size = new System.Drawing.Size(350, 30);
             this.txtNumFacturaFacturacionesBusqueda.TabIndex = 2;
             // 
             // btnAceptarFacturacionesBusqueda
@@ -82,6 +82,7 @@
             this.btnAceptarFacturacionesBusqueda.TabIndex = 3;
             this.btnAceptarFacturacionesBusqueda.Text = "Aceptar";
             this.btnAceptarFacturacionesBusqueda.UseVisualStyleBackColor = true;
+            this.btnAceptarFacturacionesBusqueda.Click += new System.EventHandler(this.btnAceptarFacturacionesBusqueda_Click);
             // 
             // btnMenuPrincipalFacturacionesBusqueda
             // 
@@ -116,7 +117,7 @@
             // 
             // FacturacionesBusquesda
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(539, 736);

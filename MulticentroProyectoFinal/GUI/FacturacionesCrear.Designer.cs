@@ -57,7 +57,7 @@
             this.label1.Location = new System.Drawing.Point(343, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(144, 18);
+            this.label1.Size = new System.Drawing.Size(183, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "FACTURA NUEVA";
             // 
@@ -68,7 +68,7 @@
             this.label2.Location = new System.Drawing.Point(243, 122);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 18);
+            this.label2.Size = new System.Drawing.Size(184, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Multicentro S.A";
             // 
@@ -79,7 +79,7 @@
             this.label3.Location = new System.Drawing.Point(243, 140);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 18);
+            this.label3.Size = new System.Drawing.Size(165, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Cédula Jurídica";
             // 
@@ -90,7 +90,7 @@
             this.label4.Location = new System.Drawing.Point(23, 179);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(132, 18);
+            this.label4.Size = new System.Drawing.Size(165, 25);
             this.label4.TabIndex = 3;
             this.label4.Text = "Fecha emisión:";
             // 
@@ -101,7 +101,7 @@
             this.label5.Location = new System.Drawing.Point(14, 219);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 18);
+            this.label5.Size = new System.Drawing.Size(179, 25);
             this.label5.TabIndex = 4;
             this.label5.Text = "Número factura:";
             // 
@@ -112,7 +112,7 @@
             this.label6.Location = new System.Drawing.Point(16, 259);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 18);
+            this.label6.Size = new System.Drawing.Size(174, 25);
             this.label6.TabIndex = 5;
             this.label6.Text = "Nombre cliente:";
             // 
@@ -123,7 +123,7 @@
             this.label7.Location = new System.Drawing.Point(77, 301);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 18);
+            this.label7.Size = new System.Drawing.Size(102, 25);
             this.label7.TabIndex = 6;
             this.label7.Text = "Servicio:";
             // 
@@ -137,6 +137,7 @@
             this.btnAceptarFacturarCrear.TabIndex = 7;
             this.btnAceptarFacturarCrear.Text = "Aceptar";
             this.btnAceptarFacturarCrear.UseVisualStyleBackColor = true;
+            this.btnAceptarFacturarCrear.Click += new System.EventHandler(this.btnAceptarFacturarCrear_Click_1);
             // 
             // btnMenuPrincipalEnFacturarCrear
             // 
@@ -154,21 +155,21 @@
             // 
             this.txtFechaEmisionFacturarCrear.Location = new System.Drawing.Point(166, 175);
             this.txtFechaEmisionFacturarCrear.Name = "txtFechaEmisionFacturarCrear";
-            this.txtFechaEmisionFacturarCrear.Size = new System.Drawing.Size(337, 26);
+            this.txtFechaEmisionFacturarCrear.Size = new System.Drawing.Size(337, 30);
             this.txtFechaEmisionFacturarCrear.TabIndex = 10;
             // 
             // txtNumFacturaFacturarCrear
             // 
             this.txtNumFacturaFacturarCrear.Location = new System.Drawing.Point(166, 215);
             this.txtNumFacturaFacturarCrear.Name = "txtNumFacturaFacturarCrear";
-            this.txtNumFacturaFacturarCrear.Size = new System.Drawing.Size(337, 26);
+            this.txtNumFacturaFacturarCrear.Size = new System.Drawing.Size(337, 30);
             this.txtNumFacturaFacturarCrear.TabIndex = 11;
             // 
             // txtNombreClienteFacturarCrear
             // 
             this.txtNombreClienteFacturarCrear.Location = new System.Drawing.Point(166, 255);
             this.txtNombreClienteFacturarCrear.Name = "txtNombreClienteFacturarCrear";
-            this.txtNombreClienteFacturarCrear.Size = new System.Drawing.Size(337, 26);
+            this.txtNombreClienteFacturarCrear.Size = new System.Drawing.Size(337, 30);
             this.txtNombreClienteFacturarCrear.TabIndex = 12;
             // 
             // CBoxServicioFacturarCrear
@@ -176,7 +177,7 @@
             this.CBoxServicioFacturarCrear.FormattingEnabled = true;
             this.CBoxServicioFacturarCrear.Location = new System.Drawing.Point(166, 297);
             this.CBoxServicioFacturarCrear.Name = "CBoxServicioFacturarCrear";
-            this.CBoxServicioFacturarCrear.Size = new System.Drawing.Size(337, 28);
+            this.CBoxServicioFacturarCrear.Size = new System.Drawing.Size(337, 33);
             this.CBoxServicioFacturarCrear.TabIndex = 13;
             // 
             // dgvFacturaNueva
@@ -200,7 +201,7 @@
             // 
             // FacturarCrear
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(539, 736);

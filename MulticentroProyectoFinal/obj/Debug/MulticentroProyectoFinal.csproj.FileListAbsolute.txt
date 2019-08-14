@@ -149,3 +149,23 @@ C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\Multic
 C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.csproj.CoreCompileInputs.cache
 C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.exe
 C:\Users\Oscar Madrigal\AppData\Local\GitHubDesktop\app-2.0.3\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.pdb
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\bin\Debug\MulticentroProyectoFinal.exe.config
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\bin\Debug\MulticentroProyectoFinal.exe
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\bin\Debug\MulticentroProyectoFinal.pdb
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.FacturacionesBusquesda.resources
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.FacturarCrear.resources
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.GUI.FacturacionBuscar.resources
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.ReporteVentas.resources
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.ServiciosActualizacion.resources
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.ServiciosBusqueda.resources
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.ServiciosIngreso.resources
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.Login.resources
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.MenuPrincipal.resources
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.ProductoActualizacion.resources
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.ProductoBusqueda.resources
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.ProductoIngreso.resources
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.Properties.Resources.resources
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.csproj.GenerateResource.cache
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.csproj.CoreCompileInputs.cache
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.exe
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.pdb
