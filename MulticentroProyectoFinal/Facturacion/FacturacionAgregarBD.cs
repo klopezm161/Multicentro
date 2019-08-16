@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
+using System.Globalization;
 
 namespace MulticentroProyectoFinal
 {
@@ -37,6 +38,7 @@ namespace MulticentroProyectoFinal
             busqueda = new ServiciosBusquedaBD();
             conexion = new ConexionesBasicasAbrirCerrarBD();
             fecha = guiFacturacionesCrear.GetFecha();
+            
             numFactura = guiFacturacionesCrear.GetNumFactura();
             idCliente = guiFacturacionesCrear.GetNombreCliente();
             servicio = guiFacturacionesCrear.GetServicio();
@@ -47,7 +49,7 @@ namespace MulticentroProyectoFinal
                     conexion.AbrirConexion();
 
                     cmd = new SqlCommand("insert into Multicentro.dbo.factura (facturaid,cliente_clienteid,fecha)" +
-                        " values('" + int.Parse(numFactura) + "', '" + int.Parse(idCliente) + "', '" + DateTime.Parse(fecha, null) + "')", conexion.GetSqlConnection());
+                        " values('" + int.Parse(numFactura) + "', '" + int.Parse(idCliente) + DateTime.ParseExact(fecha, "YYYY-MM-DD", null) + "')", conexion.GetSqlConnection());
                     cmd.ExecuteNonQuery();
                     conexion.CerrarConexion();
 

@@ -169,3 +169,4 @@ C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\Mu
 C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.csproj.CoreCompileInputs.cache
 C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.exe
 C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.pdb
+C:\Users\Andrés\Source\Repos\Multicentro3\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.csprojAssemblyReference.cache
