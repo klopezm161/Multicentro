@@ -38,12 +38,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.btnAceptarFacturarCrear = new System.Windows.Forms.Button();
             this.btnMenuPrincipalEnFacturarCrear = new System.Windows.Forms.Button();
-            this.txtFechaEmisionFacturarCrear = new System.Windows.Forms.TextBox();
             this.txtNumFacturaFacturarCrear = new System.Windows.Forms.TextBox();
             this.txtNombreClienteFacturarCrear = new System.Windows.Forms.TextBox();
             this.CBoxServicioFacturarCrear = new System.Windows.Forms.ComboBox();
             this.dgvFacturaNueva = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtFechaEmisionFacturarCrear = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturaNueva)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -151,13 +151,6 @@
             this.btnMenuPrincipalEnFacturarCrear.UseVisualStyleBackColor = true;
             this.btnMenuPrincipalEnFacturarCrear.Click += new System.EventHandler(this.BtnMenuPrincipalEnFacturarCrear_Click);
             // 
-            // txtFechaEmisionFacturarCrear
-            // 
-            this.txtFechaEmisionFacturarCrear.Location = new System.Drawing.Point(166, 175);
-            this.txtFechaEmisionFacturarCrear.Name = "txtFechaEmisionFacturarCrear";
-            this.txtFechaEmisionFacturarCrear.Size = new System.Drawing.Size(337, 30);
-            this.txtFechaEmisionFacturarCrear.TabIndex = 10;
-            // 
             // txtNumFacturaFacturarCrear
             // 
             this.txtNumFacturaFacturarCrear.Location = new System.Drawing.Point(166, 215);
@@ -198,6 +191,13 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
+            // 
+            // txtFechaEmisionFacturarCrear
+            // 
+            this.txtFechaEmisionFacturarCrear.Location = new System.Drawing.Point(166, 175);
+            this.txtFechaEmisionFacturarCrear.Name = "txtFechaEmisionFacturarCrear";
+            this.txtFechaEmisionFacturarCrear.Size = new System.Drawing.Size(337, 30);
+            this.txtFechaEmisionFacturarCrear.TabIndex = 10;
             // 
             // FacturarCrear
             // 
@@ -244,11 +244,11 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnAceptarFacturarCrear;
         private System.Windows.Forms.Button btnMenuPrincipalEnFacturarCrear;
-        private System.Windows.Forms.TextBox txtFechaEmisionFacturarCrear;
         private System.Windows.Forms.TextBox txtNumFacturaFacturarCrear;
         private System.Windows.Forms.TextBox txtNombreClienteFacturarCrear;
         private System.Windows.Forms.ComboBox CBoxServicioFacturarCrear;
         private System.Windows.Forms.DataGridView dgvFacturaNueva;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtFechaEmisionFacturarCrear;
     }
 }

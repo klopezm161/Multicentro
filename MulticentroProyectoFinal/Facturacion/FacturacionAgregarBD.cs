@@ -49,7 +49,7 @@ namespace MulticentroProyectoFinal
                     conexion.AbrirConexion();
 
                     cmd = new SqlCommand("insert into Multicentro.dbo.factura (facturaid,cliente_clienteid,fecha)" +
-                        " values('" + int.Parse(numFactura) + "', '" + int.Parse(idCliente) + DateTime.ParseExact(fecha, "YYYY-MM-DD", null) + "')", conexion.GetSqlConnection());
+                        " values('" + int.Parse(numFactura) + "', '" + int.Parse(idCliente) + DateTime.Today + "')", conexion.GetSqlConnection());
                     cmd.ExecuteNonQuery();
                     conexion.CerrarConexion();
 
