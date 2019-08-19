@@ -75,5 +75,10 @@ namespace MulticentroProyectoFinal
             txtCodigoServicioIngreso.Clear();
             txtPrecioServicioIngreso.Clear();
         }
+
+        private void dgvServicioNuevo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

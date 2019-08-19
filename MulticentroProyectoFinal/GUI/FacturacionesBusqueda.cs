@@ -12,10 +12,12 @@ namespace MulticentroProyectoFinal
 {
     public partial class FacturacionesBusquesda : Form
     {
-        private DataGridView dgvFacturacionBusqueda;
+        
         public FacturacionesBusquesda()
         {
             InitializeComponent();
+            FacturacionBusquedaBD busqueda = new FacturacionBusquedaBD();
+            busqueda.BuscarTodo(dtvFacturacionBusqueda);
         }
 
         public string GetIdFactura()
@@ -26,7 +28,7 @@ namespace MulticentroProyectoFinal
 
         public DataGridView GetDataView()
         {
-            return dgvFacturacionBusqueda;
+            return dtvFacturacionBusqueda;
         }
         private void BtnSalirFacturacionesBusqueda_Click(object sender, EventArgs e)
         {
@@ -47,8 +49,25 @@ namespace MulticentroProyectoFinal
 
         private void btnAceptarFacturacionesBusqueda_Click(object sender, EventArgs e)
         {
-            FacturacionBusquedaBD facturacion = new FacturacionBusquedaBD();
-            facturacion.BuscarPorCodigo(GetIdFactura(), GetDataView());
+            IBuscarElementoPorCodigoBD busqueda = new FacturacionBusquedaBD();
+            if (GetIdFactura().Length == 0)
+            {
+                MessageBox.Show("No ingresó ningún valor. Indique el código o nombre que desea buscar.");
+            }
+           
+            else if (GetIdFactura().Length > 0)
+            {
+                busqueda.BuscarPorCodigo(GetIdFactura(), dtvFacturacionBusqueda);
+            }
+            
+            txtNumFacturaFacturacionesBusqueda.Clear();
+           
+        
+        }
+
+        private void txtNumFacturaFacturacionesBusqueda_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

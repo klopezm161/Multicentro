@@ -31,7 +31,7 @@ namespace MulticentroProyectoFinal
             {
 
                 conexion.AbrirConexion();
-                string query = @"SELECT * FROM dbo.servicio where codigoservicio like'" + Int32.Parse(elementoABuscar) + "%'";
+                string query = @"SELECT * FROM dbo.factura where facturaid like'" + Int32.Parse(elementoABuscar) + "%'";
                 adaptador = new SqlDataAdapter(query, conexion.GetSqlConnection());
                 conexion.CerrarConexion();
                 MostrarDatos(dataGrid);
@@ -68,6 +68,14 @@ namespace MulticentroProyectoFinal
                 }
             }
             catch (NullReferenceException ex) { }
+        }
+        public void BuscarTodo(DataGridView dataGrid)
+        {
+            conexion.AbrirConexion();
+            string query = @"SELECT * FROM dbo.factura";
+            adaptador = new SqlDataAdapter(query, conexion.GetSqlConnection());
+            conexion.CerrarConexion();
+            MostrarDatos(dataGrid);
         }
         public SqlDataAdapter getSqlAdaptador()
         {

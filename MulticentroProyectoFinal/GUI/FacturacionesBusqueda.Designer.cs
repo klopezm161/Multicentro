@@ -34,9 +34,10 @@
             this.txtNumFacturaFacturacionesBusqueda = new System.Windows.Forms.TextBox();
             this.btnAceptarFacturacionesBusqueda = new System.Windows.Forms.Button();
             this.btnMenuPrincipalFacturacionesBusqueda = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtvFacturacionBusqueda = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.label3 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvFacturacionBusqueda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,6 +72,7 @@
             this.txtNumFacturaFacturacionesBusqueda.Name = "txtNumFacturaFacturacionesBusqueda";
             this.txtNumFacturaFacturacionesBusqueda.Size = new System.Drawing.Size(350, 30);
             this.txtNumFacturaFacturacionesBusqueda.TabIndex = 2;
+            this.txtNumFacturaFacturacionesBusqueda.TextChanged += new System.EventHandler(this.txtNumFacturaFacturacionesBusqueda_TextChanged);
             // 
             // btnAceptarFacturacionesBusqueda
             // 
@@ -96,14 +98,14 @@
             this.btnMenuPrincipalFacturacionesBusqueda.UseVisualStyleBackColor = true;
             this.btnMenuPrincipalFacturacionesBusqueda.Click += new System.EventHandler(this.BtnMenuPrincipalFacturacionesBusqueda_Click);
             // 
-            // dataGridView1
+            // dtvFacturacionBusqueda
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(28, 265);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(485, 459);
-            this.dataGridView1.TabIndex = 5;
+            this.dtvFacturacionBusqueda.BackgroundColor = System.Drawing.Color.White;
+            this.dtvFacturacionBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtvFacturacionBusqueda.Location = new System.Drawing.Point(28, 265);
+            this.dtvFacturacionBusqueda.Name = "dtvFacturacionBusqueda";
+            this.dtvFacturacionBusqueda.Size = new System.Drawing.Size(485, 459);
+            this.dtvFacturacionBusqueda.TabIndex = 5;
             // 
             // pictureBox1
             // 
@@ -115,15 +117,25 @@
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(70, 25);
+            this.label3.TabIndex = 38;
+            this.label3.Text = "label3";
+            // 
             // FacturacionesBusquesda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(539, 736);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtvFacturacionBusqueda);
             this.Controls.Add(this.btnMenuPrincipalFacturacionesBusqueda);
             this.Controls.Add(this.btnAceptarFacturacionesBusqueda);
             this.Controls.Add(this.txtNumFacturaFacturacionesBusqueda);
@@ -134,7 +146,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Facturaciones Busqueda";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FacturacionesBusquesa_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvFacturacionBusqueda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -148,7 +160,8 @@
         private System.Windows.Forms.TextBox txtNumFacturaFacturacionesBusqueda;
         private System.Windows.Forms.Button btnAceptarFacturacionesBusqueda;
         private System.Windows.Forms.Button btnMenuPrincipalFacturacionesBusqueda;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtvFacturacionBusqueda;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
     }
 }

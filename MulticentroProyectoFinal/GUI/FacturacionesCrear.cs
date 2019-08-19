@@ -15,12 +15,17 @@ namespace MulticentroProyectoFinal
         public FacturarCrear()
         {
             InitializeComponent();
+            FacturacionBusquedaBD busqueda = new FacturacionBusquedaBD();
+            busqueda.BuscarTodo(dgvFacturaNueva);
         }
-        public String GetFecha()
+        public string GetFecha()
         {
-            return txtFechaEmisionFacturarCrear.Text;
+            // return Convert.ToDateTime(dtpFechaFactura.Value.ToString("MM/dd/yyyy"), System.Globalization.CultureInfo.GetCultureInfo("en-US").DateTimeFormat);
+            //  return DateTime.ParseExact(dtpFechaFactura.Text.ToString(), @"yyyy/MM/dd HH/mm/ss tt", System.Globalization.CultureInfo.InvariantCulture);
+            return dtpFechaFactura.Value.ToString("yyyyMMdd");
         }
-        public String GetNumFactura()
+     
+        public string GetNumFactura()
         {
             return txtNumFacturaFacturarCrear.Text;
         }
@@ -58,9 +63,14 @@ namespace MulticentroProyectoFinal
         {
            FacturacionAgregarBD facturacion = new FacturacionAgregarBD();
             facturacion.Agregar();
-            txtFechaEmisionFacturarCrear.Clear();
+           
             txtNombreClienteFacturarCrear.Clear();
             txtNumFacturaFacturarCrear.Clear();
+        }
+
+        private void txtNumFacturaFacturarCrear_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

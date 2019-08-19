@@ -49,7 +49,7 @@ namespace MulticentroProyectoFinal
                     conexion.AbrirConexion();
 
                     cmd = new SqlCommand("insert into Multicentro.dbo.factura (facturaid,cliente_clienteid,fecha)" +
-                        " values('" + int.Parse(numFactura) + "', '" + int.Parse(idCliente) + DateTime.Today + "')", conexion.GetSqlConnection());
+                        " values('" + int.Parse(numFactura) + "', '" + int.Parse(idCliente) + "', '" + fecha + "')", conexion.GetSqlConnection());
                     cmd.ExecuteNonQuery();
                     conexion.CerrarConexion();
 
@@ -79,7 +79,7 @@ namespace MulticentroProyectoFinal
         /// <returns></returns>
         public bool VerificarInformacion()
         {
-            if (fecha.Length == 0 || numFactura.Length == 0 || idCliente.Length == 0)
+            if ( numFactura.Length == 0 || idCliente.Length == 0)
             {
                 MessageBox.Show("No puede dejar espacios en blanco");
                 return false;

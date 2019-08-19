@@ -62,7 +62,7 @@
             this.lblPrecio.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrecio.Location = new System.Drawing.Point(15, 232);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(64, 18);
+            this.lblPrecio.Size = new System.Drawing.Size(82, 25);
             this.lblPrecio.TabIndex = 8;
             this.lblPrecio.Text = "Precio:";
             // 
@@ -72,7 +72,7 @@
             this.lblNombre.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.Location = new System.Drawing.Point(15, 167);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(78, 18);
+            this.lblNombre.Size = new System.Drawing.Size(100, 25);
             this.lblNombre.TabIndex = 9;
             this.lblNombre.Text = "Nombre:";
             // 
@@ -82,7 +82,7 @@
             this.lblCodigo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCodigo.Location = new System.Drawing.Point(15, 198);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(71, 18);
+            this.lblCodigo.Size = new System.Drawing.Size(89, 25);
             this.lblCodigo.TabIndex = 10;
             this.lblCodigo.Text = "Código:";
             // 
@@ -91,7 +91,7 @@
             this.txtPrecioServicioIngreso.Location = new System.Drawing.Point(131, 232);
             this.txtPrecioServicioIngreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrecioServicioIngreso.Name = "txtPrecioServicioIngreso";
-            this.txtPrecioServicioIngreso.Size = new System.Drawing.Size(372, 22);
+            this.txtPrecioServicioIngreso.Size = new System.Drawing.Size(372, 26);
             this.txtPrecioServicioIngreso.TabIndex = 14;
             // 
             // txtCodigoServicioIngreso
@@ -99,7 +99,7 @@
             this.txtCodigoServicioIngreso.Location = new System.Drawing.Point(131, 198);
             this.txtCodigoServicioIngreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCodigoServicioIngreso.Name = "txtCodigoServicioIngreso";
-            this.txtCodigoServicioIngreso.Size = new System.Drawing.Size(372, 22);
+            this.txtCodigoServicioIngreso.Size = new System.Drawing.Size(372, 26);
             this.txtCodigoServicioIngreso.TabIndex = 15;
             // 
             // txtNombreServicioIngreso
@@ -107,7 +107,7 @@
             this.txtNombreServicioIngreso.Location = new System.Drawing.Point(131, 167);
             this.txtNombreServicioIngreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreServicioIngreso.Name = "txtNombreServicioIngreso";
-            this.txtNombreServicioIngreso.Size = new System.Drawing.Size(372, 22);
+            this.txtNombreServicioIngreso.Size = new System.Drawing.Size(372, 26);
             this.txtNombreServicioIngreso.TabIndex = 16;
             // 
             // label1
@@ -119,7 +119,7 @@
             this.label1.Location = new System.Drawing.Point(305, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(198, 25);
+            this.label1.Size = new System.Drawing.Size(255, 32);
             this.label1.TabIndex = 18;
             this.label1.Text = "SERVICIO NUEVO";
             // 
@@ -143,6 +143,7 @@
             this.dgvServicioNuevo.Name = "dgvServicioNuevo";
             this.dgvServicioNuevo.Size = new System.Drawing.Size(485, 391);
             this.dgvServicioNuevo.TabIndex = 22;
+            this.dgvServicioNuevo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicioNuevo_CellContentClick);
             // 
             // pictureBox1
             // 
@@ -156,7 +157,7 @@
             // 
             // ServiciosIngreso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(539, 736);

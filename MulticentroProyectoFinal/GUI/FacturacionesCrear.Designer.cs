@@ -43,7 +43,7 @@
             this.CBoxServicioFacturarCrear = new System.Windows.Forms.ComboBox();
             this.dgvFacturaNueva = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtFechaEmisionFacturarCrear = new System.Windows.Forms.TextBox();
+            this.dtpFechaFactura = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturaNueva)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -157,6 +157,7 @@
             this.txtNumFacturaFacturarCrear.Name = "txtNumFacturaFacturarCrear";
             this.txtNumFacturaFacturarCrear.Size = new System.Drawing.Size(337, 30);
             this.txtNumFacturaFacturarCrear.TabIndex = 11;
+            this.txtNumFacturaFacturarCrear.TextChanged += new System.EventHandler(this.txtNumFacturaFacturarCrear_TextChanged);
             // 
             // txtNombreClienteFacturarCrear
             // 
@@ -192,12 +193,15 @@
             this.pictureBox1.TabIndex = 36;
             this.pictureBox1.TabStop = false;
             // 
-            // txtFechaEmisionFacturarCrear
+            // dtpFechaFactura
             // 
-            this.txtFechaEmisionFacturarCrear.Location = new System.Drawing.Point(166, 175);
-            this.txtFechaEmisionFacturarCrear.Name = "txtFechaEmisionFacturarCrear";
-            this.txtFechaEmisionFacturarCrear.Size = new System.Drawing.Size(337, 30);
-            this.txtFechaEmisionFacturarCrear.TabIndex = 10;
+            this.dtpFechaFactura.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.dtpFechaFactura.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpFechaFactura.Location = new System.Drawing.Point(166, 179);
+            this.dtpFechaFactura.Name = "dtpFechaFactura";
+            this.dtpFechaFactura.Size = new System.Drawing.Size(337, 30);
+            this.dtpFechaFactura.TabIndex = 37;
+            this.dtpFechaFactura.Value = new System.DateTime(2019, 8, 18, 18, 33, 39, 0);
             // 
             // FacturarCrear
             // 
@@ -205,13 +209,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(539, 736);
+            this.Controls.Add(this.dtpFechaFactura);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvFacturaNueva);
             this.Controls.Add(this.CBoxServicioFacturarCrear);
             this.Controls.Add(this.txtNombreClienteFacturarCrear);
             this.Controls.Add(this.txtNumFacturaFacturarCrear);
-            this.Controls.Add(this.txtFechaEmisionFacturarCrear);
             this.Controls.Add(this.btnMenuPrincipalEnFacturarCrear);
             this.Controls.Add(this.btnAceptarFacturarCrear);
             this.Controls.Add(this.label7);
@@ -249,6 +253,6 @@
         private System.Windows.Forms.ComboBox CBoxServicioFacturarCrear;
         private System.Windows.Forms.DataGridView dgvFacturaNueva;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtFechaEmisionFacturarCrear;
+        private System.Windows.Forms.DateTimePicker dtpFechaFactura;
     }
 }
