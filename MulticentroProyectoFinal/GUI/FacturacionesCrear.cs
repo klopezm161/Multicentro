@@ -35,7 +35,7 @@ namespace MulticentroProyectoFinal
         }
         public string GetServicio()
         {
-            return CBoxServicioFacturarCrear.Text;
+            return txtServicioFacturarCrear.Text;
         }
 
         public DataGridView GetDataView()

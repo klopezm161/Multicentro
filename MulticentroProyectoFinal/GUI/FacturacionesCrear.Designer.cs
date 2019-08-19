@@ -40,10 +40,10 @@
             this.btnMenuPrincipalEnFacturarCrear = new System.Windows.Forms.Button();
             this.txtNumFacturaFacturarCrear = new System.Windows.Forms.TextBox();
             this.txtNombreClienteFacturarCrear = new System.Windows.Forms.TextBox();
-            this.CBoxServicioFacturarCrear = new System.Windows.Forms.ComboBox();
             this.dgvFacturaNueva = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dtpFechaFactura = new System.Windows.Forms.DateTimePicker();
+            this.txtServicioFacturarCrear = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturaNueva)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -166,14 +166,6 @@
             this.txtNombreClienteFacturarCrear.Size = new System.Drawing.Size(337, 30);
             this.txtNombreClienteFacturarCrear.TabIndex = 12;
             // 
-            // CBoxServicioFacturarCrear
-            // 
-            this.CBoxServicioFacturarCrear.FormattingEnabled = true;
-            this.CBoxServicioFacturarCrear.Location = new System.Drawing.Point(166, 297);
-            this.CBoxServicioFacturarCrear.Name = "CBoxServicioFacturarCrear";
-            this.CBoxServicioFacturarCrear.Size = new System.Drawing.Size(337, 33);
-            this.CBoxServicioFacturarCrear.TabIndex = 13;
-            // 
             // dgvFacturaNueva
             // 
             this.dgvFacturaNueva.BackgroundColor = System.Drawing.Color.White;
@@ -203,17 +195,24 @@
             this.dtpFechaFactura.TabIndex = 37;
             this.dtpFechaFactura.Value = new System.DateTime(2019, 8, 18, 18, 33, 39, 0);
             // 
+            // txtServicioFacturarCrear
+            // 
+            this.txtServicioFacturarCrear.Location = new System.Drawing.Point(166, 301);
+            this.txtServicioFacturarCrear.Name = "txtServicioFacturarCrear";
+            this.txtServicioFacturarCrear.Size = new System.Drawing.Size(337, 30);
+            this.txtServicioFacturarCrear.TabIndex = 38;
+            // 
             // FacturarCrear
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(539, 736);
+            this.Controls.Add(this.txtServicioFacturarCrear);
             this.Controls.Add(this.dtpFechaFactura);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvFacturaNueva);
-            this.Controls.Add(this.CBoxServicioFacturarCrear);
             this.Controls.Add(this.txtNombreClienteFacturarCrear);
             this.Controls.Add(this.txtNumFacturaFacturarCrear);
             this.Controls.Add(this.btnMenuPrincipalEnFacturarCrear);
@@ -250,9 +249,9 @@
         private System.Windows.Forms.Button btnMenuPrincipalEnFacturarCrear;
         private System.Windows.Forms.TextBox txtNumFacturaFacturarCrear;
         private System.Windows.Forms.TextBox txtNombreClienteFacturarCrear;
-        private System.Windows.Forms.ComboBox CBoxServicioFacturarCrear;
         private System.Windows.Forms.DataGridView dgvFacturaNueva;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DateTimePicker dtpFechaFactura;
+        private System.Windows.Forms.TextBox txtServicioFacturarCrear;
     }
 }
