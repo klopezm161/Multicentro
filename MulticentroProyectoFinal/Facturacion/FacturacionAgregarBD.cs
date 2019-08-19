@@ -26,7 +26,7 @@ namespace MulticentroProyectoFinal
         IBuscarElementoPorCodigoBD busqueda;
         public FacturacionAgregarBD()
         {
-
+            
         }
         //Implementación de método de la interfaz
 
@@ -35,10 +35,10 @@ namespace MulticentroProyectoFinal
         /// </summary>
         public bool Agregar()
         {
-            busqueda = new ServiciosBusquedaBD();
+            busqueda = new FacturacionBusquedaBD();
             conexion = new ConexionesBasicasAbrirCerrarBD();
             fecha = guiFacturacionesCrear.GetFecha();
-            
+
             numFactura = guiFacturacionesCrear.GetNumFactura();
             idCliente = guiFacturacionesCrear.GetNombreCliente();
             servicio = guiFacturacionesCrear.GetServicio();
