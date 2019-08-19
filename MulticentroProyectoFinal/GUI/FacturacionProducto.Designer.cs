@@ -40,6 +40,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtFacturacionBuscar = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturaProducto)).BeginInit();
             this.SuspendLayout();
@@ -137,9 +138,9 @@
             this.label4.Location = new System.Drawing.Point(28, 162);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 18);
+            this.label4.Size = new System.Drawing.Size(177, 18);
             this.label4.TabIndex = 59;
-            this.label4.Text = "Producto:";
+            this.label4.Text = "Producto por código:";
             // 
             // txtFacturacionBuscar
             // 
@@ -155,11 +156,22 @@
             this.textBox1.Size = new System.Drawing.Size(325, 20);
             this.textBox1.TabIndex = 70;
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBuscar.Location = new System.Drawing.Point(18, 268);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(145, 28);
+            this.btnBuscar.TabIndex = 71;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            // 
             // FacturacionProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(539, 576);
+            this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtFacturacionBuscar);
             this.Controls.Add(this.txtCantidadFacturaProduc);
@@ -194,5 +206,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtFacturacionBuscar;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnBuscar;
     }
 }
