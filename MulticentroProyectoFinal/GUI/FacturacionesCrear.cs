@@ -68,18 +68,25 @@ namespace MulticentroProyectoFinal
         {
            FacturacionServicio facturacionServicio= new FacturacionServicio();
             FacturacionProducto facturacionProducto = new FacturacionProducto();
-            if (txtNombreClienteFacturarCrear.Text == null || txtNumFacturaFacturarCrear.Text == null || cbTipoFacturaCrear.Text == null){
+            FacturacionAgregarBD agregarFac = new FacturacionAgregarBD();
+            if (txtNombreClienteFacturarCrear.Text.Length == 0 || txtNumFacturaFacturarCrear.Text.Length == 0)
+            {
                 MessageBox.Show("No se aceptan espacios vacios.");
             }
-            if (cbTipoFacturaCrear.Text.Equals("Servicio"))
+            else if (txtNombreClienteFacturarCrear.Text.Length > 0 || txtNumFacturaFacturarCrear.Text.Length > 0)
             {
-                facturacionServicio.Show();
-            } else 
-            {
-                facturacionProducto.Show();
-            } 
-           
-           
+                agregarFac.Agregar();
+                if (cbTipoFacturaCrear.Text.Equals("Servicio"))
+                {
+
+                    facturacionServicio.Show();
+                }
+                else
+                {
+                    facturacionProducto.Show();
+                }
+
+            }
         }
 
         private void txtNumFacturaFacturarCrear_TextChanged(object sender, EventArgs e)

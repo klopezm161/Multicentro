@@ -16,6 +16,8 @@ namespace MulticentroProyectoFinal.GUI
         public FacturacionProducto()
         {
             InitializeComponent();
+            ProductosBusquedaBD busqueda = new ProductosBusquedaBD();
+            busqueda.BuscarTodo(dgvFacturaProducto);
         }
         public string getCantidad()
         {
@@ -29,13 +31,18 @@ namespace MulticentroProyectoFinal.GUI
         {
             return dgvFacturaProducto;
         }
+        public string GetCodigo()
+        {
+            return txtFacturacionBuscar.Text;
+        }
+
         private void getcbProductoFactura()
         {
-            FacturacionJoinBD facturacionJoin = new FacturacionJoinBD();
+            //FacturacionJoinBD facturacionJoin = new FacturacionJoinBD();
             
-                cbProductoFacturaCrear.DataSource = facturacionJoin.ProductosTable();
-                cbProductoFacturaCrear.DisplayMember = "nombre";
-                cbProductoFacturaCrear.ValueMember = "codigoproducto";
+            //    cbProductoFacturaCrear.DataSource = facturacionJoin.ProductosTable();
+            //    cbProductoFacturaCrear.DisplayMember = "nombre";
+            //    cbProductoFacturaCrear.ValueMember = "codigoproducto";
             
           
 
@@ -48,10 +55,21 @@ namespace MulticentroProyectoFinal.GUI
 
         private void btnAceptarFacturarCrear_Click(object sender, EventArgs e)
         {
-            FacturacionAgregarBD facturacion = new FacturacionAgregarBD();
-            facturacion.Agregar();
-            label7.Text = cbProductoFacturaCrear.SelectedValue.ToString();
-            txtCantidadFacturaProduc.Clear();
+            IBuscarElementoPorCodigoYNombre busqueda = new ProductosBusquedaBD();
+            if (GetCodigo().Length == 00)
+            {
+                MessageBox.Show("No ingresó ningún valor. Indique el código o nombre que desea buscar.");
+            }
+            else if (GetCodigo().Length > 0)
+            {
+                busqueda.BuscarPorCodigo(GetCodigo(), dgvFacturaProducto);
+            }
+
+            //FacturacionAgregarBD facturacion = new FacturacionAgregarBD();
+            //facturacion.Agregar();
+            //label7.Text = cbProductoFacturaCrear.SelectedValue.ToString();
+            //txtCantidadFacturaProduc.Clear();
+
         }
     }
 }
