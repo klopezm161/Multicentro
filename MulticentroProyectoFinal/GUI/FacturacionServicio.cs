@@ -15,11 +15,10 @@ namespace MulticentroProyectoFinal.GUI
         public FacturacionServicio()
         {
             InitializeComponent();
+            ServiciosBusquedaBD mostrarTodo = new ServiciosBusquedaBD();
+            mostrarTodo.BuscarTodo(dgvFacturaNueva);
         }
-        public string getServicio()
-        {
-            return cbServicioFacturaCrear.SelectedValue.ToString();
-        }
+        
         public string getCantidad()
         {
             return txtServicioFacturaCrear.Text;
@@ -37,9 +36,9 @@ namespace MulticentroProyectoFinal.GUI
             FacturacionJoinBD facturacionJoin = new FacturacionJoinBD();
             try
             {
-                cbServicioFacturaCrear.DataSource = facturacionJoin.ServiciosTable();
-                cbServicioFacturaCrear.DisplayMember = "nombre";
-                cbServicioFacturaCrear.ValueMember = "codigoservicio ";
+               // cbServicioFacturaCrear.DataSource = facturacionJoin.ServiciosTable();
+             //   cbServicioFacturaCrear.DisplayMember = "nombre";
+               // cbServicioFacturaCrear.ValueMember = "codigoservicio ";
                 
             }
             catch (Exception e)
@@ -54,6 +53,8 @@ namespace MulticentroProyectoFinal.GUI
             getcbServiciosFactura();
         }
 
-        
+        private void BtnMenuPrincipalEnFacturarCrear_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

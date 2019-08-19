@@ -23,10 +23,7 @@ namespace MulticentroProyectoFinal.GUI
         {
             return txtCantidadFacturaProduc.Text;
         }
-        public string getProducto()
-        {
-            return cbProductoFacturaCrear.SelectedValue.ToString();
-        }
+       
         public DataGridView GetDataView()
         {
             return dgvFacturaProducto;
@@ -70,6 +67,11 @@ namespace MulticentroProyectoFinal.GUI
             //label7.Text = cbProductoFacturaCrear.SelectedValue.ToString();
             //txtCantidadFacturaProduc.Clear();
 
+        }
+
+        private void BtnMenuPrincipalEnFacturarCrear_Click(object sender, EventArgs e)
+        {
+          
         }
     }
 }

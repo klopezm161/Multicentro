@@ -29,39 +29,27 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FacturacionProducto));
-            this.cbProductoFacturaCrear = new System.Windows.Forms.ComboBox();
             this.txtCantidadFacturaProduc = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgvFacturaProducto = new System.Windows.Forms.DataGridView();
-            this.btnMenuPrincipalEnFacturarCrear = new System.Windows.Forms.Button();
             this.btnAceptarFacturarCrear = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtFacturacionBuscar = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturaProducto)).BeginInit();
             this.SuspendLayout();
             // 
-            // cbProductoFacturaCrear
-            // 
-            this.cbProductoFacturaCrear.FormattingEnabled = true;
-            this.cbProductoFacturaCrear.Location = new System.Drawing.Point(212, 159);
-            this.cbProductoFacturaCrear.Margin = new System.Windows.Forms.Padding(2);
-            this.cbProductoFacturaCrear.Name = "cbProductoFacturaCrear";
-            this.cbProductoFacturaCrear.Size = new System.Drawing.Size(290, 21);
-            this.cbProductoFacturaCrear.TabIndex = 68;
-            // 
             // txtCantidadFacturaProduc
             // 
-            this.txtCantidadFacturaProduc.Location = new System.Drawing.Point(212, 191);
+            this.txtCantidadFacturaProduc.Location = new System.Drawing.Point(178, 193);
             this.txtCantidadFacturaProduc.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidadFacturaProduc.Name = "txtCantidadFacturaProduc";
-            this.txtCantidadFacturaProduc.Size = new System.Drawing.Size(290, 20);
+            this.txtCantidadFacturaProduc.Size = new System.Drawing.Size(325, 20);
             this.txtCantidadFacturaProduc.TabIndex = 67;
             // 
             // label1
@@ -70,7 +58,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(341, 26);
+            this.label1.Location = new System.Drawing.Point(342, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(161, 25);
@@ -80,7 +68,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(2, -1);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(539, 76);
@@ -92,27 +80,16 @@
             // 
             this.dgvFacturaProducto.BackgroundColor = System.Drawing.Color.White;
             this.dgvFacturaProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFacturaProducto.Location = new System.Drawing.Point(20, 269);
+            this.dgvFacturaProducto.Location = new System.Drawing.Point(18, 311);
             this.dgvFacturaProducto.Margin = new System.Windows.Forms.Padding(2);
             this.dgvFacturaProducto.Name = "dgvFacturaProducto";
-            this.dgvFacturaProducto.Size = new System.Drawing.Size(482, 296);
+            this.dgvFacturaProducto.Size = new System.Drawing.Size(485, 254);
             this.dgvFacturaProducto.TabIndex = 65;
-            // 
-            // btnMenuPrincipalEnFacturarCrear
-            // 
-            this.btnMenuPrincipalEnFacturarCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuPrincipalEnFacturarCrear.Location = new System.Drawing.Point(20, 93);
-            this.btnMenuPrincipalEnFacturarCrear.Margin = new System.Windows.Forms.Padding(4);
-            this.btnMenuPrincipalEnFacturarCrear.Name = "btnMenuPrincipalEnFacturarCrear";
-            this.btnMenuPrincipalEnFacturarCrear.Size = new System.Drawing.Size(145, 28);
-            this.btnMenuPrincipalEnFacturarCrear.TabIndex = 64;
-            this.btnMenuPrincipalEnFacturarCrear.Text = "Menú Principal";
-            this.btnMenuPrincipalEnFacturarCrear.UseVisualStyleBackColor = true;
             // 
             // btnAceptarFacturarCrear
             // 
             this.btnAceptarFacturarCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarFacturarCrear.Location = new System.Drawing.Point(357, 235);
+            this.btnAceptarFacturarCrear.Location = new System.Drawing.Point(358, 268);
             this.btnAceptarFacturarCrear.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptarFacturarCrear.Name = "btnAceptarFacturarCrear";
             this.btnAceptarFacturarCrear.Size = new System.Drawing.Size(145, 28);
@@ -138,9 +115,9 @@
             this.label6.Location = new System.Drawing.Point(28, 224);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 18);
+            this.label6.Size = new System.Drawing.Size(153, 18);
             this.label6.TabIndex = 61;
-            this.label6.Text = "Precio:";
+            this.label6.Text = "Buscar por código";
             // 
             // label5
             // 
@@ -164,54 +141,36 @@
             this.label4.TabIndex = 59;
             this.label4.Text = "Producto:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(311, 115);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 18);
-            this.label3.TabIndex = 58;
-            this.label3.Text = "Cédula Jurídica";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(302, 97);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 18);
-            this.label2.TabIndex = 57;
-            this.label2.Text = "Multicentro S.A";
-            // 
             // txtFacturacionBuscar
             // 
-            this.txtFacturacionBuscar.Location = new System.Drawing.Point(199, 221);
+            this.txtFacturacionBuscar.Location = new System.Drawing.Point(178, 221);
             this.txtFacturacionBuscar.Name = "txtFacturacionBuscar";
-            this.txtFacturacionBuscar.Size = new System.Drawing.Size(100, 20);
+            this.txtFacturacionBuscar.Size = new System.Drawing.Size(325, 20);
             this.txtFacturacionBuscar.TabIndex = 69;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(178, 162);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(325, 20);
+            this.textBox1.TabIndex = 70;
             // 
             // FacturacionProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(539, 576);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.txtFacturacionBuscar);
-            this.Controls.Add(this.cbProductoFacturaCrear);
             this.Controls.Add(this.txtCantidadFacturaProduc);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvFacturaProducto);
-            this.Controls.Add(this.btnMenuPrincipalEnFacturarCrear);
             this.Controls.Add(this.btnAceptarFacturarCrear);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FacturacionProducto";
             this.Text = "FacturacionProducto";
@@ -224,20 +183,16 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ComboBox cbProductoFacturaCrear;
         private System.Windows.Forms.TextBox txtCantidadFacturaProduc;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dgvFacturaProducto;
-        private System.Windows.Forms.Button btnMenuPrincipalEnFacturarCrear;
         private System.Windows.Forms.Button btnAceptarFacturarCrear;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtFacturacionBuscar;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
