@@ -35,11 +35,9 @@
             this.dgvFacturaProducto = new System.Windows.Forms.DataGridView();
             this.btnAceptarFacturarCrear = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtFacturacionBuscar = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturaProducto)).BeginInit();
@@ -47,10 +45,10 @@
             // 
             // txtCantidadFacturaProduc
             // 
-            this.txtCantidadFacturaProduc.Location = new System.Drawing.Point(178, 193);
+            this.txtCantidadFacturaProduc.Location = new System.Drawing.Point(212, 193);
             this.txtCantidadFacturaProduc.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidadFacturaProduc.Name = "txtCantidadFacturaProduc";
-            this.txtCantidadFacturaProduc.Size = new System.Drawing.Size(325, 20);
+            this.txtCantidadFacturaProduc.Size = new System.Drawing.Size(291, 20);
             this.txtCantidadFacturaProduc.TabIndex = 67;
             // 
             // label1
@@ -95,7 +93,7 @@
             this.btnAceptarFacturarCrear.Name = "btnAceptarFacturarCrear";
             this.btnAceptarFacturarCrear.Size = new System.Drawing.Size(145, 28);
             this.btnAceptarFacturarCrear.TabIndex = 63;
-            this.btnAceptarFacturarCrear.Text = "Aceptar";
+            this.btnAceptarFacturarCrear.Text = "Agregar";
             this.btnAceptarFacturarCrear.UseVisualStyleBackColor = true;
             this.btnAceptarFacturarCrear.Click += new System.EventHandler(this.btnAceptarFacturarCrear_Click);
             // 
@@ -108,17 +106,6 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(0, 18);
             this.label7.TabIndex = 62;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(28, 224);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(153, 18);
-            this.label6.TabIndex = 61;
-            this.label6.Text = "Buscar por código";
             // 
             // label5
             // 
@@ -138,23 +125,16 @@
             this.label4.Location = new System.Drawing.Point(28, 162);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(177, 18);
+            this.label4.Size = new System.Drawing.Size(160, 18);
             this.label4.TabIndex = 59;
-            this.label4.Text = "Producto por código:";
+            this.label4.Text = "Buscar por código:";
             // 
-            // txtFacturacionBuscar
+            // txtCodigo
             // 
-            this.txtFacturacionBuscar.Location = new System.Drawing.Point(178, 221);
-            this.txtFacturacionBuscar.Name = "txtFacturacionBuscar";
-            this.txtFacturacionBuscar.Size = new System.Drawing.Size(325, 20);
-            this.txtFacturacionBuscar.TabIndex = 69;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(178, 162);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(325, 20);
-            this.textBox1.TabIndex = 70;
+            this.txtCodigo.Location = new System.Drawing.Point(212, 162);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(291, 20);
+            this.txtCodigo.TabIndex = 70;
             // 
             // btnBuscar
             // 
@@ -165,6 +145,7 @@
             this.btnBuscar.TabIndex = 71;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // FacturacionProducto
             // 
@@ -172,15 +153,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(539, 576);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.txtFacturacionBuscar);
+            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.txtCantidadFacturaProduc);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvFacturaProducto);
             this.Controls.Add(this.btnAceptarFacturarCrear);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -201,11 +180,9 @@
         private System.Windows.Forms.DataGridView dgvFacturaProducto;
         private System.Windows.Forms.Button btnAceptarFacturarCrear;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtFacturacionBuscar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Button btnBuscar;
     }
 }

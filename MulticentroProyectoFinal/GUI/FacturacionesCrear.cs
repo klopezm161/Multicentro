@@ -76,16 +76,21 @@ namespace MulticentroProyectoFinal
             else if (txtNombreClienteFacturarCrear.Text.Length > 0 || txtNumFacturaFacturarCrear.Text.Length > 0)
             {
                 agregarFac.Agregar();
-                if (cbTipoFacturaCrear.Text.Equals("Servicio"))
-                {
+               
+               //if(agregarFac.Agregar()) 
+               // {
+                 
 
-                    facturacionServicio.Show();
-                }
-                else
-                {
-                    facturacionProducto.Show();
-                }
+               //     if (cbTipoFacturaCrear.Text.Equals("Servicio"))
+               //     {
 
+               //         facturacionServicio.Show();
+               //     }
+               //     else if (cbTipoFacturaCrear.Text.Equals("Producto"))
+               //     {
+               //         facturacionProducto.Show();
+               //     }
+               // }
             }
         }
 

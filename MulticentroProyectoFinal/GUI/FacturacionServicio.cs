@@ -23,6 +23,10 @@ namespace MulticentroProyectoFinal.GUI
         {
             return txtServicioFacturaCrear.Text;
         }
+        public string GetCodigo()
+        {
+            return txtCodigo.Text;
+        }
         
         private void btnAceptarFacturarCrear_Click(object sender, EventArgs e)
         {
@@ -55,6 +59,23 @@ namespace MulticentroProyectoFinal.GUI
 
         private void BtnMenuPrincipalEnFacturarCrear_Click(object sender, EventArgs e)
         {
+        }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            IBuscarElementoPorCodigoYNombre busqueda = new ServiciosBusquedaBD();
+            //String elementoABuscar;
+            if (GetCodigo().Length == 0)
+            {
+                MessageBox.Show("No ingresó ningún valor. Indique el código o nombre que desea buscar.");
+            }
+           
+            else if (GetCodigo().Length > 0)
+            {
+                busqueda.BuscarPorCodigo(GetCodigo(), dgvFacturaNueva);
+            }
+           // txtCodigo.Clear();
+           
         }
     }
 }

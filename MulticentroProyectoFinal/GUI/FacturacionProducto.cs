@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MulticentroProyectoFinal;
+using MulticentroProyectoFinal.Facturacion;
 
 namespace MulticentroProyectoFinal.GUI
 {
@@ -23,15 +23,16 @@ namespace MulticentroProyectoFinal.GUI
         {
             return txtCantidadFacturaProduc.Text;
         }
+        public string GetCodigo()
+        {
+            return txtCodigo.Text;
+        }
        
         public DataGridView GetDataView()
         {
             return dgvFacturaProducto;
         }
-        public string GetCodigo()
-        {
-            return txtFacturacionBuscar.Text;
-        }
+        
 
         private void getcbProductoFactura()
         {
@@ -57,10 +58,15 @@ namespace MulticentroProyectoFinal.GUI
             {
                 MessageBox.Show("No ingresó ningún valor. Indique el código o nombre que desea buscar.");
             }
-            else if (GetCodigo().Length > 0)
+            else if (GetCodigo().Length > 0 & getCantidad().Length > 0)
             {
                 busqueda.BuscarPorCodigo(GetCodigo(), dgvFacturaProducto);
+                AgregarServiciosYProductosFactura agregarProducto = new AgregarServiciosYProductosFactura();
+                agregarProducto.Agregar();
+
             }
+            else
+                MessageBox.Show("Verifique los datos ingresados");
 
             //FacturacionAgregarBD facturacion = new FacturacionAgregarBD();
             //facturacion.Agregar();
@@ -73,5 +79,22 @@ namespace MulticentroProyectoFinal.GUI
         {
           
         }
+
+        private void BtnBuscar_Click(object sender, EventArgs e)
+        {
+            IBuscarElementoPorCodigoYNombre busqueda = new ProductosBusquedaBD();
+            //String elementoABuscar;
+            if (GetCodigo().Length ==0)
+            {
+                MessageBox.Show("No ingresó ningún valor. Indique el código  que desea buscar.");
+            }
+            else if (GetCodigo().Length > 0)
+            {
+                busqueda.BuscarPorCodigo(GetCodigo(), dgvFacturaProducto);
+            }
+            
+
+        }
     }
-}
+    }
+
