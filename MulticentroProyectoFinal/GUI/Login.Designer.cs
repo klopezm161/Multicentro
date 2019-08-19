@@ -51,7 +51,7 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(54, 246);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 18);
+            this.label1.Size = new System.Drawing.Size(98, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Usuario:";
             // 
@@ -62,7 +62,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(54, 298);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 18);
+            this.label2.Size = new System.Drawing.Size(136, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña:";
             // 
@@ -70,7 +70,7 @@
             // 
             this.txtUsuarioLogin.Location = new System.Drawing.Point(173, 242);
             this.txtUsuarioLogin.Name = "txtUsuarioLogin";
-            this.txtUsuarioLogin.Size = new System.Drawing.Size(273, 26);
+            this.txtUsuarioLogin.Size = new System.Drawing.Size(273, 30);
             this.txtUsuarioLogin.TabIndex = 2;
             // 
             // txtPasswordLogin
@@ -78,7 +78,7 @@
             this.txtPasswordLogin.Location = new System.Drawing.Point(173, 294);
             this.txtPasswordLogin.Name = "txtPasswordLogin";
             this.txtPasswordLogin.PasswordChar = '*';
-            this.txtPasswordLogin.Size = new System.Drawing.Size(273, 26);
+            this.txtPasswordLogin.Size = new System.Drawing.Size(273, 30);
             this.txtPasswordLogin.TabIndex = 3;
             // 
             // btnIngresarLogin
@@ -115,7 +115,7 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(201, 212);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 18);
+            this.label3.Size = new System.Drawing.Size(168, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Inicio de sesión";
             // 
@@ -148,7 +148,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-3, -3);
+            this.pictureBox2.Location = new System.Drawing.Point(-7, -7);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(546, 472);
             this.pictureBox2.TabIndex = 8;
@@ -156,7 +156,7 @@
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(539, 461);

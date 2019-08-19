@@ -43,7 +43,7 @@
             this.dgvFacturaNueva = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dtpFechaFactura = new System.Windows.Forms.DateTimePicker();
-            this.txtServicioFacturarCrear = new System.Windows.Forms.TextBox();
+            this.cbTipoFacturaCrear = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturaNueva)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -112,9 +112,9 @@
             this.label6.Location = new System.Drawing.Point(16, 259);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(174, 25);
+            this.label6.Size = new System.Drawing.Size(164, 25);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Nombre cliente:";
+            this.label6.Text = "Cedula cliente:";
             // 
             // label7
             // 
@@ -123,14 +123,14 @@
             this.label7.Location = new System.Drawing.Point(77, 301);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(102, 25);
+            this.label7.Size = new System.Drawing.Size(63, 25);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Servicio:";
+            this.label7.Text = "Tipo:";
             // 
             // btnAceptarFacturarCrear
             // 
             this.btnAceptarFacturarCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarFacturarCrear.Location = new System.Drawing.Point(358, 348);
+            this.btnAceptarFacturarCrear.Location = new System.Drawing.Point(358, 355);
             this.btnAceptarFacturarCrear.Margin = new System.Windows.Forms.Padding(5);
             this.btnAceptarFacturarCrear.Name = "btnAceptarFacturarCrear";
             this.btnAceptarFacturarCrear.Size = new System.Drawing.Size(145, 28);
@@ -170,10 +170,11 @@
             // 
             this.dgvFacturaNueva.BackgroundColor = System.Drawing.Color.White;
             this.dgvFacturaNueva.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFacturaNueva.Location = new System.Drawing.Point(30, 397);
+            this.dgvFacturaNueva.Location = new System.Drawing.Point(30, 408);
             this.dgvFacturaNueva.Name = "dgvFacturaNueva";
-            this.dgvFacturaNueva.Size = new System.Drawing.Size(473, 327);
+            this.dgvFacturaNueva.Size = new System.Drawing.Size(473, 336);
             this.dgvFacturaNueva.TabIndex = 14;
+            this.dgvFacturaNueva.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFacturaNueva_CellContentClick);
             // 
             // pictureBox1
             // 
@@ -195,20 +196,24 @@
             this.dtpFechaFactura.TabIndex = 37;
             this.dtpFechaFactura.Value = new System.DateTime(2019, 8, 18, 18, 33, 39, 0);
             // 
-            // txtServicioFacturarCrear
+            // cbTipoFacturaCrear
             // 
-            this.txtServicioFacturarCrear.Location = new System.Drawing.Point(166, 301);
-            this.txtServicioFacturarCrear.Name = "txtServicioFacturarCrear";
-            this.txtServicioFacturarCrear.Size = new System.Drawing.Size(337, 30);
-            this.txtServicioFacturarCrear.TabIndex = 38;
+            this.cbTipoFacturaCrear.FormattingEnabled = true;
+            this.cbTipoFacturaCrear.Items.AddRange(new object[] {
+            "Servicio",
+            "Producto"});
+            this.cbTipoFacturaCrear.Location = new System.Drawing.Point(166, 299);
+            this.cbTipoFacturaCrear.Name = "cbTipoFacturaCrear";
+            this.cbTipoFacturaCrear.Size = new System.Drawing.Size(337, 33);
+            this.cbTipoFacturaCrear.TabIndex = 38;
             // 
             // FacturarCrear
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(539, 736);
-            this.Controls.Add(this.txtServicioFacturarCrear);
+            this.ClientSize = new System.Drawing.Size(528, 756);
+            this.Controls.Add(this.cbTipoFacturaCrear);
             this.Controls.Add(this.dtpFechaFactura);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -229,6 +234,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FacturarCrear";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FacturarCrear_FormClosed);
+            this.Load += new System.EventHandler(this.FacturarCrear_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFacturaNueva)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -252,6 +258,6 @@
         private System.Windows.Forms.DataGridView dgvFacturaNueva;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DateTimePicker dtpFechaFactura;
-        private System.Windows.Forms.TextBox txtServicioFacturarCrear;
+        private System.Windows.Forms.ComboBox cbTipoFacturaCrear;
     }
 }

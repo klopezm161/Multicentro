@@ -54,6 +54,7 @@
     <Compile Include="ConexionBD\ConexionesBasicasAbrirCerrarBD.cs" />
     <Compile Include="Facturacion\FacturacionAgregarBD.cs" />
     <Compile Include="Facturacion\FacturacionBusquedaBD.cs" />
+    <Compile Include="Facturacion\FacturacionJoinBD.cs" />
     <Compile Include="GUI\FacturacionesBusqueda.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +72,18 @@
     </Compile>
     <Compile Include="GUI\FacturacionBuscar.Designer.cs">
       <DependentUpon>FacturacionBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FacturacionProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FacturacionProducto.Designer.cs">
+      <DependentUpon>FacturacionProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FacturacionServicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FacturacionServicio.Designer.cs">
+      <DependentUpon>FacturacionServicio.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\ServiciosActualizacion.cs">
       <SubType>Form</SubType>
@@ -156,6 +169,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FacturacionBuscar.resx">
       <DependentUpon>FacturacionBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FacturacionProducto.resx">
+      <DependentUpon>FacturacionProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FacturacionServicio.resx">
+      <DependentUpon>FacturacionServicio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\ReporteVentas.resx">
       <DependentUpon>ReporteVentas.cs</DependentUpon>

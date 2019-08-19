@@ -7,16 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
+using MulticentroProyectoFinal.GUI;
 
 namespace MulticentroProyectoFinal
 {
     public partial class FacturarCrear : Form
     {
+        private IConexionesBasicasAbrirCerrarBD conexion = new ConexionesBasicasAbrirCerrarBD();
         public FacturarCrear()
         {
             InitializeComponent();
             FacturacionBusquedaBD busqueda = new FacturacionBusquedaBD();
             busqueda.BuscarTodo(dgvFacturaNueva);
+
         }
         public string GetFecha()
         {
@@ -33,11 +38,11 @@ namespace MulticentroProyectoFinal
         {
             return txtNombreClienteFacturarCrear.Text;
         }
-        public string GetServicio()
+        public string GetTipo()
         {
-            return txtServicioFacturarCrear.Text;
+            return cbTipoFacturaCrear.Text;
         }
-
+        
         public DataGridView GetDataView()
         {
             return dgvFacturaNueva;
@@ -61,14 +66,35 @@ namespace MulticentroProyectoFinal
         }
         private void btnAceptarFacturarCrear_Click_1(object sender, EventArgs e)
         {
-           FacturacionAgregarBD facturacion = new FacturacionAgregarBD();
-            facturacion.Agregar();
+           FacturacionServicio facturacionServicio= new FacturacionServicio();
+            FacturacionProducto facturacionProducto = new FacturacionProducto();
+            if (txtNombreClienteFacturarCrear.Text == null || txtNumFacturaFacturarCrear.Text == null || cbTipoFacturaCrear.Text == null){
+                MessageBox.Show("No se aceptan espacios vacios.");
+            }
+            if (cbTipoFacturaCrear.Text.Equals("Servicio"))
+            {
+                facturacionServicio.Show();
+            } else 
+            {
+                facturacionProducto.Show();
+            } 
            
-            txtNombreClienteFacturarCrear.Clear();
-            txtNumFacturaFacturarCrear.Clear();
+           
         }
 
         private void txtNumFacturaFacturarCrear_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+        
+       
+        private void FacturarCrear_Load(object sender, EventArgs e)
+        {
+            
+           
+        }
+
+        private void dgvFacturaNueva_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
