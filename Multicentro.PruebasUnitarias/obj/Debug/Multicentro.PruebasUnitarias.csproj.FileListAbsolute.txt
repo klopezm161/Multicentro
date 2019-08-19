@@ -84,3 +84,5 @@ C:\Users\Andrés\Source\Repos\Multicentro4\Multicentro.PruebasUnitarias\obj\Debu
 C:\Users\Andrés\Source\Repos\Multicentro4\Multicentro.PruebasUnitarias\obj\Debug\Multicentro.PruebasUnitarias.csproj.CopyComplete
 C:\Users\Andrés\Source\Repos\Multicentro4\Multicentro.PruebasUnitarias\obj\Debug\Multicentro.PruebasUnitarias.dll
 C:\Users\Andrés\Source\Repos\Multicentro4\Multicentro.PruebasUnitarias\obj\Debug\Multicentro.PruebasUnitarias.pdb
+C:\Users\sergi\OneDrive\Documentos\GitHub\Multicentro\Multicentro.PruebasUnitarias\obj\Debug\Multicentro.PruebasUnitarias.dll
+C:\Users\sergi\OneDrive\Documentos\GitHub\Multicentro\Multicentro.PruebasUnitarias\obj\Debug\Multicentro.PruebasUnitarias.pdb

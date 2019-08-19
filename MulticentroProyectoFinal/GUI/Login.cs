@@ -27,42 +27,25 @@ namespace MulticentroProyectoFinal
 
         private void BtnIngresarLogin_Click(object sender, EventArgs e)
         {
-
-
-
-            {
                 string userid = txtUsuarioLogin.Text;
                 string password = txtPasswordLogin.Text;
-
+                SqlDataAdapter adaptador;
                 con.AbrirConexion();
-
-                SqlCommand cmd = new SqlCommand("SELECT empleadoid FROM empleado WHERE userid = '" + userid + "' AND password = '" + password + "'", con.GetSqlConnection());
-                cmd.Parameters.AddWithValue("@UserName", userid);
-                cmd.Parameters.AddWithValue("@Password", password);
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-
-                DataTable dt = new DataTable();
-
-                var x = cmd.Connection.DataSource;
-
-                da.Fill(dt);
-
+                string query = "SELECT * FROM dbo.empleado where userID = '" + userid + "' AND password = '"+ password + "'";
+                adaptador = new SqlDataAdapter(query, con.GetSqlConnection());
                 con.CerrarConexion();
-
-                if (dt.Rows.Count > 0)
+                DataSet DS = new DataSet();
+                adaptador.Fill(DS);
+               if (DS.Tables[0].Rows.Count == 1)
                 {
-                    MessageBox.Show("Login invalido por favor revise su usuario o su contraseña");
-                }
+                this.Hide();
+                MenuPrincipal menuPrincipalPrograma = new MenuPrincipal();
+                menuPrincipalPrograma.Show();
+            }
                 else
                 {
-                    this.Hide();
-                    MenuPrincipal menuPrincipalPrograma = new MenuPrincipal();
-                    menuPrincipalPrograma.Show();
+                MessageBox.Show("Login invalido por favor revise su usuario o su contraseña");
                 }
-            }
-
-
-
         }
 
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
