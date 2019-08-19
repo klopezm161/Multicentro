@@ -193,3 +193,5 @@ C:\Users\sergi\OneDrive\Documentos\GitHub\Multicentro\MulticentroProyectoFinal\o
 C:\Users\sergi\OneDrive\Documentos\GitHub\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.csproj.CoreCompileInputs.cache
 C:\Users\sergi\OneDrive\Documentos\GitHub\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.exe
 C:\Users\sergi\OneDrive\Documentos\GitHub\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.pdb
+C:\Users\Home\Documents\GitHub\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.GUI.FacturacionProducto.resources
+C:\Users\Home\Documents\GitHub\Multicentro\MulticentroProyectoFinal\obj\Debug\MulticentroProyectoFinal.GUI.FacturacionServicio.resources

@@ -46,7 +46,7 @@
             // 
             this.lblCodigoB.AutoSize = true;
             this.lblCodigoB.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigoB.Location = new System.Drawing.Point(115, 167);
+            this.lblCodigoB.Location = new System.Drawing.Point(115, 151);
             this.lblCodigoB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCodigoB.Name = "lblCodigoB";
             this.lblCodigoB.Size = new System.Drawing.Size(170, 18);
@@ -57,7 +57,7 @@
             // 
             this.lblNombreB.AutoSize = true;
             this.lblNombreB.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombreB.Location = new System.Drawing.Point(95, 210);
+            this.lblNombreB.Location = new System.Drawing.Point(95, 188);
             this.lblNombreB.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNombreB.Name = "lblNombreB";
             this.lblNombreB.Size = new System.Drawing.Size(78, 18);
@@ -67,7 +67,7 @@
             // btnBuscarBusquedaServicio
             // 
             this.btnBuscarBusquedaServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarBusquedaServicio.Location = new System.Drawing.Point(358, 254);
+            this.btnBuscarBusquedaServicio.Location = new System.Drawing.Point(358, 219);
             this.btnBuscarBusquedaServicio.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarBusquedaServicio.Name = "btnBuscarBusquedaServicio";
             this.btnBuscarBusquedaServicio.Size = new System.Drawing.Size(145, 28);
@@ -79,7 +79,7 @@
             // txtNombreBusquedaServicio
             // 
             this.txtNombreBusquedaServicio.BackColor = System.Drawing.SystemColors.Window;
-            this.txtNombreBusquedaServicio.Location = new System.Drawing.Point(177, 211);
+            this.txtNombreBusquedaServicio.Location = new System.Drawing.Point(177, 186);
             this.txtNombreBusquedaServicio.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombreBusquedaServicio.Name = "txtNombreBusquedaServicio";
             this.txtNombreBusquedaServicio.Size = new System.Drawing.Size(326, 20);
@@ -87,7 +87,7 @@
             // 
             // txtCodigoBusquedaServicio
             // 
-            this.txtCodigoBusquedaServicio.Location = new System.Drawing.Point(289, 168);
+            this.txtCodigoBusquedaServicio.Location = new System.Drawing.Point(289, 149);
             this.txtCodigoBusquedaServicio.Margin = new System.Windows.Forms.Padding(2);
             this.txtCodigoBusquedaServicio.Name = "txtCodigoBusquedaServicio";
             this.txtCodigoBusquedaServicio.Size = new System.Drawing.Size(214, 20);
@@ -99,16 +99,16 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(284, 28);
+            this.label1.Location = new System.Drawing.Point(264, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(241, 25);
+            this.label1.Size = new System.Drawing.Size(239, 25);
             this.label1.TabIndex = 7;
-            this.label1.Text = "BÚSQUEDA SERVICIO";
+            this.label1.Text = "Búsqueda de Servicio";
             // 
             // btnMenuPrincipalEnBusquedaServicio
             // 
             this.btnMenuPrincipalEnBusquedaServicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuPrincipalEnBusquedaServicio.Location = new System.Drawing.Point(12, 87);
+            this.btnMenuPrincipalEnBusquedaServicio.Location = new System.Drawing.Point(13, 94);
             this.btnMenuPrincipalEnBusquedaServicio.Name = "btnMenuPrincipalEnBusquedaServicio";
             this.btnMenuPrincipalEnBusquedaServicio.Size = new System.Drawing.Size(145, 28);
             this.btnMenuPrincipalEnBusquedaServicio.TabIndex = 10;
@@ -120,15 +120,15 @@
             // 
             this.dGVBusquedaServicio.BackgroundColor = System.Drawing.Color.White;
             this.dGVBusquedaServicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dGVBusquedaServicio.Location = new System.Drawing.Point(18, 306);
+            this.dGVBusquedaServicio.Location = new System.Drawing.Point(18, 267);
             this.dGVBusquedaServicio.Name = "dGVBusquedaServicio";
-            this.dGVBusquedaServicio.Size = new System.Drawing.Size(485, 398);
+            this.dGVBusquedaServicio.Size = new System.Drawing.Size(485, 297);
             this.dGVBusquedaServicio.TabIndex = 11;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-1, 1);
+            this.pictureBox1.Location = new System.Drawing.Point(1, 1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(539, 76);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -139,8 +139,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(539, 736);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(539, 576);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dGVBusquedaServicio);
@@ -153,7 +153,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ServiciosBusqueda";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Busqueda Servicio";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.ServiciosBusqueda_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.dGVBusquedaServicio)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

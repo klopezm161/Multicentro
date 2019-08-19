@@ -53,20 +53,20 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(332, 19);
+            this.label1.Location = new System.Drawing.Point(329, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 20);
+            this.label1.Size = new System.Drawing.Size(179, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "PRODUCTO NUEVO";
+            this.label1.Text = "Nuevo Producto";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(48, 106);
+            this.label2.Location = new System.Drawing.Point(50, 130);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 18);
@@ -77,7 +77,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(48, 141);
+            this.label3.Location = new System.Drawing.Point(50, 165);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 18);
@@ -88,7 +88,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(48, 176);
+            this.label4.Location = new System.Drawing.Point(50, 200);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 18);
@@ -99,7 +99,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(48, 213);
+            this.label5.Location = new System.Drawing.Point(50, 237);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 18);
@@ -109,7 +109,7 @@
             // btnAceptarProductoNuevo
             // 
             this.btnAceptarProductoNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarProductoNuevo.Location = new System.Drawing.Point(363, 253);
+            this.btnAceptarProductoNuevo.Location = new System.Drawing.Point(363, 276);
             this.btnAceptarProductoNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnAceptarProductoNuevo.Name = "btnAceptarProductoNuevo";
             this.btnAceptarProductoNuevo.Size = new System.Drawing.Size(145, 28);
@@ -121,7 +121,7 @@
             // btnMenuPrincipalProductoNuevo
             // 
             this.btnMenuPrincipalProductoNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuPrincipalProductoNuevo.Location = new System.Drawing.Point(23, 249);
+            this.btnMenuPrincipalProductoNuevo.Location = new System.Drawing.Point(13, 79);
             this.btnMenuPrincipalProductoNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnMenuPrincipalProductoNuevo.Name = "btnMenuPrincipalProductoNuevo";
             this.btnMenuPrincipalProductoNuevo.Size = new System.Drawing.Size(145, 28);
@@ -132,7 +132,7 @@
             // 
             // txtCantidadProductoNuevo
             // 
-            this.txtCantidadProductoNuevo.Location = new System.Drawing.Point(134, 212);
+            this.txtCantidadProductoNuevo.Location = new System.Drawing.Point(136, 236);
             this.txtCantidadProductoNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCantidadProductoNuevo.Name = "txtCantidadProductoNuevo";
             this.txtCantidadProductoNuevo.Size = new System.Drawing.Size(372, 22);
@@ -140,7 +140,7 @@
             // 
             // txtPrecioProductoNuevo
             // 
-            this.txtPrecioProductoNuevo.Location = new System.Drawing.Point(134, 176);
+            this.txtPrecioProductoNuevo.Location = new System.Drawing.Point(136, 200);
             this.txtPrecioProductoNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrecioProductoNuevo.Name = "txtPrecioProductoNuevo";
             this.txtPrecioProductoNuevo.Size = new System.Drawing.Size(372, 22);
@@ -148,7 +148,7 @@
             // 
             // txtCodigoProductoNuevo
             // 
-            this.txtCodigoProductoNuevo.Location = new System.Drawing.Point(134, 140);
+            this.txtCodigoProductoNuevo.Location = new System.Drawing.Point(136, 164);
             this.txtCodigoProductoNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.txtCodigoProductoNuevo.Name = "txtCodigoProductoNuevo";
             this.txtCodigoProductoNuevo.Size = new System.Drawing.Size(372, 22);
@@ -156,7 +156,7 @@
             // 
             // txtNombreProductoNuevo
             // 
-            this.txtNombreProductoNuevo.Location = new System.Drawing.Point(134, 105);
+            this.txtNombreProductoNuevo.Location = new System.Drawing.Point(136, 129);
             this.txtNombreProductoNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreProductoNuevo.Name = "txtNombreProductoNuevo";
             this.txtNombreProductoNuevo.Size = new System.Drawing.Size(372, 22);
@@ -166,10 +166,10 @@
             // 
             this.dataGridViewProductoNuevo.BackgroundColor = System.Drawing.Color.White;
             this.dataGridViewProductoNuevo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProductoNuevo.Location = new System.Drawing.Point(23, 288);
+            this.dataGridViewProductoNuevo.Location = new System.Drawing.Point(23, 311);
             this.dataGridViewProductoNuevo.Name = "dataGridViewProductoNuevo";
             this.dataGridViewProductoNuevo.RowHeadersWidth = 51;
-            this.dataGridViewProductoNuevo.Size = new System.Drawing.Size(485, 250);
+            this.dataGridViewProductoNuevo.Size = new System.Drawing.Size(485, 253);
             this.dataGridViewProductoNuevo.TabIndex = 18;
             // 
             // pictureBox1
@@ -186,8 +186,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(539, 559);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(539, 576);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridViewProductoNuevo);

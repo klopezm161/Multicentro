@@ -41,8 +41,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnReporteVentasMenuPrincipal = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
+            this.btnReporteVentasMenuPrincipal = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -54,7 +54,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(340, 22);
+            this.label1.Location = new System.Drawing.Point(340, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(166, 25);
             this.label1.TabIndex = 0;
@@ -63,7 +63,7 @@
             // btnRegresarMenuPrincipal
             // 
             this.btnRegresarMenuPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresarMenuPrincipal.Location = new System.Drawing.Point(361, 400);
+            this.btnRegresarMenuPrincipal.Location = new System.Drawing.Point(382, 396);
             this.btnRegresarMenuPrincipal.Name = "btnRegresarMenuPrincipal";
             this.btnRegresarMenuPrincipal.Size = new System.Drawing.Size(145, 28);
             this.btnRegresarMenuPrincipal.TabIndex = 4;
@@ -188,21 +188,10 @@
             this.panel1.Controls.Add(this.btnServicios);
             this.panel1.Controls.Add(this.btnProductos);
             this.panel1.Controls.Add(this.btnFacturacion);
-            this.panel1.Location = new System.Drawing.Point(12, 85);
+            this.panel1.Location = new System.Drawing.Point(12, 114);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(515, 276);
             this.panel1.TabIndex = 23;
-            // 
-            // btnReporteVentasMenuPrincipal
-            // 
-            this.btnReporteVentasMenuPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReporteVentasMenuPrincipal.Location = new System.Drawing.Point(26, 400);
-            this.btnReporteVentasMenuPrincipal.Name = "btnReporteVentasMenuPrincipal";
-            this.btnReporteVentasMenuPrincipal.Size = new System.Drawing.Size(145, 28);
-            this.btnReporteVentasMenuPrincipal.TabIndex = 24;
-            this.btnReporteVentasMenuPrincipal.Text = "Reporte de ventas";
-            this.btnReporteVentasMenuPrincipal.UseVisualStyleBackColor = true;
-            this.btnReporteVentasMenuPrincipal.Click += new System.EventHandler(this.BtnReporteVentasMenuPrincipal_Click);
             // 
             // label5
             // 
@@ -214,12 +203,23 @@
             this.label5.TabIndex = 23;
             this.label5.Text = "Seleccione la opción que desea realizar: ";
             // 
+            // btnReporteVentasMenuPrincipal
+            // 
+            this.btnReporteVentasMenuPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReporteVentasMenuPrincipal.Location = new System.Drawing.Point(12, 396);
+            this.btnReporteVentasMenuPrincipal.Name = "btnReporteVentasMenuPrincipal";
+            this.btnReporteVentasMenuPrincipal.Size = new System.Drawing.Size(145, 28);
+            this.btnReporteVentasMenuPrincipal.TabIndex = 24;
+            this.btnReporteVentasMenuPrincipal.Text = "Reporte de ventas";
+            this.btnReporteVentasMenuPrincipal.UseVisualStyleBackColor = true;
+            this.btnReporteVentasMenuPrincipal.Click += new System.EventHandler(this.BtnReporteVentasMenuPrincipal_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(-4, -2);
+            this.pictureBox2.Location = new System.Drawing.Point(0, -2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(546, 72);
+            this.pictureBox2.Size = new System.Drawing.Size(539, 76);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 26;
             this.pictureBox2.TabStop = false;

@@ -47,7 +47,7 @@
             // btnAceptarServicioIngreso
             // 
             this.btnAceptarServicioIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarServicioIngreso.Location = new System.Drawing.Point(358, 268);
+            this.btnAceptarServicioIngreso.Location = new System.Drawing.Point(358, 255);
             this.btnAceptarServicioIngreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAceptarServicioIngreso.Name = "btnAceptarServicioIngreso";
             this.btnAceptarServicioIngreso.Size = new System.Drawing.Size(145, 28);
@@ -60,9 +60,9 @@
             // 
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(15, 232);
+            this.lblPrecio.Location = new System.Drawing.Point(61, 218);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(82, 25);
+            this.lblPrecio.Size = new System.Drawing.Size(64, 18);
             this.lblPrecio.TabIndex = 8;
             this.lblPrecio.Text = "Precio:";
             // 
@@ -70,9 +70,9 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(15, 167);
+            this.lblNombre.Location = new System.Drawing.Point(47, 147);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(100, 25);
+            this.lblNombre.Size = new System.Drawing.Size(78, 18);
             this.lblNombre.TabIndex = 9;
             this.lblNombre.Text = "Nombre:";
             // 
@@ -80,34 +80,34 @@
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(15, 198);
+            this.lblCodigo.Location = new System.Drawing.Point(54, 182);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(89, 25);
+            this.lblCodigo.Size = new System.Drawing.Size(71, 18);
             this.lblCodigo.TabIndex = 10;
             this.lblCodigo.Text = "Código:";
             // 
             // txtPrecioServicioIngreso
             // 
-            this.txtPrecioServicioIngreso.Location = new System.Drawing.Point(131, 232);
+            this.txtPrecioServicioIngreso.Location = new System.Drawing.Point(131, 217);
             this.txtPrecioServicioIngreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPrecioServicioIngreso.Name = "txtPrecioServicioIngreso";
-            this.txtPrecioServicioIngreso.Size = new System.Drawing.Size(372, 26);
+            this.txtPrecioServicioIngreso.Size = new System.Drawing.Size(372, 22);
             this.txtPrecioServicioIngreso.TabIndex = 14;
             // 
             // txtCodigoServicioIngreso
             // 
-            this.txtCodigoServicioIngreso.Location = new System.Drawing.Point(131, 198);
+            this.txtCodigoServicioIngreso.Location = new System.Drawing.Point(131, 178);
             this.txtCodigoServicioIngreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCodigoServicioIngreso.Name = "txtCodigoServicioIngreso";
-            this.txtCodigoServicioIngreso.Size = new System.Drawing.Size(372, 26);
+            this.txtCodigoServicioIngreso.Size = new System.Drawing.Size(372, 22);
             this.txtCodigoServicioIngreso.TabIndex = 15;
             // 
             // txtNombreServicioIngreso
             // 
-            this.txtNombreServicioIngreso.Location = new System.Drawing.Point(131, 167);
+            this.txtNombreServicioIngreso.Location = new System.Drawing.Point(131, 143);
             this.txtNombreServicioIngreso.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombreServicioIngreso.Name = "txtNombreServicioIngreso";
-            this.txtNombreServicioIngreso.Size = new System.Drawing.Size(372, 26);
+            this.txtNombreServicioIngreso.Size = new System.Drawing.Size(372, 22);
             this.txtNombreServicioIngreso.TabIndex = 16;
             // 
             // label1
@@ -116,12 +116,12 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(305, 24);
+            this.label1.Location = new System.Drawing.Point(333, 25);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(255, 32);
+            this.label1.Size = new System.Drawing.Size(170, 25);
             this.label1.TabIndex = 18;
-            this.label1.Text = "SERVICIO NUEVO";
+            this.label1.Text = "Nuevo Servicio";
             // 
             // btnMenuPrincipalEnServicioIngreso
             // 
@@ -139,9 +139,9 @@
             // 
             this.dgvServicioNuevo.BackgroundColor = System.Drawing.Color.White;
             this.dgvServicioNuevo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvServicioNuevo.Location = new System.Drawing.Point(18, 313);
+            this.dgvServicioNuevo.Location = new System.Drawing.Point(18, 302);
             this.dgvServicioNuevo.Name = "dgvServicioNuevo";
-            this.dgvServicioNuevo.Size = new System.Drawing.Size(485, 391);
+            this.dgvServicioNuevo.Size = new System.Drawing.Size(485, 262);
             this.dgvServicioNuevo.TabIndex = 22;
             this.dgvServicioNuevo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvServicioNuevo_CellContentClick);
             // 
@@ -157,10 +157,10 @@
             // 
             // ServiciosIngreso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(539, 736);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(539, 576);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvServicioNuevo);

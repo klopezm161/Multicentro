@@ -49,35 +49,38 @@
             // cbProductoFacturaCrear
             // 
             this.cbProductoFacturaCrear.FormattingEnabled = true;
-            this.cbProductoFacturaCrear.Location = new System.Drawing.Point(202, 201);
+            this.cbProductoFacturaCrear.Location = new System.Drawing.Point(212, 159);
+            this.cbProductoFacturaCrear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbProductoFacturaCrear.Name = "cbProductoFacturaCrear";
-            this.cbProductoFacturaCrear.Size = new System.Drawing.Size(337, 24);
+            this.cbProductoFacturaCrear.Size = new System.Drawing.Size(290, 21);
             this.cbProductoFacturaCrear.TabIndex = 68;
             // 
             // txtCantidadFacturaProduc
             // 
-            this.txtCantidadFacturaProduc.Location = new System.Drawing.Point(202, 241);
+            this.txtCantidadFacturaProduc.Location = new System.Drawing.Point(212, 191);
+            this.txtCantidadFacturaProduc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCantidadFacturaProduc.Name = "txtCantidadFacturaProduc";
-            this.txtCantidadFacturaProduc.Size = new System.Drawing.Size(337, 22);
+            this.txtCantidadFacturaProduc.Size = new System.Drawing.Size(290, 20);
             this.txtCantidadFacturaProduc.TabIndex = 67;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(379, 46);
-            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label1.Location = new System.Drawing.Point(341, 26);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(183, 25);
+            this.label1.Size = new System.Drawing.Size(161, 25);
             this.label1.TabIndex = 56;
-            this.label1.Text = "FACTURA NUEVA";
+            this.label1.Text = "Factura nueva";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(37, 17);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(539, 76);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -88,16 +91,17 @@
             // 
             this.dgvFacturaProducto.BackgroundColor = System.Drawing.Color.White;
             this.dgvFacturaProducto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFacturaProducto.Location = new System.Drawing.Point(66, 356);
+            this.dgvFacturaProducto.Location = new System.Drawing.Point(20, 269);
+            this.dgvFacturaProducto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvFacturaProducto.Name = "dgvFacturaProducto";
-            this.dgvFacturaProducto.Size = new System.Drawing.Size(473, 405);
+            this.dgvFacturaProducto.Size = new System.Drawing.Size(482, 296);
             this.dgvFacturaProducto.TabIndex = 65;
             // 
             // btnMenuPrincipalEnFacturarCrear
             // 
             this.btnMenuPrincipalEnFacturarCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuPrincipalEnFacturarCrear.Location = new System.Drawing.Point(53, 101);
-            this.btnMenuPrincipalEnFacturarCrear.Margin = new System.Windows.Forms.Padding(5);
+            this.btnMenuPrincipalEnFacturarCrear.Location = new System.Drawing.Point(20, 93);
+            this.btnMenuPrincipalEnFacturarCrear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnMenuPrincipalEnFacturarCrear.Name = "btnMenuPrincipalEnFacturarCrear";
             this.btnMenuPrincipalEnFacturarCrear.Size = new System.Drawing.Size(145, 28);
             this.btnMenuPrincipalEnFacturarCrear.TabIndex = 64;
@@ -107,8 +111,8 @@
             // btnAceptarFacturarCrear
             // 
             this.btnAceptarFacturarCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarFacturarCrear.Location = new System.Drawing.Point(394, 320);
-            this.btnAceptarFacturarCrear.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAceptarFacturarCrear.Location = new System.Drawing.Point(357, 228);
+            this.btnAceptarFacturarCrear.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAceptarFacturarCrear.Name = "btnAceptarFacturarCrear";
             this.btnAceptarFacturarCrear.Size = new System.Drawing.Size(145, 28);
             this.btnAceptarFacturarCrear.TabIndex = 63;
@@ -120,53 +124,53 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(197, 276);
-            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label7.Location = new System.Drawing.Point(148, 224);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 25);
+            this.label7.Size = new System.Drawing.Size(0, 18);
             this.label7.TabIndex = 62;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(52, 276);
-            this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label6.Location = new System.Drawing.Point(142, 232);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 25);
+            this.label6.Size = new System.Drawing.Size(64, 18);
             this.label6.TabIndex = 61;
-            this.label6.Text = "Precio";
+            this.label6.Text = "Precio:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(50, 236);
-            this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label5.Location = new System.Drawing.Point(118, 193);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(101, 25);
+            this.label5.Size = new System.Drawing.Size(88, 18);
             this.label5.TabIndex = 60;
-            this.label5.Text = "Cantidad";
+            this.label5.Text = "Cantidad:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(59, 196);
-            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label4.Location = new System.Drawing.Point(120, 162);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 25);
+            this.label4.Size = new System.Drawing.Size(86, 18);
             this.label4.TabIndex = 59;
-            this.label4.Text = "Producto";
+            this.label4.Text = "Producto:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(279, 157);
-            this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label3.Location = new System.Drawing.Point(311, 115);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 25);
+            this.label3.Size = new System.Drawing.Size(131, 18);
             this.label3.TabIndex = 58;
             this.label3.Text = "Cédula Jurídica";
             // 
@@ -174,18 +178,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(279, 139);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Location = new System.Drawing.Point(302, 97);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(184, 25);
+            this.label2.Size = new System.Drawing.Size(140, 18);
             this.label2.TabIndex = 57;
             this.label2.Text = "Multicentro S.A";
             // 
             // FacturacionProducto
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(566, 789);
+            this.ClientSize = new System.Drawing.Size(539, 576);
             this.Controls.Add(this.cbProductoFacturaCrear);
             this.Controls.Add(this.txtCantidadFacturaProduc);
             this.Controls.Add(this.label1);
@@ -199,6 +203,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FacturacionProducto";
             this.Text = "FacturacionProducto";
             this.Load += new System.EventHandler(this.FacturacionProducto_Load);

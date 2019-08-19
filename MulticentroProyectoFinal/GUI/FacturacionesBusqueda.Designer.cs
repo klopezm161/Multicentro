@@ -47,37 +47,37 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(310, 27);
+            this.label1.Location = new System.Drawing.Point(345, 27);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(264, 32);
+            this.label1.Size = new System.Drawing.Size(168, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "BUSCAR FACTURA";
+            this.label1.Text = "Buscar Factura";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 169);
+            this.label2.Location = new System.Drawing.Point(53, 149);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 25);
+            this.label2.Size = new System.Drawing.Size(143, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Número Factura:";
             // 
             // txtNumFacturaFacturacionesBusqueda
             // 
-            this.txtNumFacturaFacturacionesBusqueda.Location = new System.Drawing.Point(163, 165);
+            this.txtNumFacturaFacturacionesBusqueda.Location = new System.Drawing.Point(193, 145);
             this.txtNumFacturaFacturacionesBusqueda.Margin = new System.Windows.Forms.Padding(5);
             this.txtNumFacturaFacturacionesBusqueda.Name = "txtNumFacturaFacturacionesBusqueda";
-            this.txtNumFacturaFacturacionesBusqueda.Size = new System.Drawing.Size(350, 30);
+            this.txtNumFacturaFacturacionesBusqueda.Size = new System.Drawing.Size(320, 26);
             this.txtNumFacturaFacturacionesBusqueda.TabIndex = 2;
             this.txtNumFacturaFacturacionesBusqueda.TextChanged += new System.EventHandler(this.txtNumFacturaFacturacionesBusqueda_TextChanged);
             // 
             // btnAceptarFacturacionesBusqueda
             // 
             this.btnAceptarFacturacionesBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarFacturacionesBusqueda.Location = new System.Drawing.Point(368, 201);
+            this.btnAceptarFacturacionesBusqueda.Location = new System.Drawing.Point(368, 181);
             this.btnAceptarFacturacionesBusqueda.Margin = new System.Windows.Forms.Padding(5);
             this.btnAceptarFacturacionesBusqueda.Name = "btnAceptarFacturacionesBusqueda";
             this.btnAceptarFacturacionesBusqueda.Size = new System.Drawing.Size(145, 28);
@@ -102,9 +102,9 @@
             // 
             this.dtvFacturacionBusqueda.BackgroundColor = System.Drawing.Color.White;
             this.dtvFacturacionBusqueda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtvFacturacionBusqueda.Location = new System.Drawing.Point(28, 265);
+            this.dtvFacturacionBusqueda.Location = new System.Drawing.Point(28, 217);
             this.dtvFacturacionBusqueda.Name = "dtvFacturacionBusqueda";
-            this.dtvFacturacionBusqueda.Size = new System.Drawing.Size(485, 459);
+            this.dtvFacturacionBusqueda.Size = new System.Drawing.Size(485, 333);
             this.dtvFacturacionBusqueda.TabIndex = 5;
             // 
             // pictureBox1
@@ -122,16 +122,16 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(0, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(70, 25);
+            this.label3.Size = new System.Drawing.Size(57, 20);
             this.label3.TabIndex = 38;
             this.label3.Text = "label3";
             // 
             // FacturacionesBusquesda
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(539, 736);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(539, 576);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);

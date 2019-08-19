@@ -63,7 +63,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(40, 184);
+            this.label2.Location = new System.Drawing.Point(119, 184);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(78, 18);
             this.label2.TabIndex = 1;
@@ -73,7 +73,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(40, 236);
+            this.label4.Location = new System.Drawing.Point(109, 236);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(88, 18);
             this.label4.TabIndex = 3;
@@ -82,7 +82,7 @@
             // btnAceptarProductoActualizado
             // 
             this.btnAceptarProductoActualizado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAceptarProductoActualizado.Location = new System.Drawing.Point(313, 266);
+            this.btnAceptarProductoActualizado.Location = new System.Drawing.Point(362, 266);
             this.btnAceptarProductoActualizado.Name = "btnAceptarProductoActualizado";
             this.btnAceptarProductoActualizado.Size = new System.Drawing.Size(145, 28);
             this.btnAceptarProductoActualizado.TabIndex = 9;
@@ -93,7 +93,7 @@
             // btnMenuPrincipalProductoActualizado
             // 
             this.btnMenuPrincipalProductoActualizado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuPrincipalProductoActualizado.Location = new System.Drawing.Point(12, 79);
+            this.btnMenuPrincipalProductoActualizado.Location = new System.Drawing.Point(12, 82);
             this.btnMenuPrincipalProductoActualizado.Name = "btnMenuPrincipalProductoActualizado";
             this.btnMenuPrincipalProductoActualizado.Size = new System.Drawing.Size(145, 28);
             this.btnMenuPrincipalProductoActualizado.TabIndex = 11;
@@ -105,7 +105,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(40, 210);
+            this.label3.Location = new System.Drawing.Point(133, 210);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 18);
             this.label3.TabIndex = 2;
@@ -113,21 +113,21 @@
             // 
             // txtNombreProductoActualizado
             // 
-            this.txtNombreProductoActualizado.Location = new System.Drawing.Point(154, 182);
+            this.txtNombreProductoActualizado.Location = new System.Drawing.Point(203, 182);
             this.txtNombreProductoActualizado.Name = "txtNombreProductoActualizado";
             this.txtNombreProductoActualizado.Size = new System.Drawing.Size(304, 20);
             this.txtNombreProductoActualizado.TabIndex = 12;
             // 
             // txtPrecioProductoActualizado
             // 
-            this.txtPrecioProductoActualizado.Location = new System.Drawing.Point(154, 208);
+            this.txtPrecioProductoActualizado.Location = new System.Drawing.Point(203, 208);
             this.txtPrecioProductoActualizado.Name = "txtPrecioProductoActualizado";
             this.txtPrecioProductoActualizado.Size = new System.Drawing.Size(304, 20);
             this.txtPrecioProductoActualizado.TabIndex = 13;
             // 
             // txtCantidadProductoActualizado
             // 
-            this.txtCantidadProductoActualizado.Location = new System.Drawing.Point(154, 234);
+            this.txtCantidadProductoActualizado.Location = new System.Drawing.Point(203, 234);
             this.txtCantidadProductoActualizado.Name = "txtCantidadProductoActualizado";
             this.txtCantidadProductoActualizado.Size = new System.Drawing.Size(304, 20);
             this.txtCantidadProductoActualizado.TabIndex = 14;
@@ -136,7 +136,7 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 300);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 300);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(490, 250);
@@ -144,8 +144,8 @@
             // 
             // TxtCodAActualizarActualizacionProductos
             // 
-            this.TxtCodAActualizarActualizacionProductos.Location = new System.Drawing.Point(223, 125);
-            this.TxtCodAActualizarActualizacionProductos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TxtCodAActualizarActualizacionProductos.Location = new System.Drawing.Point(272, 125);
+            this.TxtCodAActualizarActualizacionProductos.Margin = new System.Windows.Forms.Padding(2);
             this.TxtCodAActualizarActualizacionProductos.Name = "TxtCodAActualizarActualizacionProductos";
             this.TxtCodAActualizarActualizacionProductos.Size = new System.Drawing.Size(235, 20);
             this.TxtCodAActualizarActualizacionProductos.TabIndex = 30;
@@ -153,8 +153,8 @@
             // btnBuscarServiciosActualizacion
             // 
             this.btnBuscarServiciosActualizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarServiciosActualizacion.Location = new System.Drawing.Point(313, 149);
-            this.btnBuscarServiciosActualizacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscarServiciosActualizacion.Location = new System.Drawing.Point(362, 149);
+            this.btnBuscarServiciosActualizacion.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarServiciosActualizacion.Name = "btnBuscarServiciosActualizacion";
             this.btnBuscarServiciosActualizacion.Size = new System.Drawing.Size(145, 28);
             this.btnBuscarServiciosActualizacion.TabIndex = 29;
@@ -166,7 +166,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(40, 124);
+            this.label5.Location = new System.Drawing.Point(89, 127);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(179, 18);
@@ -178,7 +178,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-1, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(539, 73);
+            this.pictureBox1.Size = new System.Drawing.Size(539, 76);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 31;
             this.pictureBox1.TabStop = false;
@@ -188,7 +188,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(539, 577);
+            this.ClientSize = new System.Drawing.Size(539, 576);
             this.Controls.Add(this.btnMenuPrincipalProductoActualizado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);

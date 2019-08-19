@@ -48,17 +48,17 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(245, 25);
+            this.label1.Location = new System.Drawing.Point(319, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(257, 25);
+            this.label1.Size = new System.Drawing.Size(183, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "BÚSQUEDA PRODUCTO";
+            this.label1.Text = "Buscar producto";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(38, 103);
+            this.label3.Location = new System.Drawing.Point(154, 138);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 18);
             this.label3.TabIndex = 2;
@@ -68,7 +68,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(38, 135);
+            this.label4.Location = new System.Drawing.Point(46, 181);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 18);
             this.label4.TabIndex = 3;
@@ -77,7 +77,7 @@
             // btnBuscarProductoBusqueda
             // 
             this.btnBuscarProductoBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscarProductoBusqueda.Location = new System.Drawing.Point(357, 168);
+            this.btnBuscarProductoBusqueda.Location = new System.Drawing.Point(357, 205);
             this.btnBuscarProductoBusqueda.Name = "btnBuscarProductoBusqueda";
             this.btnBuscarProductoBusqueda.Size = new System.Drawing.Size(145, 28);
             this.btnBuscarProductoBusqueda.TabIndex = 4;
@@ -88,7 +88,7 @@
             // btnMenuPrincipalProductoBusqueda
             // 
             this.btnMenuPrincipalProductoBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMenuPrincipalProductoBusqueda.Location = new System.Drawing.Point(17, 168);
+            this.btnMenuPrincipalProductoBusqueda.Location = new System.Drawing.Point(12, 80);
             this.btnMenuPrincipalProductoBusqueda.Name = "btnMenuPrincipalProductoBusqueda";
             this.btnMenuPrincipalProductoBusqueda.Size = new System.Drawing.Size(145, 28);
             this.btnMenuPrincipalProductoBusqueda.TabIndex = 6;
@@ -98,14 +98,14 @@
             // 
             // txtCodigoProductoBusqueda
             // 
-            this.txtCodigoProductoBusqueda.Location = new System.Drawing.Point(130, 101);
+            this.txtCodigoProductoBusqueda.Location = new System.Drawing.Point(231, 136);
             this.txtCodigoProductoBusqueda.Name = "txtCodigoProductoBusqueda";
-            this.txtCodigoProductoBusqueda.Size = new System.Drawing.Size(372, 20);
+            this.txtCodigoProductoBusqueda.Size = new System.Drawing.Size(271, 20);
             this.txtCodigoProductoBusqueda.TabIndex = 8;
             // 
             // txtNombreProductoBusqueda
             // 
-            this.txtNombreProductoBusqueda.Location = new System.Drawing.Point(130, 133);
+            this.txtNombreProductoBusqueda.Location = new System.Drawing.Point(130, 179);
             this.txtNombreProductoBusqueda.Name = "txtNombreProductoBusqueda";
             this.txtNombreProductoBusqueda.Size = new System.Drawing.Size(372, 20);
             this.txtNombreProductoBusqueda.TabIndex = 9;
@@ -114,10 +114,10 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(17, 202);
+            this.dataGridView1.Location = new System.Drawing.Point(17, 239);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(485, 230);
+            this.dataGridView1.Size = new System.Drawing.Size(485, 325);
             this.dataGridView1.TabIndex = 10;
             // 
             // pictureBox1
@@ -134,8 +134,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(524, 444);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(539, 576);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
